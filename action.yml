@@ -12,8 +12,12 @@ inputs:
     description: 'Fleet team name to apply MDM configuration profiles to'
     required: true
     default: "Workstations"
+  MDM_CONFIG_REPO: 
+    description: 'Repository containing MDM configuration profiles'
+    required: true
+    default: 'fleetdm/fleet'
   MDM_CONFIG_DIRECTORY:
-    description: 'Directory where MDM configuration files are stored'
+    description: 'Directory in repo where MDM configuration files are stored'
     required: true
     default: 'mdm_profiles'
   MAC_OS_MIN_VERSION:
@@ -27,7 +31,7 @@ inputs:
   MAC_OS_ENABLE_DISK_ENCRYPTION: 
     description: 'Enable disk encryption'
     required: true
-    default: true
+    default: 'true'
 
 runs:
   using: 'composite'
@@ -35,7 +39,7 @@ runs:
     - name: Checkout code
       uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # v2
       with:
-        repository: fleetdm/fleet
+        repository: ${{ inputs.MDM_CONFIG_REPO }}
 
     - name: Install fleetctl
       run: npm install -g fleetctl
