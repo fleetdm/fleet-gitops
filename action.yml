@@ -71,7 +71,7 @@ runs:
               macos_settings:
                 enable_disk_encryption: ${{ inputs.MAC_OS_ENABLE_DISK_ENCRYPTION }}
                 custom_settings:
-                  $profiles
+        $profiles
         " > team-workstations-config.yml
         fleetctl apply -f team-workstations-config.yml
       shell: bash
