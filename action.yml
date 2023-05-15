@@ -55,7 +55,7 @@ runs:
         for file in mdm_profiles/*.mobileconfig; do
           envsubst < "$file" > "${file}.new"
           mv "${file}.new" "$file"
-          profiles+=$'- '$file$'\n'
+          profiles+=$'          - '$file$'\n'
         done
         echo "apiVersion: v1
         kind: team
@@ -70,6 +70,6 @@ runs:
                 enable_disk_encryption: ${{ inputs.MAC_OS_ENABLE_DISK_ENCRYPTION }}
                 custom_settings:
                   $profiles
-                  " > team-workstations-config.yml
+        " > team-workstations-config.yml
         fleetctl apply -f team-workstations-config.yml
       shell: bash
