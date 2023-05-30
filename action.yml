@@ -56,17 +56,31 @@ runs:
           profiles+=$'          - '$file$'\n'
         done
 
+        os_updates=""
+        if [[ -n ${{ inputs.MAC_OS_MIN_VERSION }} ]] || [[ -n ${{ inputs.MAC_OS_VERSION_DEADLINE }} ]]; then
+            os_updates=$'macos_updates:\n'
+            if [[ -n ${{ inputs.MAC_OS_MIN_VERSION }} ]]; then
+                os_updates+=$'minimum_version: ${{ inputs.MAC_OS_MIN_VERSION }}\n'
+            fi
+            if [[ -n ${{ inputs.MAC_OS_VERSION_DEADLINE }} ]]; then
+                os_updates+=$'deadline: ${{ inputs.MAC_OS_VERSION_DEADLINE }}\n'
+            fi
+        fi
+
+        disk_encryption=""
+        if [[ -n ${{ inputs.MAC_OS_ENABLE_DISK_ENCRYPTION }} ]]; then
+            disk_encryption=$'                enable_disk_encryption: ${{ inputs.MAC_OS_ENABLE_DISK_ENCRYPTION }}\n'
+        fi
+
         echo "apiVersion: v1
         kind: team
         spec:
           team:
             name: ${{ inputs.FLEET_TEAM_NAME }}
             mdm:
-              macos_updates:
-                minimum_version: ${{ inputs.MAC_OS_MIN_VERSION }}
-                deadline: ${{ inputs.MAC_OS_VERSION_DEADLINE }}
+              $os_updates
               macos_settings:
-                enable_disk_encryption: ${{ inputs.MAC_OS_ENABLE_DISK_ENCRYPTION }}
+              $disk_encryption
                 custom_settings:
         $profiles
         " > team-workstations-config.yml
