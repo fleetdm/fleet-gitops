@@ -80,7 +80,7 @@ runs:
             name: ${{ inputs.FLEET_TEAM_NAME }}
             mdm:
         $os_updates
-        macos_settings:
+              macos_settings:
         $disk_encryption
                 custom_settings:
         $profiles
