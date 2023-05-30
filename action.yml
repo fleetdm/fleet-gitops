@@ -22,16 +22,13 @@ inputs:
     default: 'mdm_profiles'
   MAC_OS_MIN_VERSION:
     description: 'Minimum macOS version of hosts'
-    required: true
-    default: '13.3.1'
+    required: false
   MAC_OS_VERSION_DEADLINE:
     description: 'Deadline for macOS version'
-    required: true
-    default: '2023-05-15'
+    required: false
   MAC_OS_ENABLE_DISK_ENCRYPTION: 
     description: 'Enable disk encryption'
-    required: true
-    default: 'true'
+    required: false
 
 runs:
   using: 'composite'
