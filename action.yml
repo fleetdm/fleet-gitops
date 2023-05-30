@@ -86,4 +86,5 @@ runs:
         $profiles
         " > team-workstations-config.yml
         fleetctl apply -f team-workstations-config.yml
+        cat team-workstations-config.yml
       shell: bash
