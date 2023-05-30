@@ -22,13 +22,14 @@ inputs:
     default: 'mdm_profiles'
   MAC_OS_MIN_VERSION:
     description: 'Minimum macOS version of hosts'
-    required: false
+    required: true
   MAC_OS_VERSION_DEADLINE:
     description: 'Deadline for macOS version'
-    required: false
+    required: true
   MAC_OS_ENABLE_DISK_ENCRYPTION: 
     description: 'Enable disk encryption'
-    required: false
+    required: true
+    default: 'true'
 
 runs:
   using: 'composite'
@@ -56,35 +57,19 @@ runs:
           profiles+=$'          - '$file$'\n'
         done
 
-        os_updates=""
-        if [[ -n "${{ inputs.MAC_OS_MIN_VERSION }}" ]] || [[ -n "${{ inputs.MAC_OS_VERSION_DEADLINE }}" ]]; then
-            os_updates=$'          macos_updates:\n'
-            if [[ -n "${{ inputs.MAC_OS_MIN_VERSION }}" ]]; then
-                os_updates+=$'            minimum_version: ${{ inputs.MAC_OS_MIN_VERSION }}\n'
-            fi
-            if [[ -n "${{ inputs.MAC_OS_VERSION_DEADLINE }}" ]]; then
-                os_updates+=$'            deadline: ${{ inputs.MAC_OS_VERSION_DEADLINE }}\n'
-            fi
-        fi
-
-        disk_encryption=""
-        if [[ -n "${{ inputs.MAC_OS_ENABLE_DISK_ENCRYPTION }}" ]]; then
-            disk_encryption=$'            enable_disk_encryption: ${{ inputs.MAC_OS_ENABLE_DISK_ENCRYPTION }}\n'
-        fi
-
-
         echo "apiVersion: v1
         kind: team
         spec:
           team:
             name: ${{ inputs.FLEET_TEAM_NAME }}
             mdm:
-        $os_updates
+              macos_updates:
+                minimum_version: ${{ inputs.MAC_OS_MIN_VERSION }}
+                deadline: ${{ inputs.MAC_OS_VERSION_DEADLINE }}
               macos_settings:
-        $disk_encryption
+                enable_disk_encryption: ${{ inputs.MAC_OS_ENABLE_DISK_ENCRYPTION }}
                 custom_settings:
         $profiles
         " > team-workstations-config.yml
         fleetctl apply -f team-workstations-config.yml
-        cat team-workstations-config.yml
       shell: bash
