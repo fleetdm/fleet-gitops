@@ -64,7 +64,7 @@ runs:
             name: ${{ inputs.FLEET_TEAM_NAME }}
             mdm:
               macos_updates:
-                minimum_version: ${{ inputs.MAC_OS_MIN_VERSION }}
+                minimum_version: \"${{ inputs.MAC_OS_MIN_VERSION }}\"
                 deadline: ${{ inputs.MAC_OS_VERSION_DEADLINE }}
               macos_settings:
                 enable_disk_encryption: ${{ inputs.MAC_OS_ENABLE_DISK_ENCRYPTION }}
