@@ -1,0 +1,23 @@
+---
+apiVersion: v1
+kind: team
+spec:
+  team:
+    name: "\U0001F4BB Workstations"
+    mdm:
+      macos_settings:
+        custom_settings:
+        - ../mdm-profiles/os-updates.json
+        - ../mdm-profiles/password-polic.mobile.config
+        enable_disk_encryption: true
+      macos_setup:
+        bootstrap_package: ""
+        enable_end_user_authentication: false
+        macos_setup_assistant: null
+      macos_updates:
+        deadline: "2023-08-11"
+        minimum_version: "13.5"
+    scripts:
+    - ../scripts/set-timezone.sh
+    - ../scripts/remove-zoom-artifacts.sh
+    - ../scripts/uninstall-zoom.sh
