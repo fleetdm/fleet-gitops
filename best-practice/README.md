@@ -18,5 +18,5 @@ Soon, a Fleet user will be able to clone this repository, push up the contents o
   - `<team name>` - folder for each team, with team-specific configs
     - `<team name>.policies.yml` - policies config for a specific team, including CIS policies. (Team name is duplicated in file name for easy searching.)
     - `<team name>.queries.yml` - queries config for a specific team. (Team name is duplicated in file name for easy searching.)
-    - `<team name>.controls.yml` - controls config for a specific team, including configuration profiles, OS updates, setup experience, and scripts
+    - `<team name>.controls.yml` - controls config for a specific team, including configuration profiles, OS updates, setup experience, and scripts.
     - `<team name>.settings.yml` - settings config for a specific team, including agent options, command-line flags, and more. Team settings override global settings.
