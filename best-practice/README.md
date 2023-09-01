@@ -14,8 +14,8 @@ Soon, a Fleet user will be able to clone this repository, push up the contents o
 - `default.queries.yml` - top-level file with all global queries (aka queries that run on **all hosts**).
 - `no-team.controls.yml` - top-level file with controls (configuration profiles, OS updates, setup experience, and scripts) that apply to **hosts assigned to "No team"**.
 - `default.settings.yml` - top-level file with settings. These settings get applied to **hosts assigned to "No team"**. When a new team is created, it gets these settings.
-- `teams` - folder for teams in Fleet. These folders contain team-level policies, queries, controls, and settings
-  - `<team name>` - folder for each team, with team-specific configs
+- `teams` - folder for teams in Fleet. These folders contain team-level policies, queries, controls, and settings.
+  - `<team name>` - folder for each team, with team-specific configs.
     - `<team name>.policies.yml` - policies config for a specific team, including CIS policies. (Team name is duplicated in file name for easy searching.)
     - `<team name>.queries.yml` - queries config for a specific team. (Team name is duplicated in file name for easy searching.)
     - `<team name>.controls.yml` - controls config for a specific team, including configuration profiles, OS updates, setup experience, and scripts.
