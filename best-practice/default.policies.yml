@@ -1,0 +1,11 @@
+# Policies that run on all hosts
+---
+apiVersion: v1
+kind: policy
+spec:
+  name: Google Chrome is up-to-date
+  platform: darwin,windows
+  description: Out of date browsers are one of the biggest contributors toward corporate breach scenarios. Ensure your Google Chrome browser has been updated to the latest version.
+  resolution: https://support.google.com/chrome/answer/95414?hl=en&co=GENIE.Platform%3DDesktop
+  query: SELECT 1 FROM apps where bundle_identifier="com.google.Chrome" AND bundle_version >= 5615.137;
+  contributors: dherder
