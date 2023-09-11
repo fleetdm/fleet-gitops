@@ -2,7 +2,7 @@
 
 This folder illustrates the best practice for using Fleet with a GitOps workflow.
 
-Soon, a Fleet user will be able to clone this repository, push up the contents of this `best-pratice/` folder to their organization's repository, and add Fleet's open-source [GitHub action](https://github.com/fleetdm/fleet-mdm-gitops) to the repo. When the user makes changes to any file, the action will run and update Fleet.
+Soon, a Fleet user will be able to clone this repository, push up the contents of this `best-practice/` folder to their organization's repository, and add Fleet's open-source [GitHub action](https://github.com/fleetdm/fleet-mdm-gitops) to the repo. When the user makes changes to any file, the action will run and update Fleet.
 
 > The GitHub action is not ready for use with this best practice. The action only supports configuration profiles, disk encryption and OS updates for macOS.
 
