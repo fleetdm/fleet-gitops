@@ -8,31 +8,6 @@ inputs:
   FLEET_URL:
     description: 'Fleet URL'
     required: true
-  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  # I think all this will go away:
-  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  # FLEET_TEAM_NAME:
-  #   description: 'Fleet team name to apply MDM configuration profiles to'
-  #   required: true
-  #   default: "Workstations"
-  # MDM_CONFIG_REPO: 
-  #   description: 'Repository containing MDM configuration profiles'
-  #   required: true
-  #   default: 'fleetdm/fleet'
-  # MDM_CONFIG_DIRECTORY:
-  #   description: 'Directory in repo where MDM configuration files are stored'
-  #   required: true
-  #   default: 'mdm_profiles'
-  # MAC_OS_MIN_VERSION:
-  #   description: 'Minimum macOS version of hosts'
-  #   required: true
-  # MAC_OS_VERSION_DEADLINE:
-  #   description: 'Deadline for macOS version'
-  #   required: true
-  # MAC_OS_ENABLE_DISK_ENCRYPTION: 
-  #   description: 'Enable disk encryption'
-  #   required: true
-  #   default: 'true'
 
 runs:
   using: 'composite'
@@ -56,30 +31,50 @@ runs:
         # STEP 1: Apply .controls.yml files:
         # (Note that .controls.yml must be applied BEFORE .settings.yml to avoid resetting certain config to the defaults)
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        # TODO: Apply no-team.controls.yml
-        # TODO: Loop through folders in /teams and apply <folder-name>.controls.yml for each
+        # Apply no-team.controls.yml
+        # TODO
+
+        # Loop through folders in /teams and apply <folder-name>.controls.yml for each
+        # TODO
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         # STEP 2: Apply .settings.yml files:
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        # TODO: Apply default.settings.yml
-        # TODO: Loop through folders in /teams and apply <folder-name>.settings.yml for each
+        # Apply default.settings.yml
+        # TODO
+        
+        # Loop through folders in /teams and apply <folder-name>.settings.yml for each
+        # TODO
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         # STEP 3: Apply queries
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        # TODO: Compile all queries into a single YAML document
-        # TODO: - Add contents of default.queries.yml
-        # TODO: - Loop through folders in /teams and add the contents of <folder-name>.queries.yml for each
-        # TODO: Apply compiled queries YAML with `--force` (deletes any queries in Fleet that aren't present in this config)
+        # Compile all queries into a single YAML document
+        
+        # TODO
+        # - Add contents of default.queries.yml
+        # TODO
+        
+        # - Loop through folders in /teams and add the contents of <folder-name>.queries.yml for each
+        # TODO
+        
+        # Apply compiled queries YAML with `--force` (deletes any queries in Fleet that aren't present in this config)
+        # TODO
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         # STEP 4: Apply policies
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        # TODO: Compile all policies into a single YAML document
-        # TODO: - Add contents of default.policies.yml
-        # TODO: - Loop through folders in /teams and add the contents of <folder-name>.policies.yml for each
-        # TODO: Apply compiled policies YAML with `--force` (deletes any policies in Fleet that aren't present in this config)
+        # Compile all policies into a single YAML document
+        # TODO
+        
+        # - Add contents of default.policies.yml
+        # TODO
+        
+        # - Loop through folders in /teams and add the contents of <folder-name>.policies.yml for each
+        # TODO
+        
+        # Apply compiled policies YAML with `--force` (deletes any policies in Fleet that aren't present in this config)
+        # TODO
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         # All done!
