@@ -53,37 +53,36 @@ runs:
     - name: Run fleetctl apply
       run: |
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        # I think all this will go away:
+        # STEP 1: Apply .controls.yml files:
+        # (Note that .controls.yml must be applied BEFORE .settings.yml to avoid resetting certain config to the defaults)
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        # profiles=""
-
-        # for file in ${{ inputs.MDM_CONFIG_DIRECTORY }}/*.mobileconfig; do
-        #   envsubst < "$file" > "${file}.new"
-        #   mv "${file}.new" "$file"
-        #   profiles+=$'          - '$file$'\n'
-        # done
-
-        # echo "apiVersion: v1
-        # kind: team
-        # spec:
-        #   team:
-        #     name: ${{ inputs.FLEET_TEAM_NAME }}
-        #     mdm:
-        #       macos_updates:
-        #         minimum_version: \"${{ inputs.MAC_OS_MIN_VERSION }}\"
-        #         deadline: ${{ inputs.MAC_OS_VERSION_DEADLINE }}
-        #       macos_settings:
-        #         enable_disk_encryption: ${{ inputs.MAC_OS_ENABLE_DISK_ENCRYPTION }}
-        #         custom_settings:
-        # $profiles
-        # " > team-workstations-config.yml
-        # fleetctl apply -f team-workstations-config.yml
+        # TODO: Apply no-team.controls.yml
+        # TODO: Loop through folders in /teams and apply <folder-name>.controls.yml for each
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        # (If we can add --force to fleetctl apply...)
+        # STEP 2: Apply .settings.yml files:
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        # TODO: Apply default.settings.yml
+        # TODO: Loop through folders in /teams and apply <folder-name>.settings.yml for each
 
-        # .controls.yml must be applied BEFORE .settings.yml to avoid resetting some config to the defaults
-        # TODO: At top-level and in each team folder, apply .controls.yml
+        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        # STEP 3: Apply queries
+        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        # TODO: Compile all queries into a single YAML document
+        # TODO: - Add contents of default.queries.yml
+        # TODO: - Loop through folders in /teams and add the contents of <folder-name>.queries.yml for each
+        # TODO: Apply compiled queries YAML with `--force` (deletes any queries in Fleet that aren't present in this config)
+
+        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        # STEP 4: Apply policies
+        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        # TODO: Compile all policies into a single YAML document
+        # TODO: - Add contents of default.policies.yml
+        # TODO: - Loop through folders in /teams and add the contents of <folder-name>.policies.yml for each
+        # TODO: Apply compiled policies YAML with `--force` (deletes any policies in Fleet that aren't present in this config)
+
+        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        # All done!
+        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
       shell: bash
