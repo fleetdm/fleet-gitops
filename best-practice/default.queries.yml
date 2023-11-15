@@ -1,4 +1,13 @@
-# Queries that run on all hosts
+# References to shared queries that run on all hosts
+---
+apiVersion: v1
+kind: config
+spec:
+  queries:
+  - ./queries/collect-fleetd-info.queries.yml
+  - ./queries/inventory.queries.yml
+
+# One-off queries that run on all hosts
 ---
 apiVersion: v1
 kind: query

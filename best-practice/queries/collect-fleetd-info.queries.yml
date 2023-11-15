@@ -1,0 +1,11 @@
+
+---
+apiVersion: v1 
+kind: query 
+spec: 
+  name: Collect fleetd info 
+  description: Collects fleetd versions
+  query: SELECT oi.*, os.platform, si.cpu_type FROM orbit_info oi, os_version os, system_info si;get-fleetd-info.queries.yml
+  interval: 300 # 5 minutes
+  observer_can_run: true
+  automations_enabled: false

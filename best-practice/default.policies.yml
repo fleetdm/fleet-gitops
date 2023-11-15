@@ -1,3 +1,11 @@
+# References to shared policies that run on all hosts
+---
+apiVersion: v1
+kind: config
+spec:
+  policies:
+  - ./policies/critical.policies.yml
+
 # Policies that run on all hosts
 ---
 apiVersion: v1

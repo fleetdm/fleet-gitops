@@ -28,34 +28,51 @@ runs:
     - name: Run fleetctl apply
       run: |
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        # STEP 1: Apply .controls.yml files:
-        # (Note that .controls.yml must be applied BEFORE .settings.yml to avoid resetting certain config to the defaults)
+        # STEP 1: Apply config
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        # Apply no-team.controls.yml
+        # Combine the contents of all the top-level config into a single YAML document
+
+        # - Include the contents of no-team.controls.yml
         # TODO
 
-        # Loop through folders in /teams and apply <folder-name>.controls.yml for each
+        # - Include the contents of default.settings.yml
         # TODO
 
-        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        # STEP 2: Apply .settings.yml files:
-        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        # Apply default.settings.yml
+        # - Include anything of `kind: config` in default.queries.yml
         # TODO
-        
-        # Loop through folders in /teams and apply <folder-name>.settings.yml for each
+
+        # - Include anything of `kind: config` in default.policies.yml
+        # TODO
+
+        # Apply top-level config with `--force` (replaces all existing top-level config)
+        # TODO
+
+        # Loop through folders in /teams and combine the contents of all team config into a single YAML document
+
+        # - Include the contents of <folder-name>.controls.yml
+        # TODO
+
+        # - Include the contents of <folder-name>.settings.yml
+        # TODO
+
+        # - Include anything of `kind: team` in <folder-name>.queries.yml
+        # TODO
+
+        # - Include anything of `kind: team` in <folder-name>.policies.yml
+        # TODO
+
+        # Apply team config with `--force` (replaces all existing config for this team)
         # TODO
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         # STEP 3: Apply queries
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         # Compile all queries into a single YAML document
-        
+
+        # - Include anything of `kind: query` in default.queries.yml
         # TODO
-        # - Add contents of default.queries.yml
-        # TODO
         
-        # - Loop through folders in /teams and add the contents of <folder-name>.queries.yml for each
+        # - Loop through folders in /teams and include anything of `kind: query` in <folder-name>.queries.yml for each
         # TODO
         
         # Apply compiled queries YAML with `--force` (deletes any queries in Fleet that aren't present in this config)
@@ -67,10 +84,10 @@ runs:
         # Compile all policies into a single YAML document
         # TODO
         
-        # - Add contents of default.policies.yml
+        # - Include anything of `kind: policy` in default.policies.yml
         # TODO
         
-        # - Loop through folders in /teams and add the contents of <folder-name>.policies.yml for each
+        # - Loop through folders in /teams and include anything of `kind: policy` in <folder-name>.policies.yml for each
         # TODO
         
         # Apply compiled policies YAML with `--force` (deletes any policies in Fleet that aren't present in this config)
