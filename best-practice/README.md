@@ -10,8 +10,8 @@ Soon, a Fleet user will be able to clone this repository, push up the contents o
 
 - `mdm-profiles` - folder for configuration profiles. These profiles are referenced in `no-team.controls.yml` and team level `controls.yml`.
 - `scripts` - folder for scripts. These scripts are referenced in `no-team.controls.yml` and team level `controls.yml`.
-- `policies` - folder for shared policies. These policies are referenced in `default.settings.yml` and team level `settings.yml`.
-- `queries` - folder for shared queries. These queries are referenced in `default.settings.yml` and team level `settings.yml`.
+- `policies` - folder for shared policies. These policies are referenced in `default.policies.yml` and team level `policies.yml`.
+- `queries` - folder for shared queries. These queries are referenced in `default.queries.yml` and team level `queries.yml`.
 - `default.policies.yml` - top-level file with all global policies (aka policies assigned to **all hosts**).
 - `default.queries.yml` - top-level file with all global queries (aka queries that run on **all hosts**).
 - `no-team.controls.yml` - top-level file with controls (configuration profiles, OS updates, setup experience, and scripts) that apply to **hosts assigned to "No team"**.
