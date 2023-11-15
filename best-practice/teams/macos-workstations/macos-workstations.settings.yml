@@ -3,7 +3,7 @@ apiVersion: v1
 kind: team
 spec:
   team:
-    name: "\U0001F4BB Workstations"
+    name: macOS workstations
     agent_options:
       config:
         decorators:
