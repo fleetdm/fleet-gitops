@@ -38,9 +38,6 @@ runs:
         # - Include the contents of default.settings.yml
         # TODO
 
-        # - Include anything of `kind: config` in default.queries.yml
-        # TODO
-
         # - Include anything of `kind: config` in default.policies.yml
         # TODO
 
@@ -55,9 +52,6 @@ runs:
         # - Include the contents of <folder-name>.settings.yml
         # TODO
 
-        # - Include anything of `kind: team` in <folder-name>.queries.yml
-        # TODO
-
         # - Include anything of `kind: team` in <folder-name>.policies.yml
         # TODO
 
@@ -69,10 +63,10 @@ runs:
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         # Compile all queries into a single YAML document
 
-        # - Include anything of `kind: query` in default.queries.yml
+        # - Include contents of default.queries.yml
         # TODO
         
-        # - Loop through folders in /teams and include anything of `kind: query` in <folder-name>.queries.yml for each
+        # - Loop through folders in /teams and include contents of <folder-name>.queries.yml for each
         # TODO
         
         # Apply compiled queries YAML with `--force` (deletes any queries in Fleet that aren't present in this config)

@@ -1,14 +1,4 @@
-# References to shared queries that run on the macOS workstations team
----
-apiVersion: v1
-kind: team
-spec:
-  team:
-    name: macOS workstations
-    queries: 
-    - ./queries/compliance.queries.yml
-
-# One-off queries that run on the macOS workstations team
+# Queries that run on the macOS workstations team
 ---
 apiVersion: v1 
 kind: query 

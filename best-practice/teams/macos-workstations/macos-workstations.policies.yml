@@ -1,14 +1,14 @@
-# References to shared policies that run on the "\U0001F4BB Workstations" team
+# References to shared policies that run on the macOS workstations team
 ---
 apiVersion: v1
 kind: team
 spec:
   team:
     name: macOS workstations
-    policies: 
+    policy_packs: 
     - ./policies/cis.policies.yml
 
-# One-off policies that run on the "\U0001F4BB Workstations" team
+# One-off policies that run on the macOS workstations team
 ---
 apiVersion: v1
 kind: policy
