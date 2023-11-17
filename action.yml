@@ -41,7 +41,7 @@ runs:
         # - Include anything of `kind: config` in default.policies.yml
         # TODO
 
-        # Apply top-level config with `--force` (replaces all existing top-level config)
+        # Apply top-level config with `--replace` (replaces all existing top-level config)
         # TODO
 
         # Loop through folders in /teams and combine the contents of all team config into a single YAML document
@@ -55,7 +55,7 @@ runs:
         # - Include anything of `kind: team` in <folder-name>.policies.yml
         # TODO
 
-        # Apply team config with `--force` (replaces all existing config for this team)
+        # Apply team config with `--replace` (replaces all existing config for this team)
         # TODO
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -69,7 +69,7 @@ runs:
         # - Loop through folders in /teams and include contents of <folder-name>.queries.yml for each
         # TODO
         
-        # Apply compiled queries YAML with `--force` (deletes any queries in Fleet that aren't present in this config)
+        # Apply compiled queries YAML with `--replace` (deletes any queries in Fleet that aren't present in this config)
         # TODO
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -84,7 +84,7 @@ runs:
         # - Loop through folders in /teams and include anything of `kind: policy` in <folder-name>.policies.yml for each
         # TODO
         
-        # Apply compiled policies YAML with `--force` (deletes any policies in Fleet that aren't present in this config)
+        # Apply compiled policies YAML with `--replace` (deletes any policies in Fleet that aren't present in this config)
         # TODO
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
