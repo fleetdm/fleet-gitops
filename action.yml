@@ -58,7 +58,7 @@ runs:
         # - Loop through folders in /teams and add the contents of <folder-name>.queries.yml for each
         # TODO
         
-        # Apply compiled queries YAML with `--force` (deletes any queries in Fleet that aren't present in this config)
+        # Apply compiled queries YAML with `--replace` (deletes any queries in Fleet that aren't present in this config)
         # TODO
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -73,7 +73,7 @@ runs:
         # - Loop through folders in /teams and add the contents of <folder-name>.policies.yml for each
         # TODO
         
-        # Apply compiled policies YAML with `--force` (deletes any policies in Fleet that aren't present in this config)
+        # Apply compiled policies YAML with `--replace` (deletes any policies in Fleet that aren't present in this config)
         # TODO
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
