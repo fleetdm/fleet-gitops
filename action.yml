@@ -28,26 +28,32 @@ runs:
     - name: Run fleetctl apply
       run: |
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        # STEP 1: Apply .controls.yml files:
-        # (Note that .controls.yml must be applied BEFORE .settings.yml to avoid resetting certain config to the defaults)
+        # STEP 1: Apply config
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        # Apply no-team.controls.yml
-        # TODO
-
-        # Loop through folders in /teams and apply <folder-name>.controls.yml for each
-        # TODO
-
-        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        # STEP 2: Apply .settings.yml files:
-        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        # Apply default.settings.yml
+        # Combine the contents of all the top-level config into a single YAML document
+        
+        # - Include the contents of no-team.controls.yml
         # TODO
         
-        # Loop through folders in /teams and apply <folder-name>.settings.yml for each
+        # - Include the contents of default.settings.yml
+        # TODO
+        
+        # Apply top-level config
+        # TODO
+        
+        # Loop through folders in /teams and combine the contents of all team config into a single YAML document
+        
+        # - Include the contents of <folder-name>.controls.yml
+        # TODO
+        
+        # - Include the contents of <folder-name>.settings.yml
+        # TODO
+        
+        # Apply team config
         # TODO
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        # STEP 3: Apply queries
+        # STEP 2: Apply queries
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         # Compile all queries into a single YAML document
         
@@ -62,7 +68,7 @@ runs:
         # TODO
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        # STEP 4: Apply policies
+        # STEP 3: Apply policies
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         # Compile all policies into a single YAML document
         # TODO
