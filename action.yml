@@ -65,7 +65,7 @@ runs:
         # TODO
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        # STEP 3: Apply queries
+        # STEP 2: Apply queries
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         # Compile all queries into a single YAML document
 
@@ -79,7 +79,7 @@ runs:
         # TODO
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        # STEP 4: Apply policies
+        # STEP 3: Apply policies
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         # Compile all policies into a single YAML document
         # TODO
