@@ -3,7 +3,7 @@ apiVersion: v1
 kind: team
 spec:
   team:
-    name: "\U0001F4BB Workstations"
+    name: Workstations
     mdm:
       enable_disk_encryption: true
       macos_settings:
