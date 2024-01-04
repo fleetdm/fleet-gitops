@@ -6,7 +6,7 @@ spec:
   team:
     name: macOS workstations
     policies: 
-    - ./policies/cis.policies.yml
+    - ./lib/cis.policies.yml
 
 # One-off policies that run on the macOS workstations team
 ---

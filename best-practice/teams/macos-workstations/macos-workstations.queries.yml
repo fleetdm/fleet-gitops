@@ -6,7 +6,7 @@ spec:
   team:
     name: macOS workstations
     queries: 
-    - ./queries/compliance.queries.yml
+    - ./lib/compliance.queries.yml
 
 # One-off queries that run on the macOS workstations team
 ---

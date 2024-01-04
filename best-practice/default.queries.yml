@@ -4,8 +4,8 @@ apiVersion: v1
 kind: config
 spec:
   queries:
-  - ./queries/collect-fleetd-info.queries.yml
-  - ./queries/inventory.queries.yml
+  - ./lib/collect-fleetd-info.queries.yml
+  - ./lib/inventory.queries.yml
 
 # One-off queries that run on all hosts
 ---

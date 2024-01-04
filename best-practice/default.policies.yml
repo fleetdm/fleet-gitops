@@ -4,7 +4,7 @@ apiVersion: v1
 kind: config
 spec:
   policies:
-  - ./policies/critical.policies.yml
+  - ./lib/critical.policies.yml
 
 # Policies that run on all hosts
 ---
