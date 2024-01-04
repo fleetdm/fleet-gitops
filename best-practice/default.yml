@@ -2,7 +2,20 @@
 apiVersion: v1
 kind: config
 spec:
-  agent_options:
+  mdm: # Controls added to "No team"
+    macos_settings:
+      custom_settings:
+      - ./lib/os-updates.ddm.json
+      - ./lib/password.macos.mobileconfig
+  scripts: # Scripts available to run on "No team"
+  - ./lib/remove-zoom-artifacts.script.sh
+  - ./lib/reset-timezon.sh
+  - ./lib/uninstall-zoom.sh
+  queries: # Queries added to hosts all teams
+  - ./lib/collect-fleetd-info.queries.yml
+  policies: # Policies added to all teams
+  - ./lib/device-health.policies.yml
+  agent_options: # Agent options added to new teams
     command_line_flags: {}
     config:
       decorators:

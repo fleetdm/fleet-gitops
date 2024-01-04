@@ -1,0 +1,27 @@
+---
+apiVersion: v1
+kind: team
+spec:
+  team:
+    name: Workstations (canary)
+    mdm:
+      macos_settings:
+        custom_settings:
+        - ../lib/os-updates.ddm.json
+        - ../lib/password.macos.mobileconfig
+        enable_disk_encryption: true
+      macos_setup:
+        bootstrap_package: ""
+        enable_end_user_authentication: false
+        macos_setup_assistant: null
+      macos_updates:
+        deadline: "2023-08-11"
+        minimum_version: "13.5"
+    scripts:
+    - ../lib/remove-zoom-artifacts.script.sh
+    - ../lib/reset-timezone.sh
+    - ../lib/uninstall-zoom.sh
+    queries: 
+    - ../lib/collect-fleetd-info.queries.yml
+    policies: 
+    - ../lib/device-health.policies.yml
