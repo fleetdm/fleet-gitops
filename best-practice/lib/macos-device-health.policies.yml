@@ -254,9 +254,9 @@ spec:
 apiVersion: v1
 kind: policy
 spec:
-  name: macOS - CIS - Ensure a Password is Required to Wake the Computer From Sleep or Screen Saver Is Enabled (MDM Required)
+  name: macOS - CIS - Ensure Password is Required to Wake the Computer From Sleep or Screen Saver is enabled (MDM Required)
   platform: darwin
-  description: Checks that Password is Required to Wake the Computer From Sleep or Screen Saver Is Enabled.
+  description: Checks that Password is Required to Wake the Computer From Sleep or Screen Saver is enabled.
   resolution: |
     Automated method:
     Ask your system administrator to deploy an MDM profile that Ensure a Password is Required to Wake the Computer From Sleep or Screen Saver Is Enabled.
