@@ -143,40 +143,6 @@ spec:
 apiVersion: v1
 kind: policy
 spec:
-  name: macOS - CIS - Ensure Gatekeeper Is Enabled
-  platform: darwin
-  description: |
-    Checks that Gatekeeper Is Enabled. Gatekeeper is Apple’s application that utilizes allowlisting to restrict downloaded applications from launching. It functions as a control to limit applications from unverified sources from running without authorization. In an update to Gatekeeper in macOS 13 Ventura, Gatekeeper checks every application on every launch, not just quarantined apps.
-  resolution: |
-    Automated method:
-    Ask your system administrator to deploy an MDM profile that Ensure Gatekeeper Is Enabled
-    Graphical method:
-      Perform the following steps to ensure Gatekeeper Is Enabled:
-        1. Open System Settings
-        2. Select Privacy & Security
-        3. Verify that 'Allow apps downloaded from' is set to' App Store and identified developers'
-  query: SELECT 1 FROM gatekeeper WHERE assessments_enabled = 1 AND dev_id_enabled = 1;
----
-apiVersion: v1
-kind: policy
-spec:
-  name: macOS - CIS - Ensure Gatekeeper Is Enabled
-  platform: darwin
-  description: |
-    Checks that Gatekeeper Is Enabled. Gatekeeper is Apple’s application that utilizes allowlisting to restrict downloaded applications from launching. It functions as a control to limit applications from unverified sources from running without authorization. In an update to Gatekeeper in macOS 13 Ventura, Gatekeeper checks every application on every launch, not just quarantined apps.
-  resolution: |
-    Automated method:
-    Ask your system administrator to deploy an MDM profile that Ensure Gatekeeper Is Enabled
-    Graphical method:
-      Perform the following steps to ensure Gatekeeper Is Enabled:
-        1. Open System Settings
-        2. Select Privacy & Security
-        3. Verify that 'Allow apps downloaded from' is set to' App Store and identified developers'
-  query: SELECT 1 FROM gatekeeper WHERE assessments_enabled = 1 AND dev_id_enabled = 1;
----
-apiVersion: v1
-kind: policy
-spec:
   name: macOS - CIS - Ensure NFS Server Is Disabled
   platform: darwin
   description: |
