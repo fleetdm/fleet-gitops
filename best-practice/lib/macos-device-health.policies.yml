@@ -4,9 +4,9 @@
 apiVersion: v1
 kind: policy
 spec:
-  name: macOS - CIS - Ensure FileVault Is Enabled (MDM Required)
+  name: macOS - CIS - Ensure FileVault is enabled (MDM required)
   platform: darwin
-  description: Checks that FileVault Is Enabled. FileVault secures a system's data by automatically encrypting its boot volume and requiring a password or recovery key to access it. This policy checks that filevault is enabled on the device and that the user is not allowed to disable it.
+  description: Checks that FileVault is enabled. FileVault secures a system's data by automatically encrypting its boot volume and requiring a password or recovery key to access it. This policy checks that filevault is enabled on the device and that the user is not allowed to disable it.
   resolution: |
     Automated method:
     Ask your system administrator to deploy an MDM profile that enables FileVault and disables turning it off.
@@ -42,7 +42,7 @@ spec:
 apiVersion: v1
 kind: policy
 spec:
-  name: macOS - CIS - Ensure Firewall Logging Is Enabled and Configured (MDM Required)
+  name: macOS - CIS - Ensure Firewall logging is enabled and configured (MDM required)
   platform: darwin
   description: |
     The socketfilter Firewall is what is used when the Firewall is turned on in the Security & Privacy Preference Pane. In order to appropriately monitor what access is allowed and denied, logging must be enabled. The logging level must be set to "detailed" to be useful in monitoring connection attempts that the firewall detects. Throttled login is not sufficient for examine Firewall connection attempts.
@@ -105,10 +105,10 @@ spec:
 apiVersion: v1
 kind: policy
 spec:
-  name: macOS - CIS - Ensure Gatekeeper Is Enabled
+  name: macOS - CIS - Ensure Gatekeeper is enabled
   platform: darwin
   description: |
-    Checks that Gatekeeper Is Enabled. Gatekeeper is Apple’s application that utilizes allowlisting to restrict downloaded applications from launching. It functions as a control to limit applications from unverified sources from running without authorization. In an update to Gatekeeper in macOS 13 Ventura, Gatekeeper checks every application on every launch, not just quarantined apps.
+    Checks that Gatekeeper is enabled. Gatekeeper is Apple’s application that utilizes allowlisting to restrict downloaded applications from launching. It functions as a control to limit applications from unverified sources from running without authorization. In an update to Gatekeeper in macOS 13 Ventura, Gatekeeper checks every application on every launch, not just quarantined apps.
   resolution: |
     Automated method:
     Ask your system administrator to deploy an MDM profile that Ensure Gatekeeper Is Enabled
@@ -122,9 +122,9 @@ spec:
 apiVersion: v1
 kind: policy
 spec:
-  name: CIS - Ensure Guest Account Is Disabled
+  name: CIS - Ensure guest account is disabled
   platform: darwin
-  description: Checks that Guest Account Is Disabled.
+  description: Checks that guest account is disabled.
   resolution: |
     Automated method:
     Ask your system administrator to deploy an MDM profile that disables Guest Account.
@@ -143,10 +143,10 @@ spec:
 apiVersion: v1
 kind: policy
 spec:
-  name: macOS - CIS - Ensure NFS Server Is Disabled
+  name: macOS - CIS - Ensure NFS server Is Disabled
   platform: darwin
   description: |
-    MacOS can act as an NFS fileserver. NFS sharing could be enabled to allow someone on another computer to mount
+    macOS can act as an NFS fileserver. NFS sharing could be enabled to allow someone on another computer to mount
     shares and gain access to information from the user's computer.
   resolution: |
     Automated method:
@@ -163,25 +163,25 @@ spec:
 apiVersion: v1
 kind: policy
 spec:
-  name: macOS - CIS - Ensure Remote Apple Events is Disabled
+  name: macOS - CIS - Ensure Remote Application Scripting is disabled
   platform: darwin
   description: |
-    Apple Events is a technology that allows one program to communicate with other programs.
-    Remote Apple Events allows a program on one computer to communicate with a program on a
-    different computer. Disabling Remote Apple Events mitigates the risk of an unauthorized
+    Apple Application Scripting is a technology that allows one program to communicate with other programs.
+    Remote Apple Application Scripting allows a program on one computer to communicate with a program on a
+    different computer. Disabling Remote Application Scripting mitigates the risk of an unauthorized
     program gaining access to the system.
   resolution: |
     Graphical Method:
     1. Open System Settings
     2. Select General
     3. Select Sharing
-    4. Set Remote Apple Events to disabled
+    4. Set Remote Application Scripting to disabled
   query: |
     SELECT 1 WHERE NOT EXISTS (
       SELECT * FROM plist WHERE
         path = '/var/db/com.apple.xpc.launchd/disabled.plist' AND
         key = 'com.apple.AEServer' AND
-        value = '0'
+        value = 0
     );
 ---
 apiVersion: v1
