@@ -8,7 +8,7 @@ spec:
       macos_settings:
         custom_settings:
         - ../lib/os-updates.ddm.json
-        - ../lib/password.macos.mobileconfig
+        - ../lib/macos-password.mobileconfig
         enable_disk_encryption: true
       macos_setup:
         bootstrap_package: ""
@@ -25,4 +25,4 @@ spec:
     - ../lib/collect-usb-devices.queries.yml
     - ../lib/collect-failed-login-attempts.queries.yml
     policies: 
-    - ../lib/device-health.policies.yml
+    - ../lib/macos-device-health.policies.yml
