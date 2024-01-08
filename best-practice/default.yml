@@ -1,8 +1,4 @@
----
-apiVersion: v1
-kind: config
-spec:
-  controls: # Controls added to "No team"
-  queries: # Queries added to hosts all teams
-  - ./lib/collect-fleetd-update-channel.queries.yml
-  policies: # Policies added to all teams
+controls: # Controls added to "No team"
+queries: # Queries added to hosts all teams
+- ./lib/collect-fleetd-update-channel.queries.yml
+policies: # Policies added to all teams

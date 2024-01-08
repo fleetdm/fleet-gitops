@@ -1,36 +1,35 @@
-team:
-  name: Workstations (canary)
-  controls:
-    os_updates:
-      macos:
-        deadline: "2023-08-11"
-        minimum_version: "13.5"
-      windows:
-        deadline:
-        grace_period:
-    os_settings:
-      enable_disk_encryption: true
-      custom_settings:
-      - ../lib/os-updates.ddm.json
-      - ../lib/macos-password.mobileconfig
-    setup_experience:
-      end_user_authentication:
-      bootstrap_package:
-      macos_setup_assistant:
-    scripts:
-    - ../lib/remove-zoom-artifacts.script.sh
-    - ../lib/reset-timezone.sh
-    - ../lib/uninstall-zoom.sh
-  queries: 
-  - ../lib/collect-usb-devices.queries.yml
-  - ../lib/collect-failed-login-attempts.queries.yml
-  policies: 
-  - ../lib/macos-filevault.policy.yml
-  - ../lib/macos-filewall.policy.yml
-  - ../lib/macos-nfs-server.policy.yml
-  - ../lib/macos-remote-application-scripting.policy.yml
-  - ../lib/macos-remote-login.policy.yml
-  - ../lib/macos-remote-management.policy.yml
-  - ../lib/macos-screenlock-inactivity.policy.yml
-  - ../lib/macos-screenlock-password.policy.yml
-  - ../lib/macos-sip.policy.yml
+name: Workstations (canary)
+controls:
+  os_updates:
+    macos:
+      deadline: "2023-08-11"
+      minimum_version: "13.5"
+    windows:
+      deadline:
+      grace_period:
+  os_settings:
+    enable_disk_encryption: true
+    custom_settings:
+    - ../lib/os-updates.ddm.json
+    - ../lib/macos-password.mobileconfig
+  setup_experience:
+    end_user_authentication:
+    bootstrap_package:
+    macos_setup_assistant:
+  scripts:
+  - ../lib/remove-zoom-artifacts.script.sh
+  - ../lib/reset-timezone.sh
+  - ../lib/uninstall-zoom.sh
+queries: 
+- ../lib/collect-usb-devices.queries.yml
+- ../lib/collect-failed-login-attempts.queries.yml
+policies: 
+- ../lib/macos-filevault.policy.yml
+- ../lib/macos-filewall.policy.yml
+- ../lib/macos-nfs-server.policy.yml
+- ../lib/macos-remote-application-scripting.policy.yml
+- ../lib/macos-remote-login.policy.yml
+- ../lib/macos-remote-management.policy.yml
+- ../lib/macos-screenlock-inactivity.policy.yml
+- ../lib/macos-screenlock-password.policy.yml
+- ../lib/macos-sip.policy.yml
