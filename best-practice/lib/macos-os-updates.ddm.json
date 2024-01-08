@@ -1,0 +1,10 @@
+{
+  "Type": "com.apple.configuration.softwareupdate.enforcement.specific",
+  "Identifier": "B6965621-36DF-46F6-839D-0F6591C9CA57",
+  "SeverToken": "20DD77EF-A359-4D63-87AA-30AFC916B261",
+  "Payload": {
+    "TargetOSVersion": "14.1",
+    "TargetBuildVersion": "20A242",
+    "TargetLocalDateTime": "2023-09-01T10:00:00" 
+  }
+}
