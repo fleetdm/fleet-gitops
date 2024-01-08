@@ -113,7 +113,7 @@ spec:
     Automated method:
     Ask your system administrator to deploy an MDM profile that Ensure Gatekeeper Is Enabled
     Graphical method:
-      Perform the following steps to ensure Gatekeeper Is Enabled:
+      Perform the following steps to ensure Gatekeeper is enabled:
         1. Open System Settings
         2. Select Privacy & Security
         3. Verify that 'Allow apps downloaded from' is set to' App Store and identified developers'
@@ -143,7 +143,7 @@ spec:
 apiVersion: v1
 kind: policy
 spec:
-  name: macOS - CIS - Ensure NFS server Is Disabled
+  name: macOS - CIS - Ensure NFS server is disabled
   platform: darwin
   description: |
     macOS can act as an NFS fileserver. NFS sharing could be enabled to allow someone on another computer to mount
@@ -187,7 +187,7 @@ spec:
 apiVersion: v1
 kind: policy
 spec:
-  name: macOS - CIS - Ensure Remote Login Is Disabled
+  name: macOS - CIS - Ensure Remote Login is disabled
   platform: darwin
   description: |
     Remote Login allows an interactive terminal session to a computer.
@@ -213,7 +213,7 @@ spec:
 apiVersion: v1
 kind: policy
 spec:
-  name: macOS - CIS - Ensure Remote Management is Disabled
+  name: macOS - CIS - Ensure Remote Management is disabled
   platform: darwin
   description: |
     Remote Management is the client portion of Apple Remote Desktop (ARD).
@@ -237,7 +237,7 @@ spec:
 apiVersion: v1
 kind: policy
 spec:
-  name: macOS - CIS - Ensure System Integrity Protection Status (SIP) Is Enabled
+  name: macOS - CIS - Ensure System Integrity Protection Status (SIP) is enabled
   platform: darwin
   description: |
     System Integrity Protection is a security feature introduced in OS X 10.11 El Capitan. System Integrity Protection restricts access to System domain locations and restricts runtime attachment to system processes. Any attempt to inspect or attach to a system process will fail. Kernel Extensions are now restricted to /Library/Extensions and are required to be signed with a Developer ID.
