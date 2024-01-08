@@ -8,14 +8,10 @@ spec:
       - ./lib/os-updates.ddm.json
       - ./lib/password.macos.mobileconfig
   scripts: # Scripts available to run on "No team"
-  - ./lib/remove-zoom-artifacts.script.sh
-  - ./lib/reset-timezon.sh
-  - ./lib/uninstall-zoom.sh
   queries: # Queries added to hosts all teams
-  - ./lib/collect-fleetd-info.queries.yml
+  - ./lib/collect-fleetd-update-channel.queries.yml
   policies: # Policies added to all teams
-  - ./lib/device-health.policies.yml
-  agent_options: # Agent options added to new teams
+  agent_options:
     command_line_flags: {}
     config:
       decorators:

@@ -22,6 +22,9 @@ spec:
     - ../lib/reset-timezone.sh
     - ../lib/uninstall-zoom.sh
     queries: 
-    - ../lib/collect-fleetd-info.queries.yml
+    - ../lib/collect-usb-devices.queries.yml
+    - ../lib/collect-failed-login-attempts.queries.yml
     policies: 
     - ../lib/device-health.policies.yml
+    agent_options:
+      
