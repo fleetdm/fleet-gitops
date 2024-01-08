@@ -1,0 +1,19 @@
+# Fleet's Fleet Enterprise Edition (EE) license applies to the code in this file. Read about the license here: https://github.com/fleetdm/fleet/blob/main/ee/LICENSE
+
+policy:
+  name: macOS - CIS - Ensure NFS server is disabled
+  platform: darwin
+  description: |
+    macOS can act as an NFS fileserver. NFS sharing could be enabled to allow someone on another computer to mount
+    shares and gain access to information from the user's computer.
+  resolution: |
+    Automated method:
+    Ask your system administrator to deploy the following script which will disable the NFS service
+    and its directory listing:
+    /usr/bin/sudo /bin/launchctl disable system/com.apple.nfsd
+    /usr/bin/sudo /bin/rm /etc/exports
+  query: |
+    SELECT 1 WHERE
+    NOT EXISTS(SELECT 1 FROM processes WHERE path = '/sbin/nfsd')
+    AND
+    NOT EXISTS(SELECT 1 FROM file WHERE path = '/etc/exports');

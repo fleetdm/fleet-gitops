@@ -1,0 +1,25 @@
+# Fleet's Fleet Enterprise Edition (EE) license applies to the code in this file. Read about the license here: https://github.com/fleetdm/fleet/blob/main/ee/LICENSE
+
+policy:
+  name: macOS - CIS - Ensure Remote Login is disabled
+  platform: darwin
+  description: |
+    Remote Login allows an interactive terminal session to a computer.
+    The SSH server built into macOS should not be enabled on a standard user computer,
+    particularly one that changes locations and IP addresses.
+    A standard user that runs local applications, including email, web browser,
+    and productivity tools, should not use the same device as a server
+
+  resolution: |
+    Graphical Method:
+    1. Open System Settings
+    2. Select General
+    3. Select Sharing
+    4. Set Remote Login to disabled
+  query: |
+    SELECT 1 WHERE NOT EXISTS (
+      SELECT * FROM plist WHERE
+        path = '/var/db/com.apple.xpc.launchd/disabled.plist' AND
+        key = 'com.openssh.sshd' AND
+        value = '0'
+    );

@@ -1,0 +1,23 @@
+# Fleet's Fleet Enterprise Edition (EE) license applies to the code in this file. Read about the license here: https://github.com/fleetdm/fleet/blob/main/ee/LICENSE
+
+policy:
+  name: macOS - CIS - Ensure Remote Application Scripting is disabled
+  platform: darwin
+  description: |
+    Apple Application Scripting is a technology that allows one program to communicate with other programs.
+    Remote Apple Application Scripting allows a program on one computer to communicate with a program on a
+    different computer. Disabling Remote Application Scripting mitigates the risk of an unauthorized
+    program gaining access to the system.
+  resolution: |
+    Graphical Method:
+    1. Open System Settings
+    2. Select General
+    3. Select Sharing
+    4. Set Remote Application Scripting to disabled
+  query: |
+    SELECT 1 WHERE NOT EXISTS (
+      SELECT * FROM plist WHERE
+        path = '/var/db/com.apple.xpc.launchd/disabled.plist' AND
+        key = 'com.apple.AEServer' AND
+        value = 0
+    );
