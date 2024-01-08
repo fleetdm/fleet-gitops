@@ -298,21 +298,6 @@ spec:
 apiVersion: v1
 kind: policy
 spec:
-  name: macOS - CIS - Ensure an Administrator Password Is Required to Access System-Wide Preferences (Fleetd required)
-  platform: darwin
-  description: Checks that an Administrator Password Is Required to Access System-Wide Preferences
-  resolution: |
-    Graphical method:
-      Perform the following steps to ensure an administrator password is required to access system-wide preferences:
-        1. Open System Settings
-        2. Open Privacy & Security
-        3. Select Advanced
-        4. Set Require an administrator password to access system-wide settings to enabled
-  query: SELECT 1 FROM authdb WHERE right_name = 'system.preferences' AND json_extract(json_result, '$.shared') == 0;
----
-apiVersion: v1
-kind: policy
-spec:
   name: macOS - CIS - Ensure an Inactivity Interval of 20 Minutes Or Less for the Screen Saver Is Enabled (MDM Required)
   platform: darwin
   description: A locking screen saver is one of the standard security controls to limit access to a computer and the current user's session when the computer is temporarily unused or unattended. In macOS, the screen saver starts after a value is selected in the drop- down menu. 20 minutes or less is an acceptable value. Any value can be selected through the command line or script, but a number that is not reflected in the GUI can be problematic. 20 minutes is the default for new accounts.
@@ -330,12 +315,12 @@ spec:
         SELECT 1 FROM managed_policies WHERE 
             domain='com.apple.screensaver' AND 
             name='idleTime' AND 
-            value <= 1200 AND 
+            CAST(value AS INT) <= 1200 AND 
             username = ''
         )
       AND NOT EXISTS (
         SELECT 1 FROM managed_policies WHERE 
             domain='com.apple.screensaver' AND 
             name='idleTime' AND 
-            value > 1200
+            CAST(value AS INT) > 1200
         );
