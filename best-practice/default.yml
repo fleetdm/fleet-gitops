@@ -1,4 +1,12 @@
 controls: # Controls added to "No team"
-queries: # Queries added to hosts all teams
+  os_settings:
+    custom_settings:
+    - ../lib/os-updates.ddm.json
+    - ../lib/macos-password.mobileconfig
+  scripts:
+  - ../lib/collect-fleetd-logs.sh
+queries: # Queries added to all teams
 - ./lib/collect-fleetd-update-channel.queries.yml
 policies: # Policies added to all teams
+agent_options: # Agent options added "No team"
+- ./lib/agent-options.yml
