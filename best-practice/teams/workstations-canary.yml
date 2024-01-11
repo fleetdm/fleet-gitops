@@ -8,10 +8,11 @@ controls:
       deadline:
       grace_period:
   os_settings:
-    enable_disk_encryption: true
+    disk_encryption: true
     custom_settings:
-    - ../lib/os-updates.ddm.json
+    - ../lib/macos-os-updates.ddm.json
     - ../lib/macos-password.mobileconfig
+    - ../lib/windows-screenlock.xml
   setup_experience:
     end_user_authentication:
     bootstrap_package:
@@ -19,25 +20,26 @@ controls:
   scripts:
   - ../lib/remove-zoom-artifacts.script.sh
   - ../lib/reset-timezone.sh
-  - ../lib/uninstall-zoom.sh
 queries: 
 - ../lib/collect-usb-devices.queries.yml
 - ../lib/collect-failed-login-attempts.queries.yml
-policies: 
-- ../lib/macos-filevault.policy.yml
-- ../lib/macos-filewall.policy.yml
-- ../lib/macos-nfs-server.policy.yml
-- ../lib/macos-remote-application-scripting.policy.yml
-- ../lib/macos-remote-login.policy.yml
-- ../lib/macos-remote-management.policy.yml
-- ../lib/macos-screenlock-inactivity.policy.yml
-- ../lib/macos-screenlock-password.policy.yml
-- ../lib/macos-sip.policy.yml
 - name: Collect fleetd update channels 
   description: "Collects the update channels for all fleetd components: osquery, Orbit, and Fleet Desktop. To see which version number each channel is on, ask in #help-engineering."
   query: SELECT desktop_channel, orbit_channel, osqueryd_channel FROM orbit_info;
   interval: 300
   observer_can_run: true
   automations_enabled: false
+policies: 
+- ../lib/device-health.policies.yml
+
+# Team settings
+
 agent_options:
 - ./lib/agent-options.yml
+webhook_settings:
+  failing_policies_webhook:
+      enable_failing_policies_webhook: true
+      destination_url: https://example.tines.com/webhook
+      policy_ids: [1, 2, 3, 4, 5,6 ,7, 8, 9]
+host_expiry_settings:
+features:
