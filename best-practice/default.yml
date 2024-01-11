@@ -19,53 +19,40 @@ queries: # Queries added to all teams
 - ./lib/collect-fleetd-update-channel.queries.yml
 policies: # Policies added to all teams
 
-# Organization settings
-
-org_info:
-  contact_url: https://fleetdm.com/company/contact
-  org_logo_url: ""
-  org_logo_url_light_background: ""
-  org_name: Fleet Device Management
-smtp:
-sso:
-  enable_jit_provisioning: true
-  enable_jit_role_sync: false
-  enable_sso: true
-  enable_sso_idp_login: false
-  idp_name: Google Workspace
-  entity_id: dogfood.fleetdm.com
-  metadata: FLEET_SSO_METADATA
-agent_options: # Agent options added "No team"
-- ./lib/agent-options.yml
-webhook_settings:
-  vulnerabilities_webhook:
-    enable_vulnerabilities_webhook: true
-    destination_url: https://example.tines.com/webhook
-fleet_desktop: # Applies to Fleet Premium only
-  transparency_url: https://fleetdm.com/transparency
-host_expiry_settings: # Applies to all teams
-  host_expiry_enabled: false
-features: # Features added to all teams
-advanced:
-  debug_host_ids:
-    - 1
-    - 3
-  deferred_save_host: false
-  enable_analytics: true
-  live_query_disabled: false
-  query_reports_disabled: false
-  scripts_disabled: false
-  server_url: https://dogfood.fleetdm.com
-
-# Integrations
-
-ticket_destinations:
-mdm:
-  enable_windows: true
-  end_user_migration_workflow:
-automatic_enrollment:
-  default_team: Workstations
-  end_user_authentication:
+organization_settings:
+  server_settings:
+    debug_host_ids:
+      - 1
+      - 3
+    deferred_save_host: false
+    enable_analytics: true
+    live_query_disabled: false
+    query_reports_disabled: false
+    scripts_disabled: false
+    server_url: https://dogfood.fleetdm.com
+  org_info:
+    contact_url: https://fleetdm.com/company/contact
+    org_logo_url: ""
+    org_logo_url_light_background: ""
+    org_name: Fleet Device Management
+  smtp:
+  sso:
+    enable_jit_provisioning: true
+    enable_jit_role_sync: false
+    enable_sso: true
+    enable_sso_idp_login: false
     idp_name: Google Workspace
-    entity_id: dogfood-eula.fleetdm.com
-    metadata: FLEET_END_USER_AUTH_METADATA
+    entity_id: dogfood.fleetdm.com
+    metadata: $FLEET_SSO_METADATA
+  integrations:
+  mdm:
+  webhook_settings:
+    vulnerabilities_webhook:
+      enable_vulnerabilities_webhook: true
+      destination_url: https://example.tines.com/webhook
+  fleet_desktop: # Applies to Fleet Premium only
+    transparency_url: https://fleetdm.com/transparency
+  host_expiry_settings: # Applies to all teams
+    host_expiry_enabled: false
+  features: # Features added to all teams
+agent_options: ./lib/agent-options.yml
