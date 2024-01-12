@@ -4,8 +4,8 @@ controls: # Controls added to "No team"
       deadline: "2023-08-11"
       minimum_version: "13.5"
     windows:
-      deadline:
-      grace_period:
+      deadline: ""
+      grace_period: ""
   os_settings:
     disk_encryption: true # Applies to Fleet Premium only
     custom_settings:
@@ -19,7 +19,7 @@ queries: # Queries added to all teams
 - ./lib/collect-fleetd-update-channel.queries.yml
 policies: # Policies added to all teams
 agent_options: ./lib/agent-options.yml
-organization_settings:
+org_settings:
   server_settings:
     debug_host_ids:
       - 1
@@ -45,7 +45,7 @@ organization_settings:
     metadata: $FLEET_SSO_METADATA
   integrations:
   mdm:
-    apple_bm_default_team: "Workstations"
+    apple_bm_default_team: Workstations
   webhook_settings:
     vulnerabilities_webhook:
       enable_vulnerabilities_webhook: true

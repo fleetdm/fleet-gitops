@@ -5,8 +5,8 @@ controls:
       deadline: "2023-08-11"
       minimum_version: "13.5"
     windows:
-      deadline:
-      grace_period:
+      deadline: ""
+      grace_period: ""
   os_settings:
     disk_encryption: true
     custom_settings:
@@ -25,8 +25,7 @@ queries:
 - ../lib/collect-failed-login-attempts.queries.yml
 policies: 
 - ../lib/device-health.policies.yml
-agent_options:
-- ./lib/agent-options.yml
+agent_options: ./lib/agent-options.yml
 team_settings:
   webhook_settings:
     failing_policies_webhook:
