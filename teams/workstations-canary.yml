@@ -31,14 +31,8 @@ queries:
   automations_enabled: false
 policies: 
 - ../lib/device-health.policies.yml
-
-# Team settings
-
 agent_options: ./lib/agent-options.yml
-webhook_settings:
-  failing_policies_webhook:
-      enable_failing_policies_webhook: true
-      destination_url: https://example.tines.com/webhook
-      policy_ids: [1, 2, 3, 4, 5,6 ,7, 8, 9]
-host_expiry_settings:
-features:
+team_settings:
+  webhook_settings:
+    secrets:
+      - secret: $FLEET_WORKSTATIONS_CANARY_ENROLL_SECRET
