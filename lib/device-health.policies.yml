@@ -248,4 +248,3 @@
       4. Run the following command:
           /usr/bin/sudo /usr/bin/csrutil enable
   query: SELECT 1 FROM sip_config WHERE config_flag="sip" and enabled=1;
-- 

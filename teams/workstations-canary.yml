@@ -41,5 +41,5 @@ policies:
 agent_options: ./lib/agent-options.yml
 team_settings:
   webhook_settings:
-    secrets:
-      - secret: $FLEET_WORKSTATIONS_CANARY_ENROLL_SECRET
+  secrets:
+  - secret: $FLEET_WORKSTATIONS_CANARY_ENROLL_SECRET

@@ -1,6 +1,6 @@
-# For Fleet Premium, the default.yml file updates queries and policies that run on all hosts ("All teams"). Ccontrols and agent options are updated for hosts on "No team."
-
 # For Fleet Free, this file updates queries, policies, controls, and agent options for all hosts.
+
+# For Fleet Premium, the default.yml file updates queries and policies that run on all hosts ("All teams"). Ccontrols and agent options are updated for hosts on "No team."
 
 controls: # Controls added to "No team"
   macos_settings:
