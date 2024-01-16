@@ -1,6 +1,6 @@
 # Only available in Fleet Premium. 
 
-#This file updates controls, queries, policies, and agent optiosn for assigned to the "Workstations" team.
+#This file updates controls, queries, policies, and agent options for assigned to the "Workstations" team.
 
 # To create and update another team, create another file in the teams/ directory and copy and paste the contents from this file.
 

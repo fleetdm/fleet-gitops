@@ -1,24 +1,19 @@
-# Best practice
+# Fleet GitOps
 
 This folder illustrates the best practice for using Fleet with a GitOps workflow.
 
-Soon, a Fleet user will be able to clone this repository, push up the contents of this `best-practice/` folder to their organization's repository, and add Fleet's open-source [GitHub action](https://github.com/fleetdm/fleet-mdm-gitops) to the repo. When the user makes changes to any file, the action will run and update Fleet.
+How to setup a GitOps workflow to manage Fleet:
 
-> The GitHub action is not ready for use with this best practice. The action only supports configuration profiles, disk encryption and OS updates for macOS.
+1. Clone this repository.
+
+2. Make any changes to policies, queries, controls, and more defined in the files.
+
+3. Create your own GitHub repository and push your cloned and modified code to your repo.
+
+4. Add Fleet's open-source [GitHub action](https://github.com/fleetdm/fleet-gitops) to your repo. Now, when anyone makes a change to any file, the action will run and update Fleet.
 
 #### Structure:
 
-- `mdm-profiles` - folder for configuration profiles. These profiles are referenced in `no-team.controls.yml` and team level `controls.yml`.
-- `scripts` - folder for scripts. These scripts are referenced in `no-team.controls.yml` and team level `controls.yml`.
-- `policies` - folder for shared policies. These policies are referenced in `default.policies.yml` and team level `policies.yml`.
-- `queries` - folder for shared queries. These queries are referenced in `default.queries.yml` and team level `queries.yml`.
-- `default.policies.yml` - top-level file with all global policies (aka policies assigned to **all hosts**).
-- `default.queries.yml` - top-level file with all global queries (aka queries that run on **all hosts**).
-- `no-team.controls.yml` - top-level file with controls (configuration profiles, OS updates, setup experience, and scripts) that apply to **hosts assigned to "No team"**.
-- `default.settings.yml` - top-level file with settings. These settings get applied to **hosts assigned to "No team"**. When a new team is created, it gets these settings.
-- `teams` - folder for teams in Fleet. These folders contain team-level policies, queries, controls, and settings.
-  - `<team name>` - folder for each team, with team-specific configs.
-    - `<team name>.policies.yml` - policies config for a specific team. (Team name is duplicated in file name for easy searching.)
-    - `<team name>.queries.yml` - queries config for a specific team. (Team name is duplicated in file name for easy searching.)
-    - `<team name>.controls.yml` - controls config for a specific team, including configuration profiles, OS updates, setup experience, and scripts.
-    - `<team name>.settings.yml` - settings config for a specific team, including agent options, command-line flags, and more. Team settings override global settings.
+- `lib/` - folder for policies, queries, configuration profiles, scripts, and agent options. These files can be referenced in top level keys in the `default.yml` file and the files in the `teams/` folder.
+- `default.yml` - file that defines the queries, policies, controls, and agent options for all hosts. If you're using Fleet Premium, this file updates queries and policies that run on all hosts ("All teams"). Controls and agent options are defined for hosts on "No team."
+- `teams/` - folder for teams in Fleet. These files define the controls, queries, policies, and agent options for hosts assigned to the specified team.
