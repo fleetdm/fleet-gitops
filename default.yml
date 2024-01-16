@@ -1,23 +1,20 @@
+# For Fleet Premium, the default.yml file updates queries and policies that run on all hosts ("All teams"). Ccontrols and agent options are updated for hosts on "No team."
+
+# For Fleet Free, this file updates queries, policies, controls, and agent options for all hosts.
+
 controls: # Controls added to "No team"
-  os_updates: # Applies to Fleet Premium only
-    macos:
-      deadline: "2023-08-11"
-      minimum_version: "13.5"
-    windows:
-      deadline: ""
-      grace_period: ""
-  os_settings:
-    disk_encryption: true # Applies to Fleet Premium only
+  macos_settings:
     custom_settings:
-    - ../lib/macos-os-updates.ddm.json
-    - ../lib/macos-password.mobileconfig
-    - ../lib/windows-screenlock.xml
-  setup_experience: # Applies to Fleet Premium only
+    - path: ../lib/macos-os-updates.ddm.json
+    - path: ../lib/macos-password.mobileconfig
+  windows_settings:
+    custom_settings:
+    - path: ../lib/windows-screenlock.xml
   scripts:
-  - ../lib/collect-fleetd-logs.sh
-queries: # Queries added to all teams
-- ./lib/collect-fleetd-update-channel.queries.yml
-policies: # Policies added to all teams
+  - path: ../lib/collect-fleetd-logs.sh
+queries:
+- path: ./lib/collect-fleetd-update-channel.queries.yml
+policies:
 agent_options: ./lib/agent-options.yml
 org_settings:
   server_settings:
