@@ -1,5 +1,7 @@
 # Fleet GitOps
 
+Fleet GitOps is currently in beta.
+
 This folder illustrates the best practice for using Fleet with a GitOps workflow.
 
 How to setup a GitOps workflow to manage Fleet:
