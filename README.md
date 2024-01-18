@@ -1,6 +1,8 @@
 # Fleet GitOps
 
-> **Fleet GitOps is coming soon.** In the mean time, you can explore this repo for a preview of how it will work, and track its development [here](https://github.com/fleetdm/fleet/issues/13643).
+> #### 🚧 Fleet GitOps is currently in development.
+>
+> In the mean time, you can explore this repo for a preview of Fleet's GitOps best practice, and track its progress [here](https://github.com/fleetdm/fleet/issues/13643).
 
 This folder illustrates the best practice for using Fleet with a GitOps workflow.
 
