@@ -1,0 +1,45 @@
+# Only available in Fleet Premium. 
+
+#This file updates controls, queries, policies, and agent options for assigned to the "Workstations (canary)" team.
+
+# To create and update another team, create another file in the teams/ directory and copy and paste the contents from this file.
+
+name: Workstations (canary)
+controls:
+  enable_disk_encryption: true
+  macos_updates:
+    deadline: "2023-08-11"
+    minimum_version: "13.5"
+  windows_updates:
+    deadline: "5"
+    grace_period: "2"
+  macos_settings:
+    custom_settings:
+    - path: ../lib/macos-os-updates.ddm.json
+    - path: ../lib/macos-password.mobileconfig
+  windows_settings:
+    custom_settings:
+    - path: ../lib/windows-screenlock.xml
+  macos_setup:
+      bootstrap_package:
+      enable_end_user_authentication:
+      macos_setup_assistant:
+  scripts:
+  - path: ../lib/remove-zoom-artifacts.script.sh
+  - path: ../lib/reset-timezone.sh
+queries: 
+- path: ../lib/collect-usb-devices.queries.yml
+- path: ../lib/collect-failed-login-attempts.queries.yml
+- name: Collect fleetd update channels 
+  description: "Collects the update channels for all fleetd components: osquery, Orbit, and Fleet Desktop. To see which version number each channel is on, ask in #help-engineering."
+  query: SELECT desktop_channel, orbit_channel, osqueryd_channel FROM orbit_info;
+  interval: 300
+  observer_can_run: true
+  automations_enabled: false
+policies: 
+- path: ../lib/device-health.policies.yml
+agent_options: ./lib/agent-options.yml
+team_settings:
+  webhook_settings:
+  secrets:
+  - secret: $FLEET_WORKSTATIONS_CANARY_ENROLL_SECRET

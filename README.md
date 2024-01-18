@@ -1,40 +1,24 @@
-# fleet-mdm-gitops
-This GitHub Action applies the latest MDM configuration profiles to a group of hosts in [Fleet](https://fleetdm.com).  It lets everyone contribute, while giving you history and an approval workflow.
+# Fleet GitOps
 
-![image](https://github.com/fleetdm/fleet-mdm-gitops/assets/618009/83cb87b6-2303-40e4-bc5b-e0f8168a00c7)
+> #### 🚧 Fleet GitOps is currently in development.
+>
+> In the mean time, you can explore this repo for a preview of Fleet's GitOps best practice, and track its progress [here](https://github.com/fleetdm/fleet/issues/13643).
 
-## Example usage
+This folder illustrates the best practice for using Fleet with a GitOps workflow.
 
-```yml
-steps:
-  - name: Apply configuration profiles and updates
-    uses: fleetdm/fleet-mdm-gitops
-    with:
-      FLEET_API_TOKEN: ${{ secrets.FLEET_API_TOKEN }}
-      FLEET_URL: ${{ secrets.FLEET_URL }}
-      FLEET_TEAM_NAME: Workstations
-      MDM_CONFIG_REPO: fleetdm/fleet
-      MDM_CONFIG_DIRECTORY: mdm_profiles
-      MAC_OS_MIN_VERSION: 13.3.1
-      MAC_OS_VERSION_DEADLINE: 2023-05-15
-      MAC_OS_ENABLE_DISK_ENCRYPTION: true
-```
+How to setup a GitOps workflow to manage Fleet:
 
+1. Clone this repository.
 
-## Contributing
+2. Make any changes to policies, queries, controls, and more defined in the files.
 
-Please observe the guidelines and conventions laid out in the [Fleet contribution guide](https://fleetdm.com/) when opening issues or submitting pull requests.
+3. Create your own GitHub repository and push your cloned and modified code to your repo.
 
-### Help
+4. Add Fleet's open-source [GitHub action](https://github.com/fleetdm/fleet-gitops) to your repo. Now, when anyone makes a change to any file, the action will run and update Fleet.
 
-Unsure?  If you run into any trouble or questions, click [here](https://fleetdm.com/slack).
+#### Structure:
 
-
-### Bugs
-
-If you suspect you've found a bug, please [report the bug here](https://github.com/fleetdm/fleet/issues).  Thanks!
-
-
-## License
-
-This GitHub Action is free and open-source under the MIT License.
+- `lib/` - folder for policies, queries, configuration profiles, scripts, and agent options. These files can be referenced in top level keys in the `default.yml` file and the files in the `teams/` folder.
+- `default.yml` - file that defines the queries, policies, controls, and agent options for all hosts. If you're using Fleet Premium, this file updates queries and policies that run on all hosts ("All teams"). Controls and agent options are defined for hosts on "No team."
+- `teams/` - folder for teams in Fleet. These files define the controls, queries, policies, and agent options for hosts assigned to the specified team.
+- `.github/workflows/workflow.yml` - TODO: Explain how to add/update secrets. That's what this file is used for

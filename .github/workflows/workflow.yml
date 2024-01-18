@@ -1,0 +1,100 @@
+name: 'Apply latest configuration profiles via Fleet'
+description: 'Applies the latest MDM configuration profiles to a Fleet team'
+
+inputs:
+  FLEET_API_TOKEN:
+    description: 'Fleet API Token'
+    required: true
+  FLEET_URL:
+    description: 'Fleet URL'
+    required: true
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        repository: ${{ inputs.MDM_CONFIG_REPO }}
+
+    - name: Install fleetctl
+      run: npm install -g fleetctl
+      shell: bash
+
+    - name: Configure fleetctl
+      run: fleetctl config set --address ${{ inputs.FLEET_URL }} --token ${{ inputs.FLEET_API_TOKEN }}
+      shell: bash
+
+    - name: Run fleetctl apply
+      run: |
+        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        # STEP 1: Apply config
+        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        # Combine the contents of all the top-level config into a single YAML document
+
+        # - Include the contents of no-team.controls.yml
+        # TODO
+
+        # - Include the contents of default.settings.yml
+        # TODO
+
+        # - Include anything of `kind: config` in default.queries.yml
+        # TODO
+
+        # - Include anything of `kind: config` in default.policies.yml
+        # TODO
+
+        # Apply top-level config with `--replace` (replaces all existing top-level config)
+        # TODO
+
+        # Loop through folders in /teams and combine the contents of all team config into a single YAML document
+
+        # - Include the contents of <folder-name>.controls.yml
+        # TODO
+
+        # - Include the contents of <folder-name>.settings.yml
+        # TODO
+
+        # - Include anything of `kind: team` in <folder-name>.queries.yml
+        # TODO
+
+        # - Include anything of `kind: team` in <folder-name>.policies.yml
+        # TODO
+
+        # Apply team config with `--replace` (replaces all existing config for this team)
+        # TODO
+
+        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        # STEP 2: Apply queries
+        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        # Compile all queries into a single YAML document
+
+        # - Include anything of `kind: query` in default.queries.yml
+        # TODO
+        
+        # - Loop through folders in /teams and include anything of `kind: query` in <folder-name>.queries.yml for each
+        # TODO
+        
+        # Apply compiled queries YAML with `--replace` (deletes any queries in Fleet that aren't present in this config)
+        # TODO
+
+        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        # STEP 3: Apply policies
+        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        # Compile all policies into a single YAML document
+        # TODO
+        
+        # - Include anything of `kind: policy` in default.policies.yml
+        # TODO
+        
+        # - Loop through folders in /teams and include anything of `kind: policy` in <folder-name>.policies.yml for each
+        # TODO
+        
+        # Apply compiled policies YAML with `--replace` (deletes any policies in Fleet that aren't present in this config)
+        # TODO
+
+        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        # All done!
+        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+      shell: bash
