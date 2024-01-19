@@ -32,6 +32,7 @@ queries:
 - path: ../lib/collect-failed-login-attempts.queries.yml
 policies: 
 - path: ../lib/macos-device-health.policies.yml
+- path: ../lib/windows-device-health.policies.yml
 agent_options: ./lib/agent-options.yml
 team_settings:
   webhook_settings:
