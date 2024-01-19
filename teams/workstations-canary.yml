@@ -37,7 +37,7 @@ queries:
   observer_can_run: true
   automations_enabled: false
 policies: 
-- path: ../lib/device-health.policies.yml
+- path: ../lib/macos-device-health.policies.yml
 agent_options: ./lib/agent-options.yml
 team_settings:
   webhook_settings:

@@ -31,7 +31,7 @@ queries:
 - path: ../lib/collect-usb-devices.queries.yml
 - path: ../lib/collect-failed-login-attempts.queries.yml
 policies: 
-- path: ../lib/device-health.policies.yml
+- path: ../lib/macos-device-health.policies.yml
 agent_options: ./lib/agent-options.yml
 team_settings:
   webhook_settings:
