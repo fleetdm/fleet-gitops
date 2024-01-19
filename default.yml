@@ -11,7 +11,7 @@ controls: # Controls added to "No team"
     custom_settings:
     - path: ../lib/windows-screenlock.xml
   scripts:
-  - path: ../lib/collect-fleetd-logs.sh
+  - path: ../lib/collect-fleetd-logs2.sh
 queries:
 - path: ./lib/collect-fleetd-update-channel.queries.yml
 policies:
