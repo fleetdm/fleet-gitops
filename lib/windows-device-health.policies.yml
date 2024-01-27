@@ -1,16 +1,5 @@
 # The Fleet Enterprise Edition (EE) license applies to code in this file. See the license here: https://github.com/fleetdm/fleet/blob/main/ee/LICENSE
 
-- name: Windows - CIS - Ensure Enable screen saver is enabled
-  platform: windows
-  description: |
-    This policy setting enables/disables the use of desktop screen savers.
-    The recommended state for this setting is: Enabled.
-  resolution: |
-    To establish the recommended configuration via GP, set the following UI path to Enabled:
-    'User Configuration\Policies\Administrative Templates\Control Panel\Personalization\Enable screen saver'
-    Note: This Group Policy path may not exist by default. It is provided by the Group Policy template ControlPanelDisplay.admx/adml that is included with the Microsoft Windows 7 & Server 2008 R2 Administrative Templates (or newer).
-  query: |
-    SELECT 1 FROM registry WHERE path LIKE 'HKEY_USERS\%\SOFTWARE\Policies\Microsoft\Windows\Control Panel\Desktop\ScreenSaveActive' and data = 1;
 - name: "Windows - CIS - Ensure Screen saver timeout enabled: 20 minutes or less"
   platform: windows
   description: |
