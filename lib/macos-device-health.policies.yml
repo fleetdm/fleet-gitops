@@ -3,7 +3,7 @@
   description: This policy checks if FileVault (disk encryption) is enabled.
   resolution: As an IT admin, turn on disk encryption in Fleet.
   query: SELECT 1 FROM filevault_status WHERE status = 'FileVault is On.';
-- name: macOS - Disble guest account
+- name: macOS - Disable guest account
   platform: darwin
   description: This policy checks if the guest account is disabled.
   resolution: An an IT admin, deploy a macOS, login window profile with the DisableGuestAccount option set to true.
@@ -12,7 +12,7 @@
   platform: darwin
   description: This policy checks if Firewall is enabled.
   resolution: An an IT admin, deploy a macOS, Firewall profile with the EnableFirewall option set to true.
-  query: SELECT 1 FROM managed_policies WHERE domain='com.apple.security.firewall' AND username = '' AND name='EnableFirewall' AND CAST(value AS INT) = 1
+  query: SELECT 1 FROM managed_policies WHERE domain='com.apple.security.firewall' AND username = '' AND name='EnableFirewall' AND CAST(value AS INT) = 1;
 - name: macOS - Require 10 character password
   platform: darwin
   description: This policy checks if the end user is required to enter a password, with at least 10 characters, to unlock the host.
