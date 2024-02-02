@@ -1,3 +1,5 @@
+# The Fleet Enterprise Edition (EE) license applies to code in this file. See the license here: https://github.com/fleetdm/fleet/blob/main/ee/LICENSE
+
 - name: macOS - CIS - Ensure FileVault is enabled (MDM required)
   platform: darwin
   description: Checks that FileVault is enabled. FileVault secures a system's data by automatically encrypting its boot volume and requiring a password or recovery key to access it. This policy checks that filevault is enabled on the device and that the user is not allowed to disable it.

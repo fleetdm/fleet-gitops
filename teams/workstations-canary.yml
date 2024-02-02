@@ -21,9 +21,9 @@ controls:
     custom_settings:
     - path: ../lib/windows-screenlock.xml
   macos_setup:
-      bootstrap_package:
-      enable_end_user_authentication:
-      macos_setup_assistant:
+      bootstrap_package: https://github.com/organinzation/repository/bootstrap-package.pkg
+      enable_end_user_authentication: true
+      macos_setup_assistant: ../lib/automatic-enrollment.dep.json
   scripts:
   - path: ../lib/remove-zoom-artifacts.script.sh
   - path: ../lib/reset-timezone.sh
@@ -37,7 +37,8 @@ queries:
   observer_can_run: true
   automations_enabled: false
 policies: 
-- path: ../lib/device-health.policies.yml
+- path: ../lib/macos-device-health.policies.yml
+- path: ../lib/windows-device-health.policies.yml
 agent_options: ./lib/agent-options.yml
 team_settings:
   webhook_settings:
