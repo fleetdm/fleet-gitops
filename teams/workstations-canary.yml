@@ -21,9 +21,9 @@ controls:
     custom_settings:
     - path: ../lib/windows-screenlock.xml
   macos_setup:
-      bootstrap_package:
-      enable_end_user_authentication:
-      macos_setup_assistant:
+      bootstrap_package: https://github.com/organinzation/repository/bootstrap-package.pkg
+      enable_end_user_authentication: true
+      macos_setup_assistant: ../lib/automatic-enrollment.dep.json
   scripts:
   - path: ../lib/remove-zoom-artifacts.script.sh
   - path: ../lib/reset-timezone.sh
