@@ -22,7 +22,7 @@ controls:
     - path: ../lib/windows-screenlock.xml
   macos_setup:
       # bootstrap_package: https://github.com/organinzation/repository/bootstrap-package.pkg (example URL)
-      enable_end_user_authentication: true
+      # enable_end_user_authentication: true
       macos_setup_assistant: ../lib/automatic-enrollment.dep.json
   scripts:
   - path: ../lib/remove-zoom-artifacts.script.sh
