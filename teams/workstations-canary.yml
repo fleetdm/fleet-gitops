@@ -41,7 +41,7 @@ policies:
   - path: ../lib/macos-device-health.policies.yml
   - path: ../lib/windows-device-health.policies.yml
 agent_options:
-  path: ./lib/agent-options.yml
+  path: ../lib/agent-options.yml
 team_settings:
   secrets:
   - secret: "$FLEET_WORKSTATIONS_CANARY_ENROLL_SECRET"
