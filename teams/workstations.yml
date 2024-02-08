@@ -11,36 +11,30 @@ controls:
     deadline: "2023-08-11"
     minimum_version: "13.5"
   windows_updates:
-    deadline: "5"
-    grace_period: "2"
+    deadline_days: 5
+    grace_period_days: 2
   macos_settings:
     custom_settings:
-    - path: ../lib/macos-os-updates.ddm.json
+    # - path: ../lib/macos-os-updates.ddm.json (DDM coming soon)
     - path: ../lib/macos-password.mobileconfig
   windows_settings:
     custom_settings:
     - path: ../lib/windows-screenlock.xml
   macos_setup:
-      bootstrap_package: https://github.com/organinzation/repository/bootstrap-package.pkg
+      # bootstrap_package: https://github.com/organinzation/repository/bootstrap-package.pkg (example URL)
       enable_end_user_authentication: true
       macos_setup_assistant: ../lib/automatic-enrollment.dep.json
   scripts:
   - path: ../lib/remove-zoom-artifacts.script.sh
-  - path: ../lib/reset-timezone.sh
+  - path: ../lib/set-timezone.script.sh
 queries: 
 - path: ../lib/collect-usb-devices.queries.yml
 - path: ../lib/collect-failed-login-attempts.queries.yml
-policies: 
-- path: ../lib/macos-device-health.policies.yml
-- path: ../lib/windows-device-health.policies.yml
-- path: ../lib/windows-device-health.policies.yml
-agent_options: ./lib/agent-options.yml
+policies:
+  - path: ../lib/macos-device-health.policies.yml
+  - path: ../lib/windows-device-health.policies.yml
+agent_options:
+  path: ../lib/agent-options.yml
 team_settings:
-  webhook_settings:
-    failing_policies_webhook:
-        enable_failing_policies_webhook: true
-        destination_url: https://example.tines.com/webhook
-        policy_ids: [1, 2, 3, 4, 5,6 ,7, 8, 9]
   secrets:
-  - secret: $FLEET_WORKSTATIONS_ENROLL_SECRET
-      
+  - secret: "$FLEET_WORKSTATIONS_ENROLL_SECRET"

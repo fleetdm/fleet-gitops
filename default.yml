@@ -5,17 +5,19 @@
 controls: # Controls added to "No team"
   macos_settings:
     custom_settings:
-    - path: ../lib/macos-os-updates.ddm.json
-    - path: ../lib/macos-password.mobileconfig
+      - path: ./lib/macos-password.mobileconfig
+#     DDM support coming soon
+#     - path: ../lib/macos-os-updates.ddm.json
   windows_settings:
     custom_settings:
-    - path: ../lib/windows-screenlock.xml
+    - path: ./lib/windows-screenlock.xml
   scripts:
-  - path: ../lib/collect-fleetd-logs.sh
+    - path: ./lib/collect-fleetd-logs.sh
 queries:
-- path: ./lib/collect-fleetd-update-channel.queries.yml
+- path: ./lib/collect-fleetd-update-channels.queries.yml
 policies:
-agent_options: ./lib/agent-options.yml
+agent_options:
+  path: ./lib/agent-options.yml
 org_settings:
   server_settings:
     debug_host_ids:
@@ -52,3 +54,5 @@ org_settings:
   host_expiry_settings: # Applies to all teams
     host_expiry_enabled: false
   features: # Features added to all teams
+  secrets: # These secrets are used to enroll hosts to the "All teams" team
+    - secret: "$FLEET_GLOBAL_ENROLL_SECRET"

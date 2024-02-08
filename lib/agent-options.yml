@@ -1,4 +1,4 @@
-command_line_flags: {}
+command_line_flags:
 config:
   decorators:
     load:
@@ -6,7 +6,7 @@ config:
     - SELECT hostname AS hostname FROM system_info;
   options:
     disable_distributed: false
-    distributed_interval: 5
+    distributed_interval: 10
     distributed_plugin: tls
     distributed_tls_max_attempts: 3
     logger_tls_endpoint: /api/v1/osquery/log
