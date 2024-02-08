@@ -20,7 +20,7 @@ How to set up a GitOps workflow to manage Fleet:
 
 6. Push your cloned and modified code to your repo.
 
-7. In GitHub, enable the `Apply latest configuration to Fleet` GitHub Actions workflow, and run workflow manually. Now, when anyone pushes a new commit, the action will run and update Fleet. In addition, the workflow will run every 24 hours to ensure that the Fleet configuration is in sync with your git repo.
+7. In GitHub, enable the `Apply latest configuration to Fleet` GitHub Actions workflow, and run workflow manually. Now, when anyone pushes a new commit, the action will run and update Fleet.
 
 #### Structure:
 
