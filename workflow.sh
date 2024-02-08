@@ -7,7 +7,7 @@
 set -exuo pipefail
 
 GLOBAL_FILE=./default.yml
-FLEETCTL=./fleetctl
+FLEETCTL="${FLEETCTL:-fleetctl}"
 
 # Validate that global file contains org_settings
 grep -Exq "^org_settings:.*" $GLOBAL_FILE

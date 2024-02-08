@@ -1,4 +1,4 @@
-name: 'Apply latest configuration profiles to Fleet'
+name: 'Apply latest configuration to Fleet'
 
 on:
   push:
@@ -13,7 +13,7 @@ defaults:
     shell: bash
 
 # Add FLEET_URL and FLEET_API_TOKEN to the repository secrets.
-# In addition, add secrets for all the environment variables that are mentioned in the global/team YAML files:
+# In addition, specify or add secrets for all the environment variables that are mentioned in the global/team YAML files.
 env:
   FLEET_SSO_METADATA: ${{ secrets.FLEET_SSO_METADATA }}
   FLEET_GLOBAL_ENROLL_SECRET: ${{ secrets.FLEET_GLOBAL_ENROLL_SECRET }}
@@ -24,7 +24,7 @@ jobs:
   build-docker:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Fleet GitOps repository
+      - name: Checkout GitOps repository
         uses: actions/checkout@v4
 
       - name: Install fleetctl

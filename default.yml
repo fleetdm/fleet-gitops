@@ -6,15 +6,14 @@ controls: # Controls added to "No team"
   macos_settings:
     custom_settings:
       - path: ./lib/macos-password.mobileconfig
-#     DDM support coming soon
-#     - path: ../lib/macos-os-updates.ddm.json
+      # - path: ../lib/macos-os-updates.ddm.json (DDM coming soon)
   windows_settings:
     custom_settings:
-    - path: ./lib/windows-screenlock.xml
+      - path: ./lib/windows-screenlock.xml
   scripts:
     - path: ./lib/collect-fleetd-logs.sh
 queries:
-- path: ./lib/collect-fleetd-update-channels.queries.yml
+  - path: ./lib/collect-fleetd-update-channels.queries.yml
 policies:
 agent_options:
   path: ./lib/agent-options.yml
