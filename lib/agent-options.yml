@@ -2,8 +2,8 @@ command_line_flags:
 config:
   decorators:
     load:
-    - SELECT uuid AS host_uuid FROM system_info;
-    - SELECT hostname AS hostname FROM system_info;
+      - SELECT uuid AS host_uuid FROM system_info;
+      - SELECT hostname AS hostname FROM system_info;
   options:
     disable_distributed: false
     distributed_interval: 10
