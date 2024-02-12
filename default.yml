@@ -43,6 +43,7 @@ org_settings:
     metadata: $FLEET_SSO_METADATA
   integrations:
   mdm:
+    apple_bm_default_team:
   webhook_settings:
     vulnerabilities_webhook:
       enable_vulnerabilities_webhook: true
