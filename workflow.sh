@@ -6,26 +6,31 @@
 # -o pipefail: Exit if any command in a pipeline fails.
 set -exuo pipefail
 
-GLOBAL_FILE=./default.yml
+FLEET_GITOPS_DIR="${FLEET_GITOPS_DIR:-./}"
+FLEET_GLOBAL_FILE="${FLEET_GLOBAL_FILE:-$FLEET_GITOPS_DIR/default.yml}"
 FLEETCTL="${FLEETCTL:-fleetctl}"
 
 # Validate that global file contains org_settings
-grep -Exq "^org_settings:.*" $GLOBAL_FILE
+grep -Exq "^org_settings:.*" "$FLEET_GLOBAL_FILE"
 
-if compgen -G ./teams/*.yml > /dev/null; then
+if compgen -G "$FLEET_GITOPS_DIR"/teams/*.yml > /dev/null; then
   # Validate that every team has a unique name.
   # This is a limited check that assumes all team files contain the phrase: `name: <team_name>`
-  ! perl -nle 'print $1 if /^name:\s*(.+)$/' ./teams/*.yml | sort | uniq -d | grep . -cq
+  ! perl -nle 'print $1 if /^name:\s*(.+)$/' "$FLEET_GITOPS_DIR"/teams/*.yml | sort | uniq -d | grep . -cq
 fi
 
 # Dry run
-$FLEETCTL gitops -f $GLOBAL_FILE --dry-run
-for team_file in ./teams/*.yml; do
-  $FLEETCTL gitops -f "$team_file" --dry-run
+$FLEETCTL gitops -f "$FLEET_GLOBAL_FILE" --dry-run
+for team_file in "$FLEET_GITOPS_DIR"/teams/*.yml; do
+  if [ -f "$team_file" ]; then
+    $FLEETCTL gitops -f "$team_file" --dry-run
+  fi
 done
 
 # Real run
-$FLEETCTL gitops -f $GLOBAL_FILE
-for team_file in ./teams/*.yml; do
-  $FLEETCTL gitops -f "$team_file"
+$FLEETCTL gitops -f "$FLEET_GLOBAL_FILE"
+for team_file in "$FLEET_GITOPS_DIR"/teams/*.yml; do
+  if [ -f "$team_file" ]; then
+    $FLEETCTL gitops -f "$team_file"
+  fi
 done
