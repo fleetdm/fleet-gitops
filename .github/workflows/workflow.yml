@@ -19,7 +19,7 @@ env:
   FLEET_WORKSTATIONS_CANARY_ENROLL_SECRET: ${{ secrets.FLEET_WORKSTATIONS_CANARY_ENROLL_SECRET }}
 
 jobs:
-  build-docker:
+  fleet-gitops:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout GitOps repository
