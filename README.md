@@ -16,7 +16,7 @@ How to set up a GitOps workflow to manage Fleet:
 
 4. Add `FLEET_URL` and `FLEET_API_KEY` to your GitHub repository secrets.
 
-5. Update the `env` section of your [.github/workflows/workflow.yml](https://github.com/fleetdm/fleet-gitops/blob/main/.github/workflows/workflow.yml) file for all the environment variables that are mentioned in your `default.yml` and `teams/*.yml` YAML files. For the environment variables that map to secrets, add the required secrets to your GitHub repository secrets.
+5. Update the `env` section of your [.github/workflows/action.yml](https://github.com/fleetdm/fleet-gitops/blob/main/.github/workflows/action.yml) file for all the environment variables that are mentioned in your `default.yml` and `teams/*.yml` YAML files. For the environment variables that map to secrets, add the required secrets to your GitHub repository secrets.
 
 6. Push your cloned and modified code to your repo.
 
@@ -27,5 +27,5 @@ How to set up a GitOps workflow to manage Fleet:
 - `lib/` - folder for policies, queries, configuration profiles, scripts, and agent options. These files can be referenced in top level keys in the `default.yml` file and the files in the `teams/` folder.
 - `default.yml` - file that defines the queries, policies, controls, and agent options for all hosts. If you're using Fleet Premium, this file updates queries and policies that run on all hosts ("All teams"). Controls and agent options are defined for hosts on "No team."
 - `teams/` - folder for teams in Fleet. These `*.yml` files define the controls, queries, policies, and agent options for hosts assigned to the specified team.
-- `.github/workflows/workflow.yml` - the GitHub Actions workflow file that applies the latest configuration to Fleet.
+- `.github/workflows/action.yml` - the GitHub Actions workflow file that applies the latest configuration to Fleet.
 - `workflow.sh` - the bash script that applies the latest configuration to Fleet by executing `fleetctl gitops`. This script is used in the GitHub Actions workflow file. It can be run standalone during development.
