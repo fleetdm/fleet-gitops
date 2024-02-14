@@ -13,4 +13,9 @@
 # - Historical context: https://github.com/fleetdm/fleet/pull/12786
 ##############################################################################################
 
-@noahtalerman
+# Default owner
+* @noahtalerman
+
+# GitHub action workflows
+/.github/workflows/ @getvictor
+/workflow.sh @getvictor
