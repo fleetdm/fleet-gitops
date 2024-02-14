@@ -16,7 +16,7 @@ How to set up a GitOps workflow to manage Fleet:
 
 4. Add `FLEET_URL` and `FLEET_API_KEY` to your GitHub repository secrets.
 
-5. Update the `env` section of your [.github/workflows/action.yml](https://github.com/fleetdm/fleet-gitops/blob/main/.github/workflows/action.yml) file for all the environment variables that are mentioned in your `default.yml` and `teams/*.yml` YAML files. For the environment variables that map to secrets, add the required secrets to your GitHub repository secrets.
+5. Update the `env` section of your [.github/workflows/workflow.yml](https://github.com/fleetdm/fleet-gitops/blob/main/.github/workflows/workflow.yml) file for all the environment variables that are mentioned in your `default.yml` and `teams/*.yml` YAML files. For the environment variables that map to secrets, add the required secrets to your GitHub repository secrets.
 
 6. Push your cloned and modified code to your repo.
 
