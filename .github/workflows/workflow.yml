@@ -10,26 +10,25 @@ defaults:
   run:
     shell: bash
 
-# Add FLEET_URL and FLEET_API_TOKEN to the repository secrets.
-# In addition, specify or add secrets for all the environment variables that are mentioned in the global/team YAML files.
-env:
-  FLEET_SSO_METADATA: ${{ secrets.FLEET_SSO_METADATA }}
-  FLEET_GLOBAL_ENROLL_SECRET: ${{ secrets.FLEET_GLOBAL_ENROLL_SECRET }}
-  FLEET_WORKSTATIONS_ENROLL_SECRET: ${{ secrets.FLEET_WORKSTATIONS_ENROLL_SECRET }}
-  FLEET_WORKSTATIONS_CANARY_ENROLL_SECRET: ${{ secrets.FLEET_WORKSTATIONS_CANARY_ENROLL_SECRET }}
+# Limit permissions of GITHUB_TOKEN.
+permissions:
+  contents: read
 
 jobs:
-  build-docker:
+  fleet-gitops:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout GitOps repository
         uses: actions/checkout@v4
 
-      - name: Install fleetctl
-        run: npm install -g fleetctl
-
-      - name: Configure fleetctl
-        run: fleetctl config set --address ${{ secrets.FLEET_URL }} --token ${{ secrets.FLEET_API_TOKEN }}
-
-      - name: Run fleetctl gitops commands
-        run: ./workflow.sh
+      - name: Apply latest configuration to Fleet
+        uses: ./.github/gitops-action
+        # Add FLEET_URL and FLEET_API_TOKEN to the repository secrets.
+        # In addition, specify or add secrets for all the environment variables that are mentioned in the global/team YAML files.
+        env:
+          FLEET_URL: ${{ secrets.FLEET_URL }}
+          FLEET_API_TOKEN: ${{ secrets.FLEET_API_TOKEN }}
+          FLEET_SSO_METADATA: ${{ secrets.FLEET_SSO_METADATA }}
+          FLEET_GLOBAL_ENROLL_SECRET: ${{ secrets.FLEET_GLOBAL_ENROLL_SECRET }}
+          FLEET_WORKSTATIONS_ENROLL_SECRET: ${{ secrets.FLEET_WORKSTATIONS_ENROLL_SECRET }}
+          FLEET_WORKSTATIONS_CANARY_ENROLL_SECRET: ${{ secrets.FLEET_WORKSTATIONS_CANARY_ENROLL_SECRET }}

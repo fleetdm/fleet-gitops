@@ -27,5 +27,6 @@ How to set up a GitOps workflow to manage Fleet:
 - `lib/` - folder for policies, queries, configuration profiles, scripts, and agent options. These files can be referenced in top level keys in the `default.yml` file and the files in the `teams/` folder.
 - `default.yml` - file that defines the queries, policies, controls, and agent options for all hosts. If you're using Fleet Premium, this file updates queries and policies that run on all hosts ("All teams"). Controls and agent options are defined for hosts on "No team."
 - `teams/` - folder for teams in Fleet. These `*.yml` files define the controls, queries, policies, and agent options for hosts assigned to the specified team.
-- `.github/workflows/workflow.yml` - the GitHub Actions workflow file that applies the latest configuration to Fleet.
-- `workflow.sh` - the bash script that applies the latest configuration to Fleet by executing `fleetctl gitops`. This script is used in the GitHub Actions workflow file. It can be run standalone during development.
+- `.github/workflows/workflow.yml` - the GitHub workflow file that applies the latest configuration to Fleet.
+- `.github/gitops-action/action.yml` - the GitHub action that runs `gitops.sh`. This action is used in the GitHub workflow file. It can also be used in other workflows.
+- `gitops.sh` - the bash script that applies the latest configuration to Fleet by executing `fleetctl gitops`. This script is used in the GitHub action file. It can be run standalone during development.
