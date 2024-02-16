@@ -34,7 +34,7 @@ org_settings:
     org_name: Fleet Device Management
   smtp_settings:
   sso_settings:
-    enable_jit_provisioning: true
+    enable_jit_provisioning: false
     enable_jit_role_sync: false
     enable_sso: true
     enable_sso_idp_login: false
