@@ -1,8 +1,8 @@
 # Fleet GitOps
 
-> #### 🚧 Fleet GitOps is currently in development.
+> #### 🚧 Fleet GitOps is currently in beta.
 >
-> In the meantime, you can explore this repo for a preview of Fleet's GitOps best practice, and track its progress [here](https://github.com/fleetdm/fleet/issues/13643).
+> In Fleet 4.45, Fleet GitOps was released in beta. The Fleet team is currently [dogfooding](https://en.wikipedia.org/wiki/Eating_your_own_dog_food) and documenting the feature. You can track the progress [here](https://github.com/fleetdm/fleet/issues/17043).
 
 This folder illustrates the best practice for using Fleet with a GitOps workflow.
 
