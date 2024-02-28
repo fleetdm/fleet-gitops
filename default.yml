@@ -7,6 +7,7 @@ controls: # Controls added to "No team"
     custom_settings:
       - path: ./lib/macos-password.mobileconfig
       # - path: ../lib/macos-os-updates.ddm.json (DDM coming soon)
+  windows_enabled_and_configured: true
   windows_settings:
     custom_settings:
       - path: ./lib/windows-screenlock.xml
