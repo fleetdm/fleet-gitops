@@ -9,6 +9,7 @@ set -exuo pipefail
 FLEET_GITOPS_DIR="${FLEET_GITOPS_DIR:-./}"
 FLEET_GLOBAL_FILE="${FLEET_GLOBAL_FILE:-$FLEET_GITOPS_DIR/default.yml}"
 FLEETCTL="${FLEETCTL:-fleetctl}"
+FLEET_DRY_RUN_ONLY="${FLEET_DRY_RUN_ONLY:-false}"
 
 # Validate that global file contains org_settings
 grep -Exq "^org_settings:.*" "$FLEET_GLOBAL_FILE"
@@ -26,6 +27,9 @@ for team_file in "$FLEET_GITOPS_DIR"/teams/*.yml; do
     $FLEETCTL gitops -f "$team_file" --dry-run
   fi
 done
+if [ "$FLEET_DRY_RUN_ONLY" = true ]; then
+  exit 0
+fi
 
 # Real run
 $FLEETCTL gitops -f "$FLEET_GLOBAL_FILE"
