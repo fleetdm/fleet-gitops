@@ -5,6 +5,9 @@ inputs:
   working-directory:
     description: 'The working directory, which should be the root of the fleet-gitops repository.'
     default: './'
+  dry-run-only:
+    description: 'Whether to only run the fleetctl gitops commands in dry-run mode.'
+    default: 'false'
 
 runs:
   using: "composite"
@@ -22,4 +25,6 @@ runs:
     - name: Run fleetctl gitops commands
       shell: bash
       working-directory: ${{ inputs.working-directory }}
+      env:
+        FLEET_DRY_RUN_ONLY: ${{ inputs.dry-run-only }}
       run: ./gitops.sh
