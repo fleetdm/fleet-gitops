@@ -5,7 +5,7 @@
 policies:
 queries:
 agent_options:
-- path: ../lib/agent-options.yml
+  path: ./lib/agent-options.yml
 controls:
 org_settings:
   server_settings:
