@@ -1,58 +1,16 @@
-# For Fleet Free, this file updates queries, policies, controls, and agent options for all hosts.
+# For Fleet Free, this file updates policies, queries, agent_options, and controls for all hosts.
 
-# For Fleet Premium, the default.yml file updates queries and policies that run on all hosts ("All teams"). Controls and agent options are updated for hosts on "No team."
+# For Fleet Premium, the default.yml file updates policies and queries that run on all hosts ("All teams"). Controls and agent options are updated for hosts on "No team."
 
-controls: # Controls added to "No team"
-  macos_settings:
-    custom_settings:
-      - path: ./lib/macos-password.mobileconfig
-      # - path: ../lib/macos-os-updates.ddm.json (DDM coming soon)
-  windows_enabled_and_configured: true
-  windows_settings:
-    custom_settings:
-      - path: ./lib/windows-screenlock.xml
-  scripts:
-    - path: ./lib/collect-fleetd-logs.sh
-queries:
-  - path: ./lib/collect-fleetd-update-channels.queries.yml
 policies:
+queries:
 agent_options:
   path: ./lib/agent-options.yml
+controls:
 org_settings:
   server_settings:
-    debug_host_ids:
-      - 1
-      - 3
-    enable_analytics: true
-    live_query_disabled: false
-    query_reports_disabled: false
-    scripts_disabled: false
-    server_url: https://dogfood.fleetdm.com
+    server_url: $FLEET_URL
   org_info:
-    contact_url: https://fleetdm.com/company/contact
-    org_logo_url: ""
-    org_logo_url_light_background: ""
-    org_name: Fleet Device Management
-  smtp_settings:
-  sso_settings:
-    enable_jit_provisioning: false
-    enable_jit_role_sync: false
-    enable_sso: true
-    enable_sso_idp_login: false
-    idp_name: Google Workspace
-    entity_id: dogfood.fleetdm.com
-    metadata: $FLEET_SSO_METADATA
-  integrations:
-  mdm:
-    apple_bm_default_team:
-  webhook_settings:
-    vulnerabilities_webhook:
-      enable_vulnerabilities_webhook: true
-      destination_url: https://example.tines.com/webhook
-  fleet_desktop: # Applies to Fleet Premium only
-    transparency_url: https://fleetdm.com/transparency
-  host_expiry_settings: # Applies to all teams
-    host_expiry_enabled: false
-  features: # Features added to all teams
-  secrets: # These secrets are used to enroll hosts to the "All teams" team
+    org_name: Fleet
+  secrets:
     - secret: "$FLEET_GLOBAL_ENROLL_SECRET"

@@ -1,40 +1,23 @@
 # Only available in Fleet Premium. 
 
-#This file updates controls, queries, policies, and agent options for assigned to the "Workstations" team.
+# This file updates policies, queries, agent options, and controls for assigned to the "Workstations" team.
 
-# To create and update another team, create another file in the teams/ directory and copy and paste the contents from this file.
+# To add another team, create a new file in the teams/ directory and copy and paste the contents from this file.
 
 name: Workstations
-controls:
-  enable_disk_encryption: true
-  macos_updates:
-    deadline: "2023-08-11"
-    minimum_version: "13.5"
-  windows_updates:
-    deadline_days: 5
-    grace_period_days: 2
-  macos_settings:
-    custom_settings:
-      # - path: ../lib/macos-os-updates.ddm.json (DDM coming soon)
-      - path: ../lib/macos-password.mobileconfig
-  windows_settings:
-    custom_settings:
-    - path: ../lib/windows-screenlock.xml
-  macos_setup:
-      # bootstrap_package: https://github.com/organinzation/repository/bootstrap-package.pkg (example URL)
-      # enable_end_user_authentication: true
-      macos_setup_assistant: ../lib/automatic-enrollment.dep.json
-  scripts:
-    - path: ../lib/remove-zoom-artifacts.script.sh
-    - path: ../lib/set-timezone.script.sh
-queries:
-  - path: ../lib/collect-usb-devices.queries.yml
-  - path: ../lib/collect-failed-login-attempts.queries.yml
 policies:
   - path: ../lib/macos-device-health.policies.yml
   - path: ../lib/windows-device-health.policies.yml
+  - path: ../lib/linux-device-health.policies.yml
+queries:
+  - path: ../lib/collect-usb-devices.queries.yml
+  - path: ../lib/collect-failed-login-attempts.queries.yml
 agent_options:
   path: ../lib/agent-options.yml
+controls:
+  scripts:
+    - path: ../lib/remove-zoom-artifacts.script.sh
+    - path: ../lib/set-timezone.script.sh
 team_settings:
   secrets:
     - secret: "$FLEET_WORKSTATIONS_ENROLL_SECRET"
