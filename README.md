@@ -18,4 +18,4 @@ How to set up your GitOps workflow:
 
 7. In GitHub, enable the `Apply latest configuration to Fleet` GitHub Actions workflow, and run workflow manually. Now, when anyone pushes a new commit, the action will run and update Fleet.
 
-For all configuration options, go to [GitOps reference](https://fleetdm.com/using-fleet/gitops) in the Fleet documentation.
+For all configuration options, go to [GitOps reference](https://fleetdm.com/docs/using-fleet/gitops) in the Fleet documentation.
