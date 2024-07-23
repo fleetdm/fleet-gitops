@@ -4,6 +4,7 @@
 
 policies:
 queries:
+  path: ./lib/standard-query-library.yml
 agent_options:
   path: ./lib/agent-options.yml
 controls:
