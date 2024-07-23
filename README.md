@@ -14,7 +14,7 @@ How to set up your GitOps workflow:
 
 5. Add `FLEET_URL` and `FLEET_API_TOKEN` secrets to your new repository's secrets. Learn how [here](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository). Set `FLEET_URL` to your Fleet instance's URL (ex. https://organization.fleet.com). Set `FLEET_API_TOKEN` to an API token for an API-only user in Fleet. Learn how [here](https://fleetdm.com/docs/using-fleet/fleetctl-cli#create-api-only-user).
 
-6. Add secrets to your repository as well as 'workflow.yml' for `FLEET_GLOBAL_ENROLL_SECRET` and for all environment variables that are mentioned in the global/team YAML files.
+6. Add secrets to your repository and update 'workflow.yml' for `FLEET_GLOBAL_ENROLL_SECRET` and for all environment variables that are mentioned in the global/team YAML files.
 
 8. Push your cloned and modified code to your repo.
 
