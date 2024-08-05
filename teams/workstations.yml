@@ -21,4 +21,3 @@ controls:
 team_settings:
   secrets:
     - secret: "$FLEET_WORKSTATIONS_ENROLL_SECRET"
-software:
