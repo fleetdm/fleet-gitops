@@ -18,7 +18,15 @@ runs:
     - name: Install fleetctl
       shell: bash
       working-directory: ${{ inputs.working-directory }}
-      run: npm install -g fleetctl
+      run: |
+        FLEET_VERSION="$(curl "$FLEET_URL/api/v1/fleet/version" --header "Authorization: Bearer $FLEET_API_TOKEN" --fail --silent | jq --raw-output '.version')"
+
+        if [[ -n "$FLEET_VERSION" ]] ; then
+          npm install -g "fleetctl@$FLEET_VERSION"
+        else
+          echo "Failed to get Fleet version from $FLEET_URL, installing latest version of fleetctl"
+          npm install -g fleetctl
+        fi
 
     - name: Configure fleetctl
       shell: bash
