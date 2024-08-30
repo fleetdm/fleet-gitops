@@ -10,9 +10,9 @@ How to set up your GitOps workflow:
 
 3. Make any changes to policies, queries, controls, and more defined in the files.
 
-4. [Set up on GitHub](#use-github) or [set up on GitLab](#use-gitlab).
+4. [Set up on GitHub](#set-up-on-github) or [set up on GitLab](#set-up-on-gitlab).
 
-## Set up on GitHub {#use-github}
+## Set up on GitHub
 
 1. Create your own GitHub repository.
 
@@ -27,7 +27,7 @@ How to set up your GitOps workflow:
 
 6. In GitHub, enable the `Apply latest configuration to Fleet` GitHub Actions workflow, and run workflow manually. Now, when anyone pushes a new commit to the default branch, the action will run and update Fleet. For pull requests, the workflow will do a dry run only.
 
-## Set up on GitLab {#use-gitlab}
+## Set up on GitLab
 
 1. Create your own GitLab repository.
 
