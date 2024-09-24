@@ -1,3 +1,3 @@
 url: https://dl.tailscale.com/stable/tailscale-setup-1.72.0.exe
 install_script:
-  path: windows-tailscale.exe.install.script.ps1
+  path: ../lib/windows-tailscale.exe.install.script.ps1

@@ -4,4 +4,4 @@
   resolution: ""
   query: "SELECT 1 FROM programs WHERE name = 'Mozilla Firefox (x64 en-US)' AND version_compare(version, '129.0.2') >= 0; "
   install_software:
-    package_path: "../lib/software/firefox.msi.software.yml"
+    package_path: "../lib/windows-firefox.msi.package.yml"

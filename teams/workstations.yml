@@ -24,4 +24,4 @@ team_settings:
     - secret: "$FLEET_WORKSTATIONS_ENROLL_SECRET"
 software:
   packages:
-    - path: ../lib/macos-microsoftteams.pkg.package.yml
+    - path: ../lib/macos-microsoft-teams.pkg.package.yml
