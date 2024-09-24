@@ -1,0 +1,7 @@
+- name: Microsoft Teams on macOS installed and up to date
+  platform: darwin
+  description: Checks if Microsoft Teams is installed and up to date on macOS.
+  resolution: Install or update Microsoft Teams to version 24193.1707.3028.4282 or higher.
+  query: "SELECT 1 FROM apps WHERE name = 'Microsoft Teams.app' AND version_compare(bundle_short_version, '24193.1707.3028.4282') >= 0;"
+  install_software:
+    package_path: ../lib/macos-microsoft-teams.pkg.package.yml

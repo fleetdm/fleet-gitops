@@ -1,0 +1,11 @@
+# For Fleet Premium, the teams/no-team.yml file updates policies, controls, and software that run on hosts on "No team."
+
+name: No team
+policies:
+  - path: ../lib/windows-firefox-installed-and-up-to-date.policy.yml
+  - path: ../lib/linux-1password-installed-and-up-to-date.policy.yml
+controls:
+software:
+  packages:
+    - path: ../lib/windows-firefox.msi.package.yml
+    - path: ../lib/linux-1password.deb.package.yml

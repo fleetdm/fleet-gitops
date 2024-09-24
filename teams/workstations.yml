@@ -9,6 +9,7 @@ policies:
   - path: ../lib/macos-device-health.policies.yml
   - path: ../lib/windows-device-health.policies.yml
   - path: ../lib/linux-device-health.policies.yml
+  - path: ../lib/macos-microsoft-teams-installed-and-up-to-date.policy.yml
 queries:
   - path: ../lib/collect-usb-devices.queries.yml
   - path: ../lib/collect-failed-login-attempts.queries.yml
@@ -22,3 +23,5 @@ team_settings:
   secrets:
     - secret: "$FLEET_WORKSTATIONS_ENROLL_SECRET"
 software:
+  packages:
+    - path: ../lib/macos-microsoftteams.pkg.package.yml
