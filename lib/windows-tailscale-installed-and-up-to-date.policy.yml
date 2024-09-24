@@ -1,7 +1,0 @@
-- name: Tailscale on Windows installed and up to date
-  platform: windows
-  description: Checks if Tailscale is installed and up to date on Windows hosts.
-  resolution: Install or update Tailscale to version 1.72.0 or higher.
-  query: "SELECT 1 FROM programs WHERE name = 'Tailscale' AND version_compare(version, '1.72.0') >= 0;"
-  install_software:
-    package_path: ../lib/windows-tailscale.exe.package.yml

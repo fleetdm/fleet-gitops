@@ -1,11 +1,12 @@
-# For Fleet Free, this file updates policies, queries, and agent_options for all hosts.
+# For Fleet Free, this file updates policies, queries, agent_options, and controls for all hosts.
 
-# For Fleet Premium, the default.yml file updates policies and queries that run on all hosts ("All teams"). 
+# For Fleet Premium, the default.yml file updates policies and queries that run on all hosts ("All teams").
 
 policies:
 queries:
 agent_options:
   path: ./lib/agent-options.yml
+controls:
 org_settings:
   server_settings:
     server_url: $FLEET_URL
