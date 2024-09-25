@@ -1,6 +1,6 @@
 # Teams are available in Fleet Premium. 
 
-# This file updates controls, queries, policies, and agent options for assigned to the "Workstations (canary)" team.
+# This file updates policies, queries, agent options, controls, settings, and software for hosts assigned to the "Workstations (canary)" team.
 
 # To add another team, create a new file in the teams/ directory and copy and paste the contents from this file.
 
