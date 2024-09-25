@@ -1,4 +1,8 @@
-# For Fleet Premium, the teams/no-team.yml file updates policies, controls, and software that run on hosts on "No team."
+# Teams are available in Fleet Premium. 
+
+# This file updates policies, controls, and software for hosts assigned to "No team."
+
+# To add another team, create a new file in the teams/ directory and copy and paste the contents from this file.
 
 name: No team
 policies:
