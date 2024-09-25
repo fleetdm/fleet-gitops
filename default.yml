@@ -1,6 +1,9 @@
-# For Fleet Free, this file updates policies, queries, agent_options, and controls for all hosts.
+# For Fleet Free: 
+# - This file updates policies, queries, agent_options, and controls for all hosts.
 
-# For Fleet Premium, the default.yml file updates policies and queries that run on all hosts ("All teams"). Controls and agent options are updated for hosts on "No team."
+# For Fleet Premium:
+# - This file updates policies and queries that run on all hosts ("All teams"). 
+# - Remove "controls" and add this to your YAML files in teams/ instead.
 
 policies:
 queries:
@@ -14,4 +17,3 @@ org_settings:
     org_name: Fleet
   secrets:
     - secret: "$FLEET_GLOBAL_ENROLL_SECRET"
-software:

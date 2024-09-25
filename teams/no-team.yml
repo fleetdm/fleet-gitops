@@ -1,0 +1,10 @@
+# Teams are available in Fleet Premium. 
+
+# This file updates policies, controls, and software for hosts assigned to "No team."
+
+# To update queries and agent options for hosts assigned to "No team," use the default.yml file.
+
+name: No team
+policies:
+controls:
+software:
