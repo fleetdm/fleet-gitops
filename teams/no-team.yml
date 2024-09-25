@@ -2,7 +2,7 @@
 
 # This file updates policies, controls, and software for hosts assigned to "No team."
 
-# To add another team, create a new file in the teams/ directory and copy and paste the contents from this file.
+# To update queries and agent options for hosts assigned to "No team," use the default.yml file.
 
 name: No team
 policies:
