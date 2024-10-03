@@ -1,4 +1,4 @@
-- name: Windows - Enable BitLocker
+- name: Windows - Enable BitLocker foo
   platform: windows
   description: "This policy checks if BitLocker (disk encryption) is enabled on the C: volume."
   resolution: As an IT admin, turn on disk encryption in Fleet.
