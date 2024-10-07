@@ -2,7 +2,7 @@
 
 This is the starter repository for using [Fleet](https://fleetdm.com) with a GitOps workflow.
 
-> For GitOps workflow documentation, run `fleetctl --help` from fleetctl.
+> For GitOps workflow documentation, run `fleetctl gitops --help` from fleetctl.
 
 ## How to set up your GitOps workflow:
 
