@@ -2,9 +2,25 @@
 
 This is the starter repository for using [Fleet](https://fleetdm.com) with a GitOps workflow.
 
-> Calling 'fleetctl gitops' directly is only recommended for experienced users. For documentation, run `fleetctl gitops --help`.
+## Why use Fleet with GitOps
+
+Before getting into [how to set up your GitOps workflow](#how-to-set-up-your-gitops-workflow), here are some good reasons to use Fleet with GitOps:
+
+### Change management
+Use CI/CD to streamline and approve changes across security, management, and productivity. With git as the backbone, changes become more reliable and transparent—ensuring consistency, security, and easy tracking, even as things evolve.
+
+### Auditing
+Track and audit every change in one system. Know who made changes, when, and why—without being tied to vendor-specific methods. Git commit history records every action, letting you see exactly what changed and who approved it.
+
+### Simplify and secure access
+IT admins are prime targets for attacks, yet their tools are often insecure and outdated. Instead of relying on legacy platforms, move to a secure, transparent system: git. With git-based changes, admins can work safely in an already trusted environment. Tools like GitHub or GitLab offer easy-to-use interfaces for those who prefer them.
+
+### Consolidation and reduced learning curve
+Rather than relying on multiple teams for tools like Intune or Jamf, build a unified team of OS specialists. By using git for MDM (mobile device management), admins can focus on expertise in macOS, Windows, or Linux—not specific vendor tools. This approach reduces silos, fosters collaboration, and helps teams learn valuable DevOps skills—avoiding reliance on unstable, vendor-specific tools that may raise prices or fade away.
 
 ## How to set up your GitOps workflow:
+
+> Calling 'fleetctl gitops' directly is only recommended for experienced users. For documentation, run `fleetctl gitops --help`.
 
 1. Clone this repository.
 
