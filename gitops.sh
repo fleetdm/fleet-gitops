@@ -23,7 +23,9 @@ fi
 
 args=(-f "$FLEET_GLOBAL_FILE")
 for team_file in "$FLEET_GITOPS_DIR"/teams/*.yml; do
-  args+=(-f "$team_file")
+  if [ -f "$team_file" ]; then
+    args+=(-f "$team_file")
+  fi
 done
 if [ "$FLEET_DELETE_OTHER_TEAMS" = true ]; then
   args+=(--delete-other-teams)

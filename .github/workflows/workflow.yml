@@ -32,6 +32,7 @@ jobs:
         with:
           # Run GitOps in dry-run mode for pull requests.
           dry-run-only: ${{ github.event_name == 'pull_request' && 'true' || 'false' }}
+          # delete-other-teams: false
         # Add FLEET_URL and FLEET_API_TOKEN to the repository secrets.
         # In addition, specify or add secrets for all the environment variables that are mentioned in the global/team YAML files.
         env:
