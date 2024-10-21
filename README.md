@@ -38,6 +38,10 @@ Rather than relying on multiple teams for tools like Intune or Jamf, build a uni
 
 3. Add `FLEET_GLOBAL_ENROLL_SECRET` secret to your new repository's secrets. The enroll secret must be an alphanumeric string of at least 32 and at most 255 characters.
    - If you have a Premium Fleet license, also add `FLEET_WORKSTATIONS_ENROLL_SECRET` and `FLEET_WORKSTATIONS_CANARY_ENROLL_SECRET`.
+   - If you do not have a Premium Fleet license, uncomment the following line in `.github/workflows/workflow.yml`:
+```yaml
+          # delete-other-teams: false
+```
 
 4. Delete `.gitlab-ci.yml`, which is for GitLab CI/CD.
 
