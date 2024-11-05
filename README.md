@@ -4,7 +4,7 @@ This is the starter repository for using [Fleet](https://fleetdm.com) with a Git
 
 ## GitHub setup
 
-1. Clone this repository, create your own GitHub repository, and push your clone to your new repo.
+1. Clone the [GitHub repository](https://github.com/fleetdm/fleet-gitops), create your own GitHub repository, and push your clone to your new repo.
 
 2. Add `FLEET_URL` and `FLEET_API_TOKEN` secrets to your new repository's secrets. Learn how [here](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository). Set `FLEET_URL` to your Fleet instance's URL (ex. https://organization.fleet.com). Set `FLEET_API_TOKEN` to an API token for an API-only user in Fleet. Learn how [here](https://fleetdm.com/docs/using-fleet/fleetctl-cli#create-api-only-user).
 
@@ -21,7 +21,7 @@ This is the starter repository for using [Fleet](https://fleetdm.com) with a Git
 
 ## GitLab setup
 
-1. Clone this repository, create your own GitLab repository, and push your clone to your new repo.
+1. Clone the [GitLab repository](https://gitlab.com/fleetdm/fleet-gitops), create your own GitLab repository, and push your clone to your new repo.
 
 2. Add `FLEET_URL` and `FLEET_API_TOKEN` as masked CI/CD variables. Learn how [here](https://docs.gitlab.com/ee/ci/variables/#define-a-cicd-variable-in-the-ui). Set `FLEET_URL` to your Fleet instance's URL (ex. https://organization.fleet.com). Set `FLEET_API_TOKEN` to an API token for an API-only user in Fleet. Learn how [here](https://fleetdm.com/docs/using-fleet/fleetctl-cli#create-api-only-user).
 
