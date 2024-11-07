@@ -11,7 +11,7 @@ FLEET_GLOBAL_FILE="${FLEET_GLOBAL_FILE:-$FLEET_GITOPS_DIR/default.yml}"
 FLEETCTL="${FLEETCTL:-fleetctl}"
 FLEET_DRY_RUN_ONLY="${FLEET_DRY_RUN_ONLY:-false}"
 FLEET_DELETE_OTHER_TEAMS="${FLEET_DELETE_OTHER_TEAMS:-true}"
-time='$time'
+export time='$time'
 
 # Validate that global file contains org_settings
 grep -Exq "^org_settings:.*" "$FLEET_GLOBAL_FILE"
