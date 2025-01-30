@@ -2,6 +2,8 @@
 
 This is the starter repository for using [Fleet](https://fleetdm.com) with a GitOps workflow.
 
+[Why use GitOps?](https://fleetdm.com/guides/sysadmin-diaries-gitops-a-strategic-advantage#basic-article)
+
 ## GitHub setup
 
 1. Clone the [GitHub repository](https://github.com/fleetdm/fleet-gitops), create your own GitHub repository, and push your clone to your new repo. Note that a workflow will run once and fail because the required variables haven't been added (step 2 and 3).
@@ -29,3 +31,14 @@ This is the starter repository for using [Fleet](https://fleetdm.com) with a Git
 ## Configuration options
 
 For all configuration options, go to the [YAML files reference](https://fleetdm.com/docs/using-fleet/gitops) in the Fleet docs.
+
+## Fleet UI
+
+> _GitOps mode is coming soon. You can follow its progress [here](https://github.com/fleetdm/fleet/issues/25478)._
+
+Once you're set up with GitOps in Fleet, you can optionally put the UI in GitOps mode. This prevents you from making changes in the UI that would be overridden by GitOps workflows. 
+
+An admin can enable GitOps mode in **Settings** > **Integrations** > **Change management**.
+
+Note that this is a UI-only setting. API permissions are restricted based on user role.
+
