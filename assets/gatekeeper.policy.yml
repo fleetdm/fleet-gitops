@@ -1,0 +1,6 @@
+- name: macOS - 1Password up to date
+  query: SELECT 1 FROM gatekeeper WHERE assessments_enabled = 1;
+  critical: true
+  description: Checks to make sure that the Gatekeeper feature is enabled on macOS devices. Gatekeeper tries to ensure only trusted software is run on a mac machine.
+  resolution: Please enable Gatekeeper, or talk to your IT team to enable it.
+  platform: darwin

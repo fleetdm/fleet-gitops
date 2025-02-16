@@ -1,0 +1,7 @@
+- name: Ensure Docker is installed on Engineering
+  query: SELECT 1 FROM apps WHERE name like '%Docker.app%'
+  description: Checks that Docker installed on engineering team.
+  resolution: The IT team will auto-install this app.
+  platform: darwin
+  install_software:
+    path: ../lib/docker.yml
