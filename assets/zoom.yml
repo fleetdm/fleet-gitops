@@ -1,0 +1,4 @@
+url: https://zoom.us/client/latest/ZoomInstallerIT.pkg
+self_service: true
+post_install_script:
+  path: ../lib/zoom-config.sh
