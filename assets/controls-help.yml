@@ -1,0 +1,10 @@
+controls:
+  enable_disk_encryption: true
+  macos_settings:
+    custom_settings:
+      - path: ../lib...
+  windows_settings:
+    custom_settings:
+      - path: ../lib...
+  scripts:
+    - path: ../lib...
