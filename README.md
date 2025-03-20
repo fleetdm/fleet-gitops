@@ -34,8 +34,6 @@ For all configuration options, go to the [YAML files reference](https://fleetdm.
 
 ## Fleet UI
 
-> _GitOps mode is coming soon. You can follow its progress [here](https://github.com/fleetdm/fleet/issues/25478)._
-
 Once you're set up with GitOps in Fleet, you can optionally put the UI in GitOps mode. This prevents you from making changes in the UI that would be overridden by GitOps workflows. 
 
 An admin can enable GitOps mode in **Settings** > **Integrations** > **Change management**.
