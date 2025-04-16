@@ -5,7 +5,6 @@ on:
     branches:
       - main
   pull_request:
-  workflow_dispatch: # allows manual triggering
 
 # Prevent concurrent runs of this workflow.
 concurrency:
@@ -31,7 +30,7 @@ jobs:
         uses: ./.github/gitops-action
         with:
           # Run GitOps in dry-run mode for pull requests.
-          dry-run-only: ${{ github.event_name == 'pull_request' && 'true' || 'false' }}
+          dry-run-only: ${{ github.event_name == 'push' && 'false' || 'true' }}
         # Add FLEET_URL and FLEET_API_TOKEN to the repository secrets.
         # In addition, specify or add secrets for all the environment variables that are mentioned in the global/team YAML files.
         env:
