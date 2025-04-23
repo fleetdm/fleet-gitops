@@ -15,6 +15,13 @@ FLEET_DELETE_OTHER_TEAMS="${FLEET_DELETE_OTHER_TEAMS:-true}"
 # Validate that global file contains org_settings
 grep -Exq "^org_settings:.*" "$FLEET_GLOBAL_FILE"
 
+# Copy/pasting raw SSO metadata into GitHub secrets will result in malformed yaml. 
+# Adds spaces to all but the first line of metadata keeps the  multiline string in bounds.
+# See README for more information 
+
+# FLEET_SSO_METADATA=$( sed '2,$s/^/      /' <<<  "${FLEET_MDM_SSO_METADATA}")
+# FLEET_MDM_SSO_METADATA=$( sed '2,$s/^/        /' <<<  "${FLEET_MDM_SSO_METADATA}")
+
 if compgen -G "$FLEET_GITOPS_DIR"/teams/*.yml > /dev/null; then
   # Validate that every team has a unique name.
   # This is a limited check that assumes all team files contain the phrase: `name: <team_name>`
