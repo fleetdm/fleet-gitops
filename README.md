@@ -10,11 +10,10 @@ This is the starter repository for using [Fleet](https://fleetdm.com) with a Git
 
 2. Add `FLEET_URL` and `FLEET_API_TOKEN` secrets to your new repository's secrets. Learn how [here](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository). Set `FLEET_URL` to your Fleet instance's URL (ex. https://organization.fleet.com). [Create an API-only user](https://fleetdm.com/docs/using-fleet/fleetctl-cli#create-api-only-user) with the "GitOps" role and set `FLEET_API_TOKEN` to your user's API token. If you're using Fleet Free, set the API-only user's role to global admin.
 
-3. Add `FLEET_GLOBAL_ENROLL_SECRET` secret to your new repository's secrets. The enroll secret must be an alphanumeric string of at least 32 and at most 255 characters.
-   - If you have a Premium Fleet license, also add `FLEET_WORKSTATIONS_ENROLL_SECRET` and `FLEET_WORKSTATIONS_CANARY_ENROLL_SECRET`.
-   - If you do not have a Premium Fleet license, delete the `teams` directory.
+4. If you are using secrets to manage SSO metadata for Fleet SSO login or MDM SSO login, uncomment lines 22 and 23 in `gitops.sh`.
+   - If you are using different variable names for your secrets, edit the appropriate line to reflect the correct variable name. 
 
-4. In GitHub, enable the `Apply latest configuration to Fleet` GitHub Actions workflow, and run workflow manually. Now, when anyone pushes a new commit to the default branch, the action will run and update Fleet. For pull requests, the workflow will do a dry run only.
+5. In GitHub, enable the `Apply latest configuration to Fleet` GitHub Actions workflow, and run workflow manually. Now, when anyone pushes a new commit to the default branch, the action will run and update Fleet. For pull requests, the workflow will do a dry run only.
 
 ## GitLab setup
 
@@ -25,8 +24,11 @@ This is the starter repository for using [Fleet](https://fleetdm.com) with a Git
 3. Add `FLEET_GLOBAL_ENROLL_SECRET` secret as a masked CI/CD variable. The enroll secret must be an alphanumeric string of at least 32 and at most 255 characters.
    - If you have a Premium Fleet license, also add `FLEET_WORKSTATIONS_ENROLL_SECRET` and `FLEET_WORKSTATIONS_CANARY_ENROLL_SECRET`.
    - If you do not have a Premium Fleet license, delete the `teams` directory.
+     
+4. If you are using secrets to manage SSO metadata for Fleet SSO login or MDM SSO login, uncomment lines 22 and 23 in `gitops.sh`.
+   - If you are using different variable names for your secrets, edit the appropriate line to reflect the correct variable name. 
 
-4. Now, when anyone pushes a new commit to the default branch, the pipeline will run and update Fleet. For merge requests, the pipeline will do a dry run only.
+5. Now, when anyone pushes a new commit to the default branch, the pipeline will run and update Fleet. For merge requests, the pipeline will do a dry run only.
 
 ## Configuration options
 
