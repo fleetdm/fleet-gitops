@@ -11,7 +11,7 @@ This can reduce duplication for policies, scripts, and other config that is the 
 ```yaml
 # default.yml
 policies:
-  - path: ./lib/macos-device-health.policies.yml
+  - path: ./lib/macos/policies/macos-device-health.policies.yml
 ```
 
 ##### Queries
@@ -19,7 +19,7 @@ policies:
 ```yaml
 # default.yml
 queries:
-  - path: ./lib/collect-usb-devices.queries.yml
+  - path: ./lib/all/queries/collect-usb-devices.queries.yml
 ```
 
 ##### Scripts
@@ -28,7 +28,7 @@ queries:
 # default.yml
 controls:
   scripts:
-    - path: ./lib/remove-zoom-artifacts.script.sh
+    - path: ./lib/macos/scripts/remove-zoom-artifacts.script.sh
 ```
 
 ##### Agent options
@@ -36,5 +36,5 @@ controls:
 ```yaml
 # default.yml
 agent_options:
-  path: ./lib/all/agent-options/agent-options.yml
+  path: ./lib/agent-options.yml
 ```

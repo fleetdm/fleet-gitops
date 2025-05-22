@@ -16,7 +16,7 @@ queries:
   - path: ../lib/all/queries/collect-usb-devices.queries.yml
   - path: ../lib/all/queries/collect-failed-login-attempts.queries.yml
 agent_options:
-  path: ../lib/all/agent-options/agent-options.yml
+  path: ../lib/agent-options.yml
 controls:
   scripts:
     - path: ../lib/macos/scripts/remove-zoom-artifacts.script.sh
