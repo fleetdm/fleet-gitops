@@ -1,15 +1,15 @@
-# For Fleet Free: 
+# For Fleet Free:
 # - This file updates policies, queries, agent_options, and controls for all hosts.
 
 # For Fleet Premium:
-# - This file updates policies and queries that run on all hosts ("All teams"). 
+# - This file updates policies and queries that run on all hosts ("All teams").
 # - Remove "controls" and add this to your YAML files in teams/ instead.
 
 policies:
 queries:
 agent_options:
   path: ./lib/agent-options.yml
-controls:
+controls: # This cannot be set here and in no-team.yml
 org_settings:
   server_settings:
     server_url: $FLEET_URL
