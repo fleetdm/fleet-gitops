@@ -1,4 +1,4 @@
-# Teams are available in Fleet Premium. 
+# Teams are available in Fleet Premium.
 
 # This file updates policies, controls, and software for hosts assigned to "No team."
 
@@ -6,5 +6,5 @@
 
 name: No team
 policies:
-controls:
+controls: # This cannot be set here and in default.yml
 software:
