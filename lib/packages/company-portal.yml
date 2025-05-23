@@ -1,0 +1,6 @@
+# Company Portal (CompanyPortal-Installer.pkg) version 5.2504.0
+hash_sha256: 931db4af2fe6320a1bfb6776fae75b6f7280a947203a5a622b2cae00e8f6b6e6
+install_script:
+  path: ../scripts/install-company-portal.sh
+uninstall_script:
+  path: ../scripts/uninstall-company-portal.sh
