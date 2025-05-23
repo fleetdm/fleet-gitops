@@ -29,3 +29,14 @@ software:
     - path: ../lib/packages/company-portal.yml
     - path: ../lib/packages/box-drive.yml
     - path: ../lib/packages/santa.yml
+  app_store_apps:
+    - app_store_id: '803453959' # Slack Desktop
+      self_service: true
+      categories:
+        - Productivity
+        - Communication
+  fleet_maintained_apps:
+    - slug: visual-studio-code/windows
+      self_service: true
+      categories:
+        - Productivity
