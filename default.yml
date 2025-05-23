@@ -17,3 +17,12 @@ org_settings:
     org_name: Fleet
   secrets:
     - secret: "$FLEET_GLOBAL_ENROLL_SECRET"
+  mdm:
+    apple_business_manager:
+    - organization_name: Fleet Device Management Inc.
+    volume_purchasing_program:
+    - location: Janis Watts
+      teams:
+      - "Workstations"
+labels:
+  - path: ./lib/all/labels/test1.yaml
