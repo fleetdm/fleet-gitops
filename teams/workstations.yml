@@ -28,3 +28,4 @@ software:
   packages:
     - path: ../lib/packages/company-portal.yml
     - path: ../lib/packages/box-drive.yml
+    - path: ../lib/packages/santa.yml
