@@ -25,4 +25,4 @@ org_settings:
       teams:
       - "Workstations"
 labels:
-  - path: ./lib/all/labels/test1.yaml
+  - path: ./lib/all/labels/test1.yml
