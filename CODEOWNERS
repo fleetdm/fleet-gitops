@@ -13,5 +13,12 @@
 # - Historical context: https://github.com/fleetdm/fleet/pull/12786
 ##############################################################################################
 
-# Default owner
-* @getvictor
+# Best practice file structure
+/lib @harrisonravazzolo
+/teams @harrisonravazzolo
+default.yml @harrisonravazzolo
+
+# GitHub Action and GitLab CI/CD
+.github @getvictor
+.gitlab-ci.yml @getvictor
+gitops.sh @getvictor
