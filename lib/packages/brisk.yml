@@ -1,0 +1,6 @@
+# Brisk (Brisk_1.2.0.pkg) version 1.2.0
+hash_sha256: 21112cd7d47a2907217eb812dcac0cb7f8e7bbb74c47103a2ae28ab1f75213f9
+install_script:
+  path: ../scripts/install-brisk.sh
+uninstall_script:
+  path: ../scripts/uninstall-brisk.sh
