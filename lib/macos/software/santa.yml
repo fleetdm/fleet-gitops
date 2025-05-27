@@ -1,0 +1,6 @@
+# Santa (santa-2025.4.pkg) version 2025.4
+hash_sha256: c3eea21b4724719f6deadbd43ef9e0683bf54eba08ee270cc5057055291313b1
+install_script:
+  path: ../scripts/install-santa.sh
+uninstall_script:
+  path: ../scripts/uninstall-santa.sh
