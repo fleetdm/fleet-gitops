@@ -22,3 +22,6 @@ default.yml @harrisonravazzolo
 .github @getvictor
 .gitlab-ci.yml @getvictor
 gitops.sh @getvictor
+
+# Everything else
+* @getvictor
