@@ -1,8 +1,2 @@
 # Clipy (Clipy_1.2.1.pkg) version 1.2.1
 hash_sha256: 62780f858b28ae3b7f3fa412b035f4bfdb77fc099f88db81b87d1aca47cced74
-pre_install_query:
-  path: ../queries/pre-install-query-clipy.yml
-install_script:
-  path: ../scripts/install-clipy.sh
-uninstall_script:
-  path: ../scripts/uninstall-clipy.sh
