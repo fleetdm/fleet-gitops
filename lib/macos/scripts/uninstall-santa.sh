@@ -1,0 +1,1 @@
+# This will be a script that uninstalls Santa from macOS hosts.

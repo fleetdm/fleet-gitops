@@ -4,3 +4,4 @@
   interval: 360 # 6 minutes
   observer_can_run: true
   automations_enabled: false
+  platform: darwin,linux
