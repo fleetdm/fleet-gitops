@@ -1,2 +1,2 @@
-- name: Pre-install query Clipy.pkg
-  query: SELECT * from osquery_info where start_time < 1;
+- name: "[Pre-install software] Clipy (pkg)"
+  query: SELECT * from apps;
