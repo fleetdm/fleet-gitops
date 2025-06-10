@@ -4,5 +4,7 @@ pre_install_query:
   path: ../queries/pre-install-query-clipy.yml
 install_script:
   path: ../scripts/install-clipy.sh
+post_install_script:
+  path: ../scripts/post-install-clipy.sh
 uninstall_script:
   path: ../scripts/uninstall-clipy.sh

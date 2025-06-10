@@ -2,23 +2,23 @@
 
 # Fleet extracts and saves package IDs.
 pkg_ids=(
+  "org.cocoapods.RxScreeen"
+  "org.cocoapods.LoginServiceKit"
+  "org.cocoapods.RealmSwift"
   "org.cocoapods.LetsMove"
-  "org.cocoapods.SwiftHEXColors"
+  "org.cocoapods.Sauce"
   "org.cocoapods.RxCocoa"
+  "org.cocoapods.SwiftHEXColors"
+  "org.cocoapods.Magnet"
+  "org.sparkle-project.Sparkle.Autoupdate"
   "org.cocoapods.PINCache"
   "org.cocoapods.Screeen"
-  "org.cocoapods.RealmSwift"
-  "org.cocoapods.RxSwift"
-  "org.sparkle-project.Sparkle.Autoupdate"
-  "org.sparkle-project.Sparkle"
-  "org.cocoapods.Magnet"
-  "org.cocoapods.AEXML"
-  "org.cocoapods.KeyHolder"
-  "org.cocoapods.Sauce"
-  "org.cocoapods.RxScreeen"
   "org.cocoapods.RxOptional"
-  "org.cocoapods.LoginServiceKit"
   "org.cocoapods.Realm"
+  "org.cocoapods.KeyHolder"
+  "org.sparkle-project.Sparkle"
+  "org.cocoapods.RxSwift"
+  "org.cocoapods.AEXML"
 )
 
 # For each package id, get all .app folders associated with the package and remove them.

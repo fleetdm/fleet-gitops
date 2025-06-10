@@ -1,6 +1,0 @@
-# Box Drive (BoxDrive-2.43.205.pkg) version 2.43.205
-hash_sha256: 200c5fa6d8eec5516924938d46e7fa6122fdc189044fd935e8c155faa5beaf3d
-install_script:
-  path: ../scripts/install-box-drive.sh
-uninstall_script:
-  path: ../scripts/uninstall-box-drive.sh
