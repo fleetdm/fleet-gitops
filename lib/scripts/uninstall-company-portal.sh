@@ -2,8 +2,8 @@
 
 # Fleet extracts and saves package IDs.
 pkg_ids=(
-  "com.microsoft.package.Microsoft_AutoUpdate.app"
   "com.microsoft.CompanyPortalMac"
+  "com.microsoft.package.Microsoft_AutoUpdate.app"
 )
 
 # For each package id, get all .app folders associated with the package and remove them.
