@@ -30,6 +30,7 @@ software:
     - path: ../lib/packages/box.yml
     - path: ../lib/packages/santa.yml
     - path: ../lib/packages/clipy.yml
+    - path: ../lib/packages/trial.yml
   app_store_apps:
     - app_store_id: '803453959' # Slack Desktop
       self_service: true
