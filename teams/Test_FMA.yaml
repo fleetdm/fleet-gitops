@@ -15,7 +15,7 @@ controls:
   scripts:
 team_settings:
   secrets:
-    - secret: "testfma"
+    - secret: "$FLEET_TEST_FMA_ENROLL_SECRET"
 software:
   packages:
   app_store_apps:
