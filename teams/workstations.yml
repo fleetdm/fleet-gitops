@@ -37,10 +37,6 @@ software:
       categories:
         - Productivity
         - Communication
-    - app_store_id: "462058435"   # Microsoft Excel
-      self_service: true
-      categories:
-        - Productivity
   fleet_maintained_apps:
     - slug: visual-studio-code/windows
       self_service: true
