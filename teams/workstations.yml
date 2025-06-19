@@ -27,7 +27,6 @@ team_settings:
 software:
   packages:
     - path: ../lib/packages/box.yml
-    - path: ../lib/packages/brisk.yml
     - path: ../lib/packages/clipy.yml
     - path: ../lib/packages/company-portal.yml
     - path: ../lib/packages/santa.yml
