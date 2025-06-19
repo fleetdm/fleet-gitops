@@ -7,10 +7,11 @@
 # Then add that secret to .github/workflows/workflow.yml as an env variable.
 # The secret name in the YAML file must match the secret name in GitHub Actions secrets.
 
-name: Test_FMA
-policies:
+name: 'Test FMA'
 agent_options:
   path: ../lib/agent-options.yml
+policies:
+queries:
 controls:
   scripts:
 team_settings:
