@@ -17,6 +17,9 @@ org_settings:
     org_name: Fleet
   secrets:
     - secret: "$FLEET_GLOBAL_ENROLL_SECRET"
+  features:
+    enable_host_users: true
+    enable_software_inventory: true
   sso_settings:
     enable_jit_provisioning: true
     enable_sso: true
