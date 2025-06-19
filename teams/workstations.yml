@@ -26,10 +26,11 @@ team_settings:
     - secret: "$FLEET_WORKSTATIONS_ENROLL_SECRET"
 software:
   packages:
-    - path: ../lib/packages/company-portal.yml
     - path: ../lib/packages/box.yml
-    - path: ../lib/packages/santa.yml
+    - path: ../lib/packages/brisk.yml
     - path: ../lib/packages/clipy.yml
+    - path: ../lib/packages/company-portal.yml
+    - path: ../lib/packages/santa.yml
     - path: ../lib/packages/trial.yml
   app_store_apps:
     - app_store_id: '803453959' # Slack Desktop
