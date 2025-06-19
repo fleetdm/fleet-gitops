@@ -25,11 +25,15 @@ software:
       self_service: true
     - slug: adobe-acrobat-reader/darwin
       self_service: true
+    - slug: box-drive/darwin
+      self_service: true
     - slug: box-drive/windows
       self_service: true
     - slug: brave-browser/darwin
       self_service: true
     - slug: brave-browser/windows
+      self_service: true
+    - slug: cloudflare-warp/darwin
       self_service: true
     - slug: cloudflare-warp/windows
       self_service: true
@@ -47,11 +51,19 @@ software:
       self_service: true
     - slug: microsoft-edge/darwin
       self_service: true
+    - slug: microsoft-excel/darwin
+      self_service: true
+    - slug: microsoft-teams/darwin
+      self_service: true
+    - slug: microsoft-word/darwin
+      self_service: true
     - slug: notion/darwin
       self_service: true
     - slug: postman/darwin
       self_service: true
     - slug: slack/darwin
+      self_service: true
+    - slug: teamviewer/darwin
       self_service: true
     - slug: teamviewer/windows
       self_service: true
@@ -60,5 +72,7 @@ software:
     - slug: visual-studio-code/windows
       self_service: true
     - slug: whatsapp/darwin
+      self_service: true
+    - slug: zoom/darwin
       self_service: true
 
