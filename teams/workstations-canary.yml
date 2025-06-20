@@ -24,4 +24,8 @@ controls:
 team_settings:
   secrets:
     - secret: "$FLEET_WORKSTATIONS_CANARY_ENROLL_SECRET"
+  features:
+    enable_host_users: true
+    enable_software_inventory: true
 software:
+
