@@ -21,10 +21,6 @@ software:
   packages:
   app_store_apps:
   fleet_maintained_apps:
-    - slug: 1password/darwin
-      self_service: true
-    - slug: adobe-acrobat-reader/darwin
-      self_service: true
     - slug: box-drive/darwin
       self_service: true
     - slug: box-drive/windows
