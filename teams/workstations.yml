@@ -31,6 +31,7 @@ software:
     - path: ../lib/packages/company-portal.yml
     - path: ../lib/packages/santa.yml
     - path: ../lib/packages/trial.yml
+    - path: ../lib/packages/TeamViewer.yml
   app_store_apps:
     - app_store_id: '803453959' # Slack Desktop
       self_service: true
