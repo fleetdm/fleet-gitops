@@ -44,3 +44,7 @@ software:
       self_service: true
       categories:
         - Productivity
+    - slug: google-chrome/darwin
+      self_service: true
+    - slug: google-chrome/windows
+      self_service: true
