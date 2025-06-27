@@ -30,6 +30,16 @@ This is the starter repository for using [Fleet](https://fleetdm.com) with a Git
 
 5. Now, when anyone pushes a new commit to the default branch, the pipeline will run and update Fleet. For merge requests, the pipeline will do a dry run only.
 
+6. (Optional) To ensure your Fleet configuration stays up to date even when there are no new commits, set up a scheduled pipeline:
+   - In your GitLab project, go to the left sidebar and navigate to **Build > Pipeline schedules**. (In some GitLab versions, this may appear as **CI/CD > Schedules**.)
+   - Click **Create a new pipeline schedule** (or **Schedule a new pipeline**).
+   - Fill in the form:
+      - **Description**: e.g., `Daily GitOps sync`
+      - **Cron timezone**: e.g., `[UTC 0] UTC`
+      - **Interval pattern**: e.g., Custom: `0 6 * * *` (runs nightly at 6AM UTC)
+      - **Target branch or tag**: your default branch (e.g., `main`)
+   - Click **Create pipeline schedule**.
+
 ## Configuration options
 
 For all configuration options, go to the [YAML files reference](https://fleetdm.com/docs/using-fleet/gitops) in the Fleet docs.
