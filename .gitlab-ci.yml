@@ -7,6 +7,9 @@ fleet-gitops:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
       variables:
         FLEET_DRY_RUN_ONLY: false
+    - if: $CI_PIPELINE_SOURCE == 'schedule' && $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      variables:
+        FLEET_DRY_RUN_ONLY: false
   before_script:
     - apt-get -qq update
     - apt-get install -y jq=1.6-2.1
