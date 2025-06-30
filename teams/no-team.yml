@@ -330,9 +330,9 @@ software:
   - hash_sha256: 2ddba07c557673b851595729e14d1bb8d0fdc285509839bf39ac2d9d3a898029
       # Less MSIérables (lessmsi) (lessmsi-gui.exe) version 1.3
     install_script:
-      path: ../lib/no-team/scripts/less-msiérables-lessmsi-windows-install
+      path: ../lib/no-team/scripts/less-msierables-lessmsi-windows-install
     uninstall_script:
-      path: ../lib/no-team/scripts/less-msiérables-lessmsi-windows-uninstall
+      path: ../lib/no-team/scripts/less-msierables-lessmsi-windows-uninstall
   - hash_sha256: d4c8903203097fc2043750903c7ed07564179a1a0a3357606c8a419fb15b8def
       # libUCPluginCisco.dylib.dSYM (Install_Cisco-Jabber-Mac.pkg) version 15.1.0.309843
     install_script:
