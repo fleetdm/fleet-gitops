@@ -1,0 +1,56 @@
+#!/bin/sh
+
+# Fleet extracts and saves package IDs.
+pkg_ids=(
+  "com.flexibits.fbcaldav.FBCalDAV-XPC"
+  "com.flexibits.fantastical2.mac.fantastical-intents"
+  "com.flexibits.FlexibitsKit"
+  "com.flexibits.fantastical2.mac"
+  "tpinappreceipt.TPInAppReceipt.resources"
+  "org.sparkle-project.Sparkle"
+  "com.flexibits.FBCalDAV"
+  "com.flexibits.FantasticalParse"
+  "com.flexibits.fantastical2.mac.quick-look-extension"
+  "com.flexibits.fantastical2.mac.share-extension"
+  "io.github.libical.libical"
+  "com.flexibits.fantastical2.mac.FantasticalWidgets"
+  "com.instagram.IGListDiffKit"
+  "85C27NK92C.com.flexibits.fantastical2.mac.helper"
+  "com.flexibits.fantastical2.mac.docktile"
+  "com.deusty.CocoaLumberjack"
+  "org.sparkle-project.InstallerLauncher"
+  "com.kulakov.ShortcutRecorder"
+  "asn1swift.ASN1Swift.resources"
+  "com.flexibits.fantastical2.mac.FantasticalAppIntentsExtension"
+  "com.flexibits.fantastical.core"
+  "com.flexibits.fantastical.viewmodel"
+  "net.openid.AppAuth-macOS"
+  "com.flexibits.fantastical.sync"
+  "com.deusty.CocoaLumberjackSwift"
+  "org.sparkle-project.DownloaderService"
+  "com.flexibits.fantastical.fantasticalutilities"
+  "org.mantle.Mantle"
+  "com.flexibits.fantastical2.mac.FantasticalServices"
+  "org.sparkle-project.Sparkle.Updater"
+  "io.sentry.Sentry"
+  "com.flexibits.fantastical2.mac.FantasticalUI"
+  "com.flexibits.fantastical.core.libical-XPC"
+)
+
+# For each package id, get all .app folders associated with the package and remove them.
+for pkg_id in "${pkg_ids[@]}"
+do
+  # Get volume and location of the package.
+  volume=$(pkgutil --pkg-info "$pkg_id" | grep -i "volume" | awk '{if (NF>1) print $NF}')
+  location=$(pkgutil --pkg-info "$pkg_id" | grep -i "location" | awk '{if (NF>1) print $NF}')
+  # Check if this package id corresponds to a valid/installed package
+  if [[ ! -z "$volume" ]]; then
+    # Remove individual directories that end with ".app" belonging to the package.
+    # Only process directories that end with ".app" to prevent Fleet from removing top level directories.
+    pkgutil --only-dirs --files "$pkg_id" | grep "\.app$" | sed -e 's@^@'"$volume""$location"'/@' | tr '\n' '\0' | xargs -n 1 -0 rm -rf
+    # Remove receipts
+    pkgutil --forget "$pkg_id"
+  else
+    echo "WARNING: volume is empty for package ID $pkg_id"
+  fi
+done
