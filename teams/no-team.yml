@@ -8,3 +8,598 @@ name: No team
 policies:
 controls:
 software:
+  packages:
+  - hash_sha256: 3e66ea2dd587a29023a14af203f08e2b46a0b08aa858597e7f5216bbc7895aeb
+      # Google Chrome (GoogleChrome.pkg) version 133.0.6943.127
+    install_script:
+      path: ../lib/no-team/scripts/google-chrome-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/google-chrome-darwin-uninstall
+  - hash_sha256: c816a6c258b37a8b4a50535a87cb35e647a474beeb767334e27959c5adcbf298
+      # Mozilla Firefox (Firefox-135.0.1.pkg) version 135.0.1
+    install_script:
+      path: ../lib/no-team/scripts/mozilla-firefox-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/mozilla-firefox-darwin-uninstall
+  - hash_sha256: d60d6ef3933e075568552666a79b7b12cc4f7c987167c0d977abac3445fec44e
+      # Slack (Slack-Universal.pkg) version 4.44.65
+    install_script:
+      path: ../lib/no-team/scripts/slack-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/slack-darwin-uninstall
+  - hash_sha256: e38326a58163b268a69adfd1bfae492d4a5a3266c587767c82d68db378699d51
+      # 1Password (1Password.pkg) version 8.10.82
+    install_script:
+      path: ../lib/no-team/scripts/1password-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/1password-darwin-uninstall
+  - hash_sha256: 8437f9a61043e3520f2c418d04562be7022a68a54324b946b43be4a4acca0f5a
+      # Figma (Figma-125.5.6.pkg) version 125.5.6
+    install_script:
+      path: ../lib/no-team/scripts/figma-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/figma-darwin-uninstall
+  - hash_sha256: c6f0e912f0c98cfdbaf63812bbeb831f3ab003c99c9de4882ddee75a0ce64559
+      # Microsoft Edge (MSEdge-134.3124.25030551.pkg) version 134.0.3124.51
+    install_script:
+      path: ../lib/no-team/scripts/microsoft-edge-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/microsoft-edge-darwin-uninstall
+  - hash_sha256: e3593aca0c1dc77d1975968d91383b8478b0e92dc8ba71d15c091c69eb53ddff
+      # Microsoft Teams (MSTeams-25016.1906.3434.7234.pkg) version 25016.1906.3434.7234
+    install_script:
+      path: ../lib/no-team/scripts/microsoft-teams-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/microsoft-teams-darwin-uninstall
+  - hash_sha256: d7cf25bf190330731ffd2e63aa380ce265207929a3c4eca427aca72b4224eb41
+      # Zoom (Zoom.pkg) version 6.5.1.58208
+    install_script:
+      path: ../lib/no-team/scripts/zoom-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/zoom-darwin-uninstall
+  - hash_sha256: f0ecd2f4defad527abf823ae4fa6c2fefe0d30e20d2e44a615077ccc36d42886
+      # Microsoft Word (MSWord2016-16.16.20101200.pkg) version 16.16.27
+    install_script:
+      path: ../lib/no-team/scripts/microsoft-word-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/microsoft-word-darwin-uninstall
+  - hash_sha256: 55b5f983d04592d68c8247f80529358d12247d1f0a73f6fcd343b0273b71e6ba
+      # 1Password (1PasswordSetup-latest.exe) version 8.10.82.29
+    install_script:
+      path: ../lib/no-team/scripts/1password-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/1password-windows-uninstall
+  - hash_sha256: c7f182dad21eebfce02f141d6a01f847d1e194c4d6aa29998d9305388553cf6a
+      # 7-Zip 24.09 (7zip.msi) version 24.09.00.0
+    install_script:
+      path: ../lib/no-team/scripts/7zip-2409-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/7zip-2409-windows-uninstall
+  - hash_sha256: af93d6873add42305d7d51bf1131439789340225fa25d9705b2828cff178c0f3
+      # A+ Suite (A+ Suite for Mac_sign.pkg) version 2.7.2166.169 2.5.2161.162
+    install_script:
+      path: ../lib/no-team/scripts/a-suite-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/a-suite-darwin-uninstall
+  - hash_sha256: 2ff14910228b14f8699f8bbf4074b7a8014ef94ed5ae309152d2551c36117864
+      # Adobe Acrobat X Pro (10.1.16) (AcrobatUpd10116.pkg) version 10.1.16
+    install_script:
+      path: ../lib/no-team/scripts/adobe-acrobat-x-pro-10116-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/adobe-acrobat-x-pro-10116-darwin-uninstall
+  - hash_sha256: 450a56870b508bb7784fb514466a099b2acb73c2d7e00689c1e73c8b68eb987b
+      # Adobe Reader XI (11.0.23) (AdobeReader.pkg) version 11.0.23
+    install_script:
+      path: ../lib/no-team/scripts/adobe-reader-xi-11023-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/adobe-reader-xi-11023-darwin-uninstall
+  - hash_sha256: 8ebedcc6627c309466b6cbff67a4fb336c0aa61623387c3888af872f6368d547
+      # Airtame (Airtame.pkg) version 4.13.1
+    install_script:
+      path: ../lib/no-team/scripts/airtame-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/airtame-darwin-uninstall
+  - hash_sha256: 1ec3b61bf8cc0e2d71f3845215b8c59ac141eb05c3a93fea218c898eff299a81
+      # Autodesk Fusion.app (AutodeskFusion-005.pkg) version 2602.1.25
+    install_script:
+      path: ../lib/no-team/scripts/autodesk-fusionapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/autodesk-fusionapp-darwin-uninstall
+  - hash_sha256: 1944a69aad18b0b9618b48292d115412a98ca165b626f48b11bbc59b504af082
+      # autopkg (AutoPkg-2.7.3.pkg) version 2.7.3
+    install_script:
+      path: ../lib/no-team/scripts/autopkg-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/autopkg-darwin-uninstall
+  - hash_sha256: 906f77fbca3334fbdcd1145dd6f2725beab82a30b9b51eafd1a25c3fe7d669eb
+      # AWS VPN Client (AWS VPN Client.pkg) version 5.2.1
+    install_script:
+      path: ../lib/no-team/scripts/aws-vpn-client-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/aws-vpn-client-darwin-uninstall
+  - hash_sha256: f27cb0eed7c9c5354caa5d7e37595eefbb048d7481bf698b2e5fb653b667c190
+      # AWS VPN Client (AWS_VPN_Client.msi) version 5.2.2
+    install_script:
+      path: ../lib/no-team/scripts/aws-vpn-client-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/aws-vpn-client-windows-uninstall
+  - hash_sha256: 63ca164797bec96ffcad3c71349d395773a7ec21482f81d7699219857093b67a
+      # Backup and Sync.app (GoogleBackupandSync-3.56.3802.7766.pkg) version 3.56
+    install_script:
+      path: ../lib/no-team/scripts/backup-and-syncapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/backup-and-syncapp-darwin-uninstall
+  - hash_sha256: 7c3bce4aa53e99fd153542aef4d17beba2a54b4d3d67fdfd260c53cf6f0fbc14
+      # Box (BoxDrive.msi) version 2.45.187
+    install_script:
+      path: ../lib/no-team/scripts/box-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/box-windows-uninstall
+  - hash_sha256: 4552f5a6bd6ffd7ad996d094d97aa5a4febf16ffa490edf02346d25e3f7ef290
+      # Box Drive (BoxDrive.pkg) version 2.45.185
+    install_script:
+      path: ../lib/no-team/scripts/box-drive-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/box-drive-darwin-uninstall
+  - hash_sha256: 28b001bb9a72ae7a24242bfab248d767a1ac5dec981c672a3944f7a072375e9a
+      # cli-64.exe (cli-64.exe) version 
+    install_script:
+      path: ../lib/no-team/scripts/cli64exe-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/cli64exe-windows-uninstall
+  - hash_sha256: a3d6a6c68c2e759f7c36f35687f6b60d163c2e1a0846a4c07a4c4006a96d88c7
+      # cli-arm64.exe (cli-arm64.exe) version 
+    install_script:
+      path: ../lib/no-team/scripts/cliarm64exe-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/cliarm64exe-windows-uninstall
+  - hash_sha256: 75f12ea2f30d9c0d872dade345f30f562e6d93847b6a509ba53beec6d0b2c346
+      # cli.exe (cli.exe) version 
+    install_script:
+      path: ../lib/no-team/scripts/cliexe-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/cliexe-windows-uninstall
+  - hash_sha256: 0f221edabd2eb9ff173380d7d9b26b9eb941b680a9d2ce3b1295a633243227d1
+      # Cloudflare WARP (CloudflareWARP.pkg) version 2025.4.943.0
+    install_script:
+      path: ../lib/no-team/scripts/cloudflare-warp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/cloudflare-warp-darwin-uninstall
+  - hash_sha256: bd14df3b7a5dc2b24a86b5d988eb433103ecaae16e5e4ed211048fe04186c588
+      # Company Portal (CompanyPortal-53.2506311.003.pkg) version 5.2504.2
+    install_script:
+      path: ../lib/no-team/scripts/company-portal-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/company-portal-darwin-uninstall
+  - hash_sha256: 2dc84672d6b63e3c473f4fd24a548fa3a450b5719e45a28f049310d93b35fa0c
+      # DesktopSpeaker (DesktopSpeaker.pkg) version 6.0.0
+    install_script:
+      path: ../lib/no-team/scripts/desktopspeaker-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/desktopspeaker-darwin-uninstall
+  - hash_sha256: b6ce957b4e72aecb58266915e85a01498ad9dce6f64e1757605168383415caa2
+      # Egnyte Connect.app (Egnyte Connect-3.14.18.pkg) version 3.14.18
+    install_script:
+      path: ../lib/no-team/scripts/egnyte-connectapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/egnyte-connectapp-darwin-uninstall
+  - hash_sha256: fc316560dfd8bfcd5359129c33f47d190084e1c43561e2bc0a366259d9af979e
+      # Elgato Control Center.app (Elgato Control Center-1.8.1.pkg) version 1.8.1
+    install_script:
+      path: ../lib/no-team/scripts/elgato-control-centerapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/elgato-control-centerapp-darwin-uninstall
+  - hash_sha256: c8a4291470be3d50524d70774f215b33f576a019b6168d02bdc88b9c1d8aa214
+      # Elmedia Player.app (Elmedia Player-8.22.pkg) version 8.22
+    install_script:
+      path: ../lib/no-team/scripts/elmedia-playerapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/elmedia-playerapp-darwin-uninstall
+  - hash_sha256: 00d8e70b8fb63275621da8c8dfda45689ee349278d766f3a9a4281b1c4e92136
+      # Emacs.app (Emacs-30.1.pkg) version 30.1
+    install_script:
+      path: ../lib/no-team/scripts/emacsapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/emacsapp-darwin-uninstall
+  - hash_sha256: 00a1e75a6b507f9a561d323e1573860324c0902d2c10b23e210bcbe768c51a25
+      # Evernote (Evernote-10.143.4.pkg) version 10.143.4
+    install_script:
+      path: ../lib/no-team/scripts/evernote-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/evernote-darwin-uninstall
+  - hash_sha256: 779c2734320bec9950f766f3c579b322c5ea3ad366cc42579c41a4ac12cc5546
+      # Evernote (Evernote-latest.exe) version 10.143.4
+    install_script:
+      path: ../lib/no-team/scripts/evernote-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/evernote-windows-uninstall
+  - hash_sha256: eef46f04b04d251fa4e451425ee5de770119bdb2ccecc616932f35b7009e3ea8
+      # exiftool (ExifTool-13.31.pkg) version 13.31
+    install_script:
+      path: ../lib/no-team/scripts/exiftool-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/exiftool-darwin-uninstall
+  - hash_sha256: 24e8766c32f6588a73a60441a29fbe85585c7082cee62f230add858344852a31
+      # Explorer Shortcut Helper for Lessmsi (AddWindowsExplorerShortcut.exe) version 1.3
+    install_script:
+      path: ../lib/no-team/scripts/explorer-shortcut-helper-for-lessmsi-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/explorer-shortcut-helper-for-lessmsi-windows-uninstall
+  - hash_sha256: 9872744c64784d6c09c73522e50a8b76e0bb19b8f0351da1568068a7dbb0ccfe
+      # ExpressVPN (ExpressVPN.pkg) version 11.70.0 (90675)
+    install_script:
+      path: ../lib/no-team/scripts/expressvpn-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/expressvpn-darwin-uninstall
+  - hash_sha256: c23915c3bed59e2cf4b09a269f3c44bcffaed2d98b4c0659a1714462ff112447
+      # Fantastical.app (Fantastical-4.0.14.pkg) version 4.0.14
+    install_script:
+      path: ../lib/no-team/scripts/fantasticalapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/fantasticalapp-darwin-uninstall
+  - hash_sha256: 4569dc58c656e5a1af76ada302cd5c714c37b6149386342c7169fff65308d9ac
+      # FileMonitor.app (FileMonitor-1.3.0.pkg) version 1.3.0
+    install_script:
+      path: ../lib/no-team/scripts/filemonitorapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/filemonitorapp-darwin-uninstall
+  - hash_sha256: 93e10710819acfdc668c46f8a3282d1842ed25086ca5e76cb0458553afdf859c
+      # Final Draft 11 (FinalDraft11-11.1.7.pkg) version 1
+    install_script:
+      path: ../lib/no-team/scripts/final-draft-11-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/final-draft-11-darwin-uninstall
+  - hash_sha256: fceb11c44c46dddc0503ad61deac954d231d87911e5bdbd78525a7b1d57a8f02
+      # GitKraken.app (GitKraken-11.2.0.pkg) version 11.2.0
+    install_script:
+      path: ../lib/no-team/scripts/gitkrakenapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/gitkrakenapp-darwin-uninstall
+  - hash_sha256: f737f950664451651e7344f3e6c6fcad3f0e82ad67d109495547c8973c278f45
+      # Google Earth Pro (Google Earth Pro-7.3.pkg) version 7.3
+    install_script:
+      path: ../lib/no-team/scripts/google-earth-pro-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/google-earth-pro-darwin-uninstall
+  - hash_sha256: 69828c857d4824b9f850b1e0597d2c134c91114b7a0774c41dffe33b0eb23721
+      # gui-64.exe (gui-64.exe) version 
+    install_script:
+      path: ../lib/no-team/scripts/gui64exe-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/gui64exe-windows-uninstall
+  - hash_sha256: 4c416738a0e2fa6ab766ccf1a9b0a80974e733f9615168dd22a069afa7d5b38d
+      # gui-arm64.exe (gui-arm64.exe) version 
+    install_script:
+      path: ../lib/no-team/scripts/guiarm64exe-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/guiarm64exe-windows-uninstall
+  - hash_sha256: 5c1af46c7300e87a73dacf6cf41ce397e3f05df6bd9c7e227b4ac59f85769160
+      # gui.exe (gui.exe) version 
+    install_script:
+      path: ../lib/no-team/scripts/guiexe-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/guiexe-windows-uninstall
+  - hash_sha256: 5179ec304f53506e4c6e1d4e71ad53d4d5193b05516894cc524815bb1127e350
+      # Horos.app (Horos-4.0.1.pkg) version 4.0.1
+    install_script:
+      path: ../lib/no-team/scripts/horosapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/horosapp-darwin-uninstall
+  - hash_sha256: abfcf5738aa837d9f3549e84fe00e50090aad2bff84a03c04faaca6e71f0019d
+      # HoverCam Flex.app (HoverCam Flex.pkg) version 2.0.205
+    install_script:
+      path: ../lib/no-team/scripts/hovercam-flexapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/hovercam-flexapp-darwin-uninstall
+  - hash_sha256: 038bbed276a5607b8824ff30265ac2795aa4306f1363afcb3370bf3a008cfaad
+      # Hype4.app (Hype4-4.1.19.pkg) version 4.1.19
+    install_script:
+      path: ../lib/no-team/scripts/hype4app-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/hype4app-darwin-uninstall
+  - hash_sha256: 3a6456f36f3302d560d886042fbdbc746850af894810bb7423fc884b167eea17
+      # ICQ.app (ICQ-23.2.0.pkg) version 23.2.0
+    install_script:
+      path: ../lib/no-team/scripts/icqapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/icqapp-darwin-uninstall
+  - hash_sha256: 7ddb88e961d4cd6d49fce16a91488717dd86b1761eeabf97ea45465250df84fb
+      # Install Disk Creator.app (Install Disk Creator-1.5.pkg) version 1.5
+    install_script:
+      path: ../lib/no-team/scripts/install-disk-creatorapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/install-disk-creatorapp-darwin-uninstall
+  - hash_sha256: 6709b7d2fe51d2ca5ed108bbd00b984f6fe1c7811dd1841a340640c015f1ebf2
+      # installer-window-title (SkypeForBusiness-16.31.11.pkg) version 16.31.11
+    install_script:
+      path: ../lib/no-team/scripts/installerwindowtitle-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/installerwindowtitle-darwin-uninstall
+  - hash_sha256: 2f5a7f4a85e24810297cb3ef63fd6d743df1c62edfc5e4ca3677c7b083bc2ff0
+      # iTunes (iTunes.exe) version 12.13.7.1
+    install_script:
+      path: ../lib/no-team/scripts/itunes-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/itunes-windows-uninstall
+  - hash_sha256: 5500f0322a2ec42e8b825b947ab10beceb8cee06577fd5205b51ab1c4eb08661
+      # Kite Student Portal (KiteStudentPortal.pkg) version 11.0.0
+    install_script:
+      path: ../lib/no-team/scripts/kite-student-portal-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/kite-student-portal-darwin-uninstall
+  - hash_sha256: 2ddba07c557673b851595729e14d1bb8d0fdc285509839bf39ac2d9d3a898029
+      # Less MSIérables (lessmsi) (lessmsi-gui.exe) version 1.3
+    install_script:
+      path: ../lib/no-team/scripts/less-msiérables-lessmsi-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/less-msiérables-lessmsi-windows-uninstall
+  - hash_sha256: d4c8903203097fc2043750903c7ed07564179a1a0a3357606c8a419fb15b8def
+      # libUCPluginCisco.dylib.dSYM (Install_Cisco-Jabber-Mac.pkg) version 15.1.0.309843
+    install_script:
+      path: ../lib/no-team/scripts/libucpluginciscodylibdsym-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/libucpluginciscodylibdsym-darwin-uninstall
+  - hash_sha256: 3d6df35579cfb389b966ec5e4c4a93b8c75ff06539e44de2cf7d6be839bbdd2d
+      # Maccy.app (Maccy_2.3.0.pkg) version 2.3.0
+    install_script:
+      path: ../lib/no-team/scripts/maccyapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/maccyapp-darwin-uninstall
+  - hash_sha256: b91f335b3027e1ff812dedc705d51d88ec55982fd36c6efe6a77f27e071d9fc3
+      # MacmillanEducationTeacher.app (MacmillanEducationTeacher-0.0.0.56.pkg) version 0.0.0
+    install_script:
+      path: ../lib/no-team/scripts/macmillaneducationteacherapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/macmillaneducationteacherapp-darwin-uninstall
+  - hash_sha256: 9133c74460b0e791f5cf9a9dcce1ac492d2e33d5e432d44815f2ef65b49846b5
+      # MacX DVD Ripper Pro.app (MacX DVD Ripper Pro-6.8.3.pkg) version 6.8.3
+    install_script:
+      path: ../lib/no-team/scripts/macx-dvd-ripper-proapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/macx-dvd-ripper-proapp-darwin-uninstall
+  - hash_sha256: d26becdcd1b1b493265278bacd9bcf0b64f601bbdfe3c2f7420d4527132835ea
+      # MacX Video Converter Pro.app (MacX Video Converter Pro-6.9.0.pkg) version 6.9.0
+    install_script:
+      path: ../lib/no-team/scripts/macx-video-converter-proapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/macx-video-converter-proapp-darwin-uninstall
+  - hash_sha256: 182f510d5d0e43305b71c15298a61fd8abf0e4e72f01b1b072f99f3fce54bb13
+      # Maestral.app (Maestral-1.9.4.pkg) version 1.9.4
+    install_script:
+      path: ../lib/no-team/scripts/maestralapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/maestralapp-darwin-uninstall
+  - hash_sha256: 68ce14809f7061b95d64608242906c55fe0a0911bebceb35c4d9b7070d49cef7
+      # Magic Number Machine.app (Magic Number Machine-1.0.32.pkg) version 1.0.32
+    install_script:
+      path: ../lib/no-team/scripts/magic-number-machineapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/magic-number-machineapp-darwin-uninstall
+  - hash_sha256: 15b9d1fb052fcbf0e983316fd8342ca4aa67067e33d1f58aa0ccd26b779624ac
+      # MailRaider Pro.app (MailRaider Pro-4.2.6.pkg) version 4.2.6
+    install_script:
+      path: ../lib/no-team/scripts/mailraider-proapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/mailraider-proapp-darwin-uninstall
+  - hash_sha256: 0ac4ceabf1ae1aa60c8a3260a10fe19be2aee18ef9d44ed5a1fd79aa53d550e7
+      # MakerBot Print (MakerBotPrint.pkg) version 4.10.1.7494
+    install_script:
+      path: ../lib/no-team/scripts/makerbot-print-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/makerbot-print-darwin-uninstall
+  - hash_sha256: 58ca4a1f67bbb8ede270f7179593189e66a0951ea126f2cb7596566df1668701
+      # Malwarebytes Anti-Malware.app (Malwarebytes Anti-Malware-1.3.1.pkg) version 1.3.1
+    install_script:
+      path: ../lib/no-team/scripts/malwarebytes-antimalwareapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/malwarebytes-antimalwareapp-darwin-uninstall
+  - hash_sha256: 3f9982fd0930fe328ad23efe471929a14d97b52781093d65454bda2a5b9b993f
+      # Marvel.app (Marvel-11.4.pkg) version 11.4
+    install_script:
+      path: ../lib/no-team/scripts/marvelapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/marvelapp-darwin-uninstall
+  - hash_sha256: 63432b6214fb1dbf9df4f4f237147e396cd277679d19e7b7e39610b5b3a726c3
+      # massdeploy (Fusion_Client_Install.pkg) version 1.0
+    install_script:
+      path: ../lib/no-team/scripts/massdeploy-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/massdeploy-darwin-uninstall
+  - hash_sha256: 4fdb568ac79743f1fb08a62ad522c0d3e34663020c06150f154a7acc7c924cbb
+      # Media Converter.app (Media Converter-3.0.2.pkg) version 3.0.2
+    install_script:
+      path: ../lib/no-team/scripts/media-converterapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/media-converterapp-darwin-uninstall
+  - hash_sha256: 532674164cc7c51b0a5feba5dad9b1af272ed5f0c1d7d4a1687a2e6bc98c31c2
+      # MediaInfo.app (MediaInfo-25.04.pkg) version 25.04
+    install_script:
+      path: ../lib/no-team/scripts/mediainfoapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/mediainfoapp-darwin-uninstall
+  - hash_sha256: 4960f7cad5f509d8e13d3c290f880ec49488b52a62de317102c50526c1d5711b
+      # MeisterTask.app (MeisterTask-3.0.10.pkg) version 3.0.10
+    install_script:
+      path: ../lib/no-team/scripts/meistertaskapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/meistertaskapp-darwin-uninstall
+  - hash_sha256: 0066f2ef8ff83d2fca9b07c98f0f1335736649abe3651969db152fc0ca4b9b0e
+      # Merlyn Origin.app (Merlyn Origin-2.8.1.pkg) version 2.8.1
+    install_script:
+      path: ../lib/no-team/scripts/merlyn-originapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/merlyn-originapp-darwin-uninstall
+  - hash_sha256: 1f052fc6aa95ded21ae0325cd961cfff81637397c05e7fcdeee05aac0fdf3e1d
+      # Metashape.app (Metashape-2.2.1.pkg) version 2.2.1
+    install_script:
+      path: ../lib/no-team/scripts/metashapeapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/metashapeapp-darwin-uninstall
+  - hash_sha256: 587ec60db5bdf06b596a189a77eff030600058399bca249b9aee7df0ff29c282
+      # Microsoft Advertising Editor.app (MicrosoftAdvertisingEditor-11.31.20184.52913.pkg) version 11.31.20184.52913
+    install_script:
+      path: ../lib/no-team/scripts/microsoft-advertising-editorapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/microsoft-advertising-editorapp-darwin-uninstall
+  - hash_sha256: 5e4cac055805c69bbc670b1188820d78bc33119bf66c2e81f2fe4c2710749b6c
+      # Microsoft AutoUpdate (Microsoft_AutoUpdate.pkg) version 4.79
+    install_script:
+      path: ../lib/no-team/scripts/microsoft-autoupdate-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/microsoft-autoupdate-darwin-uninstall
+  - hash_sha256: 23818f20bee706161eb21991c9cf49529519b80d2079f94bcef625ce69324f0f
+      # Microsoft Azure Storage Explorer.app (Microsoft Azure Storage Explorer-1.39.0.pkg) version 1.39.0
+    install_script:
+      path: ../lib/no-team/scripts/microsoft-azure-storage-explorerapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/microsoft-azure-storage-explorerapp-darwin-uninstall
+  - hash_sha256: cd71eda728b7a16eab9f0f92823558d37d20534f51319c259fb14e52b057006b
+      # Microsoft Defender (Microsoft_Defender.pkg) version 101.25042.0009
+    install_script:
+      path: ../lib/no-team/scripts/microsoft-defender-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/microsoft-defender-darwin-uninstall
+  - hash_sha256: 26cb54b84c88a955ba12138ad8cdd8b0a2f297e3f46973756abddcfec2169bff
+      # Microsoft Excel (MSExcel2016-16.16.20101200.pkg) version 16.16.27
+    install_script:
+      path: ../lib/no-team/scripts/microsoft-excel-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/microsoft-excel-darwin-uninstall
+  - hash_sha256: b8448a99359e4531515c96ee845bf7f04b80d6f99e0685b6ba5c1426c397dc2b
+      # Microsoft OneNote (MSOneNote2016-16.16.20101200.pkg) version 16.16.27
+    install_script:
+      path: ../lib/no-team/scripts/microsoft-onenote-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/microsoft-onenote-darwin-uninstall
+  - hash_sha256: 9acb7a86113bc12bbb61af35af7d42de779633ff48b4589010002cab1836c92e
+      # Microsoft Outlook (MSOutlook2016-16.16.20101200.pkg) version 16.16.27
+    install_script:
+      path: ../lib/no-team/scripts/microsoft-outlook-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/microsoft-outlook-darwin-uninstall
+  - hash_sha256: ffff171d4bc6a72e4e817c7be1d5388391b18b5fbfdbd5747d7171db6331688f
+      # Microsoft PowerPoint (MSPowerPoint2016-16.16.20101200.pkg) version 16.16.27
+    install_script:
+      path: ../lib/no-team/scripts/microsoft-powerpoint-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/microsoft-powerpoint-darwin-uninstall
+  - hash_sha256: 8514e981b070c67ffe34cecaacc94bd87486fd797ff46220ea85ef6205357add
+      # Mozilla Firefox 135.0.1 x64 en-US (Firefox_20Setup_20135.0.1.msi) version 135.0.1.0
+    install_script:
+      path: ../lib/no-team/scripts/mozilla-firefox-13501-x64-enus-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/mozilla-firefox-13501-x64-enus-windows-uninstall
+  - hash_sha256: 19dfeb9b49c00c61ef370819713b74f3bce85c11faa67fb47e012cb8798850b0
+      # MTI Player.app (MTI Player-1.2.1.pkg) version 1.2.1
+    install_script:
+      path: ../lib/no-team/scripts/mti-playerapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/mti-playerapp-darwin-uninstall
+  - hash_sha256: c7bf2ce6c695e5c927f19b26dc60d1a05581851b5dfaacf5f1cdd7b7ee0bc7d2
+      # NordLayer (NordLayer.pkg) version 3.6.2
+    install_script:
+      path: ../lib/no-team/scripts/nordlayer-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/nordlayer-darwin-uninstall
+  - hash_sha256: 3bb928bd9d8b0f2463411f4cac74ae782aaa5efbf9f9e8386d76ee159ad54dcf
+      # NordLocker (NordLocker.pkg) version 4.10.0
+    install_script:
+      path: ../lib/no-team/scripts/nordlocker-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/nordlocker-darwin-uninstall
+  - hash_sha256: 02439b5ba8df16687b53de58cb712e97545e9bec76e7fae5e2b81b35e082c728
+      # NordVPN (NordVPN.pkg) version 8.40.1
+    install_script:
+      path: ../lib/no-team/scripts/nordvpn-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/nordvpn-darwin-uninstall
+  - hash_sha256: 3f69d7d6d1cea65f15037474fcb578df26c5aac6973174af2a8af555ca504a61
+      # OneDrive (OneDrive.pkg) version 25.075.0420
+    install_script:
+      path: ../lib/no-team/scripts/onedrive-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/onedrive-darwin-uninstall
+  - hash_sha256: e89538a134738dfa71d5b80f8e4658cb812e0803115a760629380b851b608782
+      # org.xquartz.X11 (XQuartz-2.8.5.pkg) version 2.8.5
+    install_script:
+      path: ../lib/no-team/scripts/orgxquartzx11-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/orgxquartzx11-darwin-uninstall
+  - hash_sha256: 413ee1bce51f8d291ef51ebdb207ab038430f100ac8860af2808832acfb34e45
+      # pkg (EndNote-21.5.0.20846.pkg) version 21.5.0.20846
+    install_script:
+      path: ../lib/no-team/scripts/pkg-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/pkg-darwin-uninstall
+  - hash_sha256: a39517dd758fe657a215bb0881b8e8103219a5e5a47b9e91b8c4cf3dd7ba17fc
+      # Roaming Client (RoamingClient_MAC_3.0.29.pkg) version 3.0.29
+    install_script:
+      path: ../lib/no-team/scripts/roaming-client-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/roaming-client-darwin-uninstall
+  - hash_sha256: 6b4195e640a85ac32eb6f9628822a622057df1e459df7c17a12f97aeabc9415b
+      # Simple Launcher (t32.exe) version 1.1.0.14
+    install_script:
+      path: ../lib/no-team/scripts/simple-launcher-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/simple-launcher-windows-uninstall
+  - hash_sha256: f48c52e95044d4fdc89f01077ce53aebbee3d4f5bfb29a6ad232ea625c4f3d40
+      # StatusBarApp (WIFI dongle driver_5.0.9(MacOS 10.15).pkg) version 5.0.9.b6
+    install_script:
+      path: ../lib/no-team/scripts/statusbarapp-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/statusbarapp-darwin-uninstall
+  - hash_sha256: f97dfe8b0a1d7f7b05a706003a3e9cef5b2d1400b2ed5d0086f40b074411f859
+      # Thunderbird (Thunderbird-135.0.1.pkg) version 135.0.1
+    install_script:
+      path: ../lib/no-team/scripts/thunderbird-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/thunderbird-darwin-uninstall
+  - hash_sha256: 39b1b2eded08170e4afb0df90f351fa0c474d1a11935f5165221734d9567cc42
+      # Thunderbird (Thunderbird.exe) version 18.05
+    install_script:
+      path: ../lib/no-team/scripts/thunderbird-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/thunderbird-windows-uninstall
+  - hash_sha256: 9742689a50e96ddc04d80ceff046b28da2beefd617be18166f8c5e715ec60c59
+      # VLC-win64.exe (VLC-win64.exe) version 
+    install_script:
+      path: ../lib/no-team/scripts/vlcwin64exe-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/vlcwin64exe-windows-uninstall
+  - hash_sha256: 4bd03202b6633f9611b3fc8757880a9b2b38c7c0c40ed6bcbefec71c0099d493
+      # VLC.exe (VLC.exe) version 
+    install_script:
+      path: ../lib/no-team/scripts/vlcexe-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/vlcexe-windows-uninstall
+  - hash_sha256: a503618edc159fde28ebc30a3bc0fa0856bd4b4b315bc1009af7a425c64059b5
+      # VMware Tools (VMwareToolsUpgrader.exe) version 12.4.5 build-23787635
+    install_script:
+      path: ../lib/no-team/scripts/vmware-tools-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/vmware-tools-windows-uninstall
+  - hash_sha256: 43801ba648c39ce50a1b0055d4edaaa2573de1cd81435380f34f70d103e53ce2
+      # Windows App (MSRemoteDesktop-2520.pkg) version 11.1.1
+    install_script:
+      path: ../lib/no-team/scripts/windows-app-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/windows-app-darwin-uninstall
+  - hash_sha256: 009d1ea2ddf98da0ea748df65c2dc88ae16106a684f444a25a49f542413f8732
+      # YubiKey Manager (yubikey-manager-qt-1.2.5-mac.pkg) version 1.2.5
+    install_script:
+      path: ../lib/no-team/scripts/yubikey-manager-darwin-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/yubikey-manager-darwin-uninstall
+  - hash_sha256: ef86477aad666fb4ba208ccf3fcf0c3dfe90bb1389e63ed99cde956217078c1b
+      # Zoom Workplace (64-bit) (Zoom64.msi) version 6.5.6476
+    install_script:
+      path: ../lib/no-team/scripts/zoom-workplace-64bit-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/zoom-workplace-64bit-windows-uninstall
+  - hash_sha256: 077b49b74f5b122dc06b03dd88919bbbf3b506c4628f9998f8e1648d57e22d6d
+      # Zotero (Zotero.exe) version 7.0
+    install_script:
+      path: ../lib/no-team/scripts/zotero-windows-install
+    uninstall_script:
+      path: ../lib/no-team/scripts/zotero-windows-uninstall
