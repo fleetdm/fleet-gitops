@@ -21,6 +21,14 @@ org_settings:
     enable_host_users: true
     enable_software_inventory: true
   sso_settings:
+    enable_jit_provisioning: true
+    enable_sso: true
+    enable_sso_idp_login: true
+    entity_id: fleetsso
+    idp_image_url: ""
+    idp_name: Okta
+    metadata: 
+    metadata_url: "https://dev-66479709.okta.com/app/exknouxjb8ILG2lM95d7/sso/saml/metadata"
   mdm:
     apple_business_manager:
     - organization_name: Fleet Device Management Inc.
