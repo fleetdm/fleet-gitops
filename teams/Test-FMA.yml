@@ -21,3 +21,5 @@ software:
   packages:
   app_store_apps:
   fleet_maintained_apps:
+    - slug: google-chrome/darwin
+      self_service: true
