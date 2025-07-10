@@ -1,0 +1,6 @@
+- name: Ensure Cloudflare DNS is used
+  query: SELECT 1 FROM dns_resolvers WHERE type='nameserver' AND address = '1.1.1.1' 
+  critical: false
+  description: This device is not using Cloudflare DNS, which may lead to slower DNS resolution times and potential security risks.
+  resolution: Change the DNS resolver to Cloudflare at 1.1.1.1
+  platform: darwin
