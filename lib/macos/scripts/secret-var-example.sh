@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "$FLEET_SECRET_EXAMPLE_PASSWORD"
