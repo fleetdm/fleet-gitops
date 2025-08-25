@@ -1,3 +1,4 @@
+# This is a script added via GitOps
 $exitCode = $process.ExitCode
 
 # Prints the exit code
