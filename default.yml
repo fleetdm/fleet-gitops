@@ -38,5 +38,5 @@ org_settings:
       - "Workstations"
 labels:
   - path: ./lib/all/labels/test1.yml
-  - path: ./lib/all/labels/design-label.yml
-  - path: ./lib/all/labels/sales-label.yml
+  - path: ./lib/all/labels/design_label.yml
+  - path: ./lib/all/labels/sales_label.yml
