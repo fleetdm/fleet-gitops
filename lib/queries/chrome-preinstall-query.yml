@@ -1,1 +1,2 @@
-SELECT * FROM osquery_info WHERE start_time > 1;
+- name: "[Pre-install software] Insomnia (pkg)"
+  query: SELECT * FROM apps WHERE name !='something';
