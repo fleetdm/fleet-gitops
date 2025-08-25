@@ -1,3 +1,4 @@
+# This is a script added via GitOps
 $exeFilePath = "${env:INSTALLER_PATH}"
 
 try {
