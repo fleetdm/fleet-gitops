@@ -49,5 +49,7 @@ jobs:
           FLEET_SECRET_MESSAGE_LONG: ${{ secrets.FLEET_SECRET_MESSAGE_LONG }}
           FLEET_GIT_OPS_1: ${{ secrets.FLEET_GIT_OPS_1 }}
           FLEET_SECRET_TEST_MESSAGE: ${{ secrets.FLEET_SECRET_TEST_MESSAGE }}
+          FLEET_SECRET_TEST_MESSAGE_NEW: ${{ secrets.FLEET_SECRET_TEST_MESSAGE_NEW }}
+          
           
           
