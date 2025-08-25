@@ -26,7 +26,6 @@ controls:
     - path: ../lib/batch-scripts/profiles/fleetdm-macos-password-expiry.mobileconfig
     - path: ../lib/batch-scripts/profiles/turn-on-set-time-and-date-automatically.mobileconfig
     - path: ../lib/batch-scripts/profiles/secret.json
-    - path: ../lib/batch-scripts/profiles/secret.xml
     - path: ../lib/batch-scripts/profiles/secret.mobileconfig
   macos_updates:
     deadline: "2024-07-01"
