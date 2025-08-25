@@ -18,7 +18,7 @@
         </dict>
     </array>
     <key>PayloadDisplayName</key>
-    <string>$FLEET_SECRET_MESSAGE</string>
+    <string>Disable guest account</string>
     <key>PayloadIdentifier</key>
     <string>com.fleet.disable-guest-account</string>
     <key>PayloadType</key>

@@ -1,7 +1,7 @@
 {
     "Type": "com.apple.configuration.management.test",
     "Payload": {
-        "Echo": "$FLEET_SECRET_MESSAGE"
+        "Echo": "KMFDDM"
     },
     "Identifier": "io.macadmins.config.test"
 }
