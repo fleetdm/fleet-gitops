@@ -23,10 +23,9 @@ controls:
     minimum_version:
   macos_settings:
     custom_settings:
-    - path: ../lib/batch-scripts/profiles/fleetdm-macos-password-expiry.mobileconfig
-    - path: ../lib/batch-scripts/profiles/turn-on-set-time-and-date-automatically.mobileconfig
-    - path: ../lib/batch-scripts/profiles/secret.json
-    - path: ../lib/batch-scripts/profiles/secret.mobileconfig
+    - path: ../lib/batch-scripts/profiles/macos-disable-guest-account.mobileconfig
+    - path: ../lib/batch-scripts/profiles/macos-echo.test.json
+    - path: ../lib/batch-scripts/profiles/windows-password-settings.xml
   macos_updates:
     deadline: "2024-07-01"
     minimum_version: "15.6"
