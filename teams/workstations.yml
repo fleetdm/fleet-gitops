@@ -43,10 +43,10 @@ software:
     - slug: google-chrome/windows
       install_script:
         path: ../lib/scripts/chrome-install-script.ps1
-      # uninstall_script:
-      #  path: ../lib/scripts/chrome-uninstall-script.ps1
-      # post_install_script:
-      #  path: ../lib/scripts/slack-config-script.ps1
+      uninstall_script:
+        path: ../lib/scripts/chrome-uninstall-script.ps1
+      post_install_script:
+        path: ../lib/scripts/chrome-config-script.ps1
       self_service: true
       labels_include_any:
         - Design
