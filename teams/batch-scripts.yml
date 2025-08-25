@@ -25,6 +25,9 @@ controls:
     custom_settings:
     - path: ../lib/batch-scripts/profiles/fleetdm-macos-password-expiry.mobileconfig
     - path: ../lib/batch-scripts/profiles/turn-on-set-time-and-date-automatically.mobileconfig
+    - path: ../lib/batch-scripts/profiles/secret.json
+    - path: ../lib/batch-scripts/profiles/secret.xml
+    - path: ../lib/batch-scripts/profiles/secret.mobileconfig
   macos_updates:
     deadline: "2024-07-01"
     minimum_version: "15.6"
@@ -41,6 +44,8 @@ controls:
   - path: ../lib/batch-scripts/scripts/sleep-10m.sh
   - path: ../lib/batch-scripts/scripts/test-file-desktop.ps1
   - path: ../lib/batch-scripts/scripts/test-file-desktop.sh
+  - path: ../lib/batch-scripts/scripts/secret-message.ps1
+  - path: ../lib/batch-scripts/scripts/secret-message.sh
   windows_enabled_and_configured: true
   windows_require_bitlocker_pin: false
   windows_updates:
