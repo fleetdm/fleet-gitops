@@ -1,0 +1,5 @@
+- name: Sales
+  description: Sales Label
+  label_membership_type: manual
+  hosts:
+    - "JANISWATTSEBA4"
