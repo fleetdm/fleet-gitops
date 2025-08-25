@@ -1,10 +1,48 @@
-# Teams are available in Fleet Premium.
-
-# This file updates policies, controls, and software for hosts assigned to "No team."
-
-# To update queries and agent options for hosts assigned to "No team," use the default.yml file.
-
+controls:
+  enable_disk_encryption: true  
+  ios_updates:
+    deadline:
+    minimum_version:
+  ipados_updates:
+    deadline:
+    minimum_version:
+  macos_migration:
+    enable: false
+    mode: forced
+    webhook_url: https://quomoquize5842.andrey.docun.ngrok.app
+  macos_settings:
+    custom_settings:
+    - path: ../lib/no-team/profiles/1password-managed-settings.mobileconfig
+    - path: ../lib/no-team/profiles/disable-content-caching.mobileconfig
+    - path: ../lib/no-team/profiles/turn-off-ad-tracking-and-personalized-ads.mobileconfig
+    - path: ../lib/no-team/profiles/turn-on-library-validation.mobileconfig
+    - path: ../lib/no-team/profiles/turn-on-set-time-and-date-automatically.mobileconfig
+    - path: ../lib/no-team/profiles/various-restriction-settings.mobileconfig
+  macos_updates:
+    deadline: "2024-08-08"
+    minimum_version: "15.6"
+  macos_setup: 
+  scripts:
+  - path: ../lib/no-team/scripts/read_identifier.ps1
+  - path: ../lib/no-team/scripts/read_identifier.sh
+  windows_enabled_and_configured: true
+  windows_migration_enabled: true
+  windows_require_bitlocker_pin: true
+  windows_updates:
+    deadline_days:
+    grace_period_days:
 name: No team
 policies:
-controls: # This cannot be set here and in default.yml
+- calendar_events_enabled: false
+  conditional_access_enabled: false
+  critical: false
+  description: |-
+    Policy triggers automatic install of htop on each host that's missing this software.
+    Software won't be installed on Linux hosts with Debian-based distributions because this policy's query is written to always pass on these hosts.
+  name: '[Install software] htop (rpm)'
+  platform: linux
+  query: "SELECT 1 \nWHERE \n  (SELECT COUNT(*) FROM rpm_packages) = 0 \n  OR EXISTS
+    (\n    SELECT 1 \n    FROM rpm_packages \n    WHERE name = 'htop' \n      AND
+    version_compare(version, '3.2.2') >= 0\n  );"
+  resolution:
 software:

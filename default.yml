@@ -1,22 +1,156 @@
-# For Fleet Free:
-# - This file updates policies, queries, agent_options, and controls for all hosts.
-
-# For Fleet Premium:
-# - This file updates policies and queries that run on all hosts ("All teams").
-# - Remove "controls" and add this to your YAML files in teams/ instead.
-
-policies:
-queries:
 agent_options:
-  path: ./lib/agent-options.yml
-controls: # This cannot be set here and in no-team.yml
+  config:
+    decorators:
+      load:
+      - SELECT uuid AS host_uuid FROM system_info;
+      - SELECT hostname AS hostname FROM system_info;
+    options:
+      disable_distributed: false
+      distributed_interval: 10
+      distributed_plugin: tls
+      distributed_tls_max_attempts: 3
+      logger_tls_endpoint: /api/osquery/log
+      logger_tls_period: 10
+      pack_delimiter: /
+  overrides:
+labels:
+- description:
+  label_membership_type: dynamic
+  name: MacOS only > Windows only
+  platform: windows
+  query: SELECT 1 FROM os_version WHERE major >= 1;
+- description:
+  label_membership_type: dynamic
+  name: Windows and MacOS
+  platform: windows, darwin
+  query: SELECT 1 FROM os_version WHERE major >= 1;
+- description:
+  label_membership_type: dynamic
+  name: Ubuntu only > MacOS only
+  platform: darwin
+  query: SELECT 1 FROM os_version WHERE major >= 1;
+- description:
+  hosts:
+  - andreys-macbook-pro.local
+  label_membership_type: manual
+  name: Mini > Pro
+- description:
+  hosts:
+  - Andreys-Mac-mini.local
+  label_membership_type: manual
+  name: Pro > Mini
 org_settings:
-  server_settings:
-    server_url: $FLEET_URL
-  org_info:
-    org_name: Fleet
-  secrets:
-    - secret: "$FLEET_GLOBAL_ENROLL_SECRET"
   features:
     enable_host_users: true
     enable_software_inventory: true
+  fleet_desktop:
+  host_expiry_settings:
+    host_expiry_enabled: false
+    host_expiry_window: 0
+  integrations:
+    conditional_access_enabled: false
+    custom_scep_proxy:
+    digicert:
+    google_calendar:
+    jira:
+    ndes_scep_proxy:
+    zendesk:
+  mdm:
+    apple_business_manager:
+    apple_server_url:
+    end_user_authentication:
+      entity_id: eua
+      idp_name: OKTA
+      issuer_uri:
+      metadata:
+      metadata_url: $FLEET_MDM_SSO_METADATA # TODO: Add your MDM end user auth metadata URL here
+    end_user_license_agreement:
+    volume_purchasing_program:
+    - location: Andrey Kizimenko
+      teams:
+      - Default ADE team
+  org_info:
+    contact_url: https://fleetdm.com/company/contact
+    org_logo_url:
+    org_logo_url_light_background:
+    org_name: TestQA
+  secrets:
+  - secret: $FLEET_GLOBAL_ENROLL_SECRET # TODO: Add your enroll secrets here
+  server_settings:
+    ai_features_disabled: false
+    deferred_save_host: false
+    enable_analytics: true
+    live_query_disabled: false
+    query_report_cap: 0
+    query_reports_disabled: false
+    scripts_disabled: false
+    server_url: $FLEET_URL
+  sso_settings:
+  webhook_settings:
+    activities_webhook:
+      destination_url:
+      enable_activities_webhook: false
+    failing_policies_webhook:
+      destination_url:
+      enable_failing_policies_webhook: false
+      host_batch_size: 0
+      policy_ids:
+    host_status_webhook:
+      days_count: 0
+      destination_url:
+      enable_host_status_webhook: false
+      host_percentage: 0
+    interval: 24h0m0s
+    vulnerabilities_webhook:
+      destination_url:
+      enable_vulnerabilities_webhook: false
+      host_batch_size: 0
+  yara_rules:
+policies:
+- calendar_events_enabled: false
+  conditional_access_enabled: false
+  critical: false
+  description:
+  name: Test
+  platform: darwin,windows,linux,chrome
+  query: SELECT 1 FROM osquery_info WHERE start_time > 1;
+  resolution:
+- calendar_events_enabled: false
+  conditional_access_enabled: false
+  critical: false
+  description:
+  name: Test123
+  platform: darwin,windows,chrome
+  query: SELECT 1 FROM osquery_info WHERE start_time > 1;
+  resolution:
+queries:
+- automations_enabled: false
+  description:
+  discard_data: false
+  interval: 3600
+  logging: snapshot
+  min_osquery_version:
+  name: Test Query
+  observer_can_run: false
+  platform: darwin,windows,linux,chrome
+  query: SELECT * FROM osquery_info;
+- automations_enabled: false
+  description:
+  discard_data: false
+  interval: 3600
+  logging: snapshot
+  min_osquery_version:
+  name: Test1
+  observer_can_run: false
+  platform: darwin,windows,linux,chrome
+  query: SELECT * FROM osquery_info;
+- automations_enabled: false
+  description:
+  discard_data: false
+  interval: 3600
+  logging: snapshot
+  min_osquery_version:
+  name: Test2
+  observer_can_run: false
+  platform: darwin,windows,linux,chrome
+  query: SELECT * FROM osquery_info;
