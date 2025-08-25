@@ -5,7 +5,7 @@
     <key>PayloadContent</key>
     <array>
         <dict>
-            <key>DisableGuestAccount</key>
+            <key>$FLEET_SECRET_MESSAGE</key>
             <true/>
             <key>PayloadIdentifier</key>
             <string>com.example.myaccountpayload</string>
