@@ -25,7 +25,6 @@ controls:
     custom_settings:
     - path: ../lib/batch-scripts/profiles/macos-disable-guest-account.mobileconfig
     - path: ../lib/batch-scripts/profiles/macos-echo.test.json
-    - path: ../lib/batch-scripts/profiles/windows-password-settings.xml
   macos_updates:
     deadline: "2024-07-01"
     minimum_version: "15.6"
