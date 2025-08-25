@@ -41,6 +41,8 @@ software:
     - slug: google-chrome/darwin
       self_service: true
     - slug: google-chrome/windows
+      pre_install_query:
+        path: ./lib/queries/chrome-preinstall-query.yml
       install_script:
         path: ../lib/scripts/chrome-install-script.ps1
       uninstall_script:
