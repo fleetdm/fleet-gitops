@@ -1,3 +1,4 @@
+# This is a script added via GitOps
 $softwareName = "Google Chrome"
 
 $uninstallArgs = "--uninstall"
