@@ -47,4 +47,5 @@ jobs:
           FLEET_WINDOWS_PIN_ENROLL_SECRET: ${{ secrets.FLEET_WINDOWS_PIN_ENROLL_SECRET }}
           FLEET_SECRET_MESSAGE: ${{ secrets.FLEET_SECRET_MESSAGE }}
           FLEET_SECRET_MESSAGE_LONG: ${{ secrets.FLEET_SECRET_MESSAGE_LONG }}
+          FLEET_GIT_OPS_1: ${{ secrets.FLEET_GIT_OPS_1 }}
           
