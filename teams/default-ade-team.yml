@@ -25,7 +25,7 @@ controls:
     custom_settings:
     - path: ../lib/default-ade-team/profiles/fleetdm-macos-password-expiry.mobileconfig
     - path: ../lib/default-ade-team/profiles/macospasscodesettings.json
-  macos_setup: 'TODO: update with your macos_setup configuration'
+  macos_setup: 
   macos_updates:
     deadline: "2024-08-08"
     minimum_version: "15.6"
