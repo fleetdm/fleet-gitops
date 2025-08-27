@@ -64,7 +64,6 @@ org_settings:
       issuer_uri:
       metadata:
       metadata_url: $FLEET_MDM_SSO_METADATA # TODO: Add your MDM end user auth metadata URL here
-    end_user_license_agreement:
     volume_purchasing_program:
     - location: Andrey Kizimenko
       teams:
