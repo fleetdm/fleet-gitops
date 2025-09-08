@@ -12,7 +12,7 @@ fleet-gitops:
         FLEET_DRY_RUN_ONLY: false
   before_script:
     - apt-get -qq update
-    - apt-get install -y jq=1.6-2.1
+    - apt-get install -y 'jq=1.6-2.1*'
   script:
     - >
       FLEET_VERSION="$(curl "$FLEET_URL/api/v1/fleet/version" --header "Authorization: Bearer $FLEET_API_TOKEN" --fail --silent | jq --raw-output '.version')"
