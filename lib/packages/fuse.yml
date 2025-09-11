@@ -1,0 +1,11 @@
+# fuse  (fuse_osx_1_9_0.pkg) version 1.9.0
+url: https://github.com/fuse-open/fuse-studio/releases/download/1.9.0/fuse_osx_1_9_0.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+
