@@ -1,0 +1,11 @@
+# enclave  (enclave_osx-installer-x64-stable-2025.6.2.pkg) version 2025.6.2
+url: https://release.enclave.io/enclave_osx-installer-x64-stable-2025.6.2.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

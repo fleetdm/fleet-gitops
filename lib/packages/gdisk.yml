@@ -1,5 +1,5 @@
-# airtool  (Airtool_2.6.2.pkg) version 2.6.2
-url: https://www.intuitibits.com/downloads/Airtool_2.6.2.pkg
+# gdisk  (gdisk-1.0.10.pkg) version 1.0.10
+url: https://downloads.sourceforge.net/gptfdisk/gdisk-1.0.10.pkg
 self_service: true
 labels_include_any: 
   - test1

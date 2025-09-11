@@ -1,5 +1,5 @@
-# airtool  (Airtool_2.6.2.pkg) version 2.6.2
-url: https://www.intuitibits.com/downloads/Airtool_2.6.2.pkg
+# ltspice  (LTspice.pkg) version unknown
+url: https://ltspice.analog.com/software/LTspice.pkg
 self_service: true
 labels_include_any: 
   - test1

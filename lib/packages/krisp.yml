@@ -1,5 +1,5 @@
-# airtool  (Airtool_2.6.2.pkg) version 2.6.2
-url: https://www.intuitibits.com/downloads/Airtool_2.6.2.pkg
+# krisp  (Krisp_3.5.7_arm64.pkg) version 3.5.7
+url: https://cdn.krisp.ai/mp/mn/3.5/mac/Krisp_3.5.7_arm64.pkg
 self_service: true
 labels_include_any: 
   - test1

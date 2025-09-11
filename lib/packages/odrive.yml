@@ -1,5 +1,5 @@
-# airtool  (Airtool_2.6.2.pkg) version 2.6.2
-url: https://www.intuitibits.com/downloads/Airtool_2.6.2.pkg
+# odrive  (odrivesync.7514.pkg) version unknown
+url: https://d3huse1s6vwzq6.cloudfront.net/odrivesync.7514.pkg
 self_service: true
 labels_include_any: 
   - test1

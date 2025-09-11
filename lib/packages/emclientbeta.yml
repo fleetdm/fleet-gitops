@@ -1,5 +1,5 @@
-# airtool  (Airtool_2.6.2.pkg) version 2.6.2
-url: https://www.intuitibits.com/downloads/Airtool_2.6.2.pkg
+# emclient@beta  (setup.pkg) version 10.0.2362
+url: https://cdn-dist.emclient.com/dist/v10.0.2362_Mac/setup.pkg
 self_service: true
 labels_include_any: 
   - test1

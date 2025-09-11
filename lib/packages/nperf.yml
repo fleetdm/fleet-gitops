@@ -1,5 +1,5 @@
-# airtool  (Airtool_2.6.2.pkg) version 2.6.2
-url: https://www.intuitibits.com/downloads/Airtool_2.6.2.pkg
+# nperf  (nPerf-arm64-2.15.6.pkg) version 2.15.6
+url: https://repo.nperf.com/macos/nperf/nPerf-arm64-2.15.6.pkg
 self_service: true
 labels_include_any: 
   - test1

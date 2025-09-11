@@ -1,0 +1,11 @@
+# bluestacks  (BlueStacksInstaller_5.21.735.7518.pkg) version 5.21.735
+url: https://ak-build.bluestacks.com/public/app-player/mac/nxt_mac2/5.21.735.7518/e367bd246009485ea7f7121aff818f32/BlueStacksInstaller_5.21.735.7518.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

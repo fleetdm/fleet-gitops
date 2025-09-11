@@ -1,5 +1,5 @@
-# airtool  (Airtool_2.6.2.pkg) version 2.6.2
-url: https://www.intuitibits.com/downloads/Airtool_2.6.2.pkg
+# repoz  (RepoZ.5.5.pkg) version unknown
+url: https://github.com/awaescher/RepoZ/releases/download/v5.5/RepoZ.5.5.pkg
 self_service: true
 labels_include_any: 
   - test1
