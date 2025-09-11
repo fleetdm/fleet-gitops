@@ -1,0 +1,11 @@
+# docker-toolbox  (DockerToolbox-19.03.1.pkg) version 19.03.1
+url: https://github.com/docker/toolbox/releases/download/v19.03.1/DockerToolbox-19.03.1.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

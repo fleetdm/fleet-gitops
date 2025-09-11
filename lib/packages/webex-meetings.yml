@@ -1,0 +1,11 @@
+# webex-meetings  (Cisco_Webex_Meetings.pkg) version unknown
+url: https://akamaicdn.webex.com/client/Cisco_Webex_Meetings.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

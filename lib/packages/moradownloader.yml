@@ -1,0 +1,11 @@
+# moradownloader  (MoraDownloader.pkg) version unknown
+url: https://downloader.mora.jp/mac/MoraDownloader.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

@@ -1,0 +1,11 @@
+# bankid  (BankID_installation_7_15_2.pkg) version unknown
+url: https://cdn.bankid.com/bisp/mac/BankID_installation_7_15_2.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

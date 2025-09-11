@@ -1,0 +1,11 @@
+# epichrome  (epichrome-2.4.26.pkg) version 2.4.26
+url: https://github.com/dmarmor/epichrome/releases/download/v2.4.26/epichrome-2.4.26.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

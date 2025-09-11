@@ -1,0 +1,11 @@
+# dyalog  (mac_64_19.0.50027_unicode.pkg) version 19.0.50027
+url: https://www.dyalog.com/uploads/php/download.dyalog.com/download.php?file=19.0/mac_64_19.0.50027_unicode.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

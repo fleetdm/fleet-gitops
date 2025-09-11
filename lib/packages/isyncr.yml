@@ -1,0 +1,11 @@
+# isyncr  (iSyncr%20Desktop%206.1.0.pkg) version 206.1.0
+url: https://www.jrtstudio.com/files/iSyncr%20Desktop%206.1.0.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+
