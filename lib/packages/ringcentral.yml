@@ -1,0 +1,11 @@
+# ringcentral  (RingCentral-arm64.pkg) version unknown
+url: https://app.ringcentral.com/download/RingCentral-arm64.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

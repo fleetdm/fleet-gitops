@@ -1,0 +1,11 @@
+# arturia-software-center  (Arturia_Software_Center__2_10_0_2970.pkg) version unknown
+url: https://dl.arturia.net/products/asc/soft/Arturia_Software_Center__2_10_0_2970.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

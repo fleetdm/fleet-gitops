@@ -1,0 +1,11 @@
+# hiarcs-chess-explorer  (HIARCS-Chess-Explorer-Installer-v1.13.pkg) version unknown
+url: https://www.hiarcs.com/hce/HIARCS-Chess-Explorer-Installer-v1.13.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

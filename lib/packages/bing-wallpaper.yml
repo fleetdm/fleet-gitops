@@ -1,0 +1,11 @@
+# bing-wallpaper  (Bing%20Wallpaper.pkg) version 1.1.8
+url: https://download.microsoft.com/download/3a8e7366-aac0-4636-bc1d-a3c6c217accf/Installer/1.1.8/MSN/Var1/MW021/Bing%20Wallpaper.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

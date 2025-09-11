@@ -1,0 +1,11 @@
+# epoccam  (EpocCam_Installer_3_4_1.pkg) version unknown
+url: https://edge.elgato.com/egc/macos/epoccam/EpocCam_Installer_3_4_1.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

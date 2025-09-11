@@ -1,0 +1,11 @@
+# enpass  (Enpass.pkg) version 6.11.14
+url: https://dl.enpass.io/stable/mac/package/6.11.14.2071/Enpass.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

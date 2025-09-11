@@ -1,0 +1,11 @@
+# feem  (Feem_Mac_4.4.2_beta_Installer.pkg) version 4.4.2
+url: https://f000.backblazeb2.com/file/feemdownloads/Feem_Mac_4.4.2_beta_Installer.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

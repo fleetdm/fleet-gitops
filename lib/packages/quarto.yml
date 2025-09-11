@@ -1,0 +1,11 @@
+# quarto  (quarto-1.7.34-macos.pkg) version 1.7.34
+url: https://github.com/quarto-dev/quarto-cli/releases/download/v1.7.34/quarto-1.7.34-macos.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

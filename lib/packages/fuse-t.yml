@@ -1,0 +1,11 @@
+# fuse-t  (fuse-t-macos-installer-1.0.49.pkg) version 1.0.49
+url: https://github.com/macos-fuse-t/fuse-t/releases/download/1.0.49/fuse-t-macos-installer-1.0.49.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

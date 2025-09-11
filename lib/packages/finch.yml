@@ -1,0 +1,11 @@
+# finch  (Finch-v1.11.0-aarch64.pkg) version 1.11.0
+url: https://github.com/runfinch/finch/releases/download/v1.11.0/Finch-v1.11.0-aarch64.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

@@ -1,0 +1,11 @@
+# arq  (Arq7.36.2.pkg) version 7.36.2
+url: https://www.arqbackup.com/download/arqbackup/Arq7.36.2.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

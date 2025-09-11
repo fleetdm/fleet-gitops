@@ -1,0 +1,11 @@
+# foxitreader  (FoxitPDFReader20252.L10N.Setup.pkg) version unknown
+url: https://cdn01.foxitsoftware.com/pub/foxit/phantomPDF/desktop/mac/2025.x/2025.2/FoxitPDFReader20252.L10N.Setup.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

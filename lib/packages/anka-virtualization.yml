@@ -1,0 +1,11 @@
+# anka-virtualization  (Anka-3.7.4.205.pkg) version 3.7.4
+url: https://downloads.veertu.com/anka/Anka-3.7.4.205.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+
