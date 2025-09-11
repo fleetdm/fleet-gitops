@@ -1,0 +1,11 @@
+# dotnet-sdk@8  (dotnet-sdk-8.0.414-osx-arm64.pkg) version 8.0.414
+url: https://builds.dotnet.microsoft.com/dotnet/Sdk/8.0.414/dotnet-sdk-8.0.414-osx-arm64.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

@@ -1,0 +1,11 @@
+# desktoppr  (desktoppr-0.5-218.pkg) version unknown
+url: https://github.com/scriptingosx/desktoppr/releases/download/v0.5/desktoppr-0.5-218.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+
