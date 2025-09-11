@@ -1,0 +1,11 @@
+# azookey  (azooKey-release-signed.pkg) version unknown
+url: https://github.com/azooKey/azooKey-Desktop/releases/download/v0.1/azooKey-release-signed.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

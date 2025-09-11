@@ -1,0 +1,11 @@
+# aws-vpn-client  (AWS_VPN_Client.pkg) version 5.3.1
+url: https://d20adtppz83p9s.cloudfront.net/OSX/5.3.1/AWS_VPN_Client.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

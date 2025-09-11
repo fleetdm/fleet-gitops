@@ -1,0 +1,11 @@
+# clip-studio-paint  (CSP_414m_app.pkg) version unknown
+url: https://vd.clipstudio.net/clipcontent/paint/app/414/CSP_414m_app.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

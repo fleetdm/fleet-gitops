@@ -1,0 +1,11 @@
+# clamxav  (ClamXAV_3.9.1_11136_Installer.pkg) version 3.9.1
+url: https://cdn.clamxav.com/ClamXAVdownloads/ClamXAV_3.9.1_11136_Installer.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

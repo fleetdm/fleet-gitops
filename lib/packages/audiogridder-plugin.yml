@@ -1,0 +1,11 @@
+# audiogridder-plugin  (AudioGridderPlugin_1.2.0_1_macOS-universal.pkg) version 1.2.0
+url: https://audiogridder.com/releases/AudioGridderPlugin_1.2.0_1_macOS-universal.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

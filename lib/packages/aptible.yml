@@ -1,0 +1,11 @@
+# aptible  (aptible-toolbelt-0.25.0%2B20250825144101-mac-os-x.10.15.7-1.pkg) version 0.25.0
+url: https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/gh-64/pkg/aptible-toolbelt-0.25.0%2B20250825144101-mac-os-x.10.15.7-1.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

@@ -1,0 +1,11 @@
+# cardinal  (Cardinal-macOS-universal-25.06.pkg) version unknown
+url: https://github.com/DISTRHO/Cardinal/releases/download/25.06/Cardinal-macOS-universal-25.06.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

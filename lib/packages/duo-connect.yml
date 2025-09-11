@@ -1,0 +1,11 @@
+# duo-connect  (DuoConnect-2.0.7.pkg) version 2.0.7
+url: https://dl.duosecurity.com/DuoConnect-2.0.7.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

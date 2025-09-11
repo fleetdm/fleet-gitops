@@ -1,0 +1,11 @@
+# autogram  (Autogram-2.5.0-MacOs.pkg) version 2.5.0
+url: https://github.com/slovensko-digital/autogram/releases/download/v2.5.0/Autogram-2.5.0-MacOs.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

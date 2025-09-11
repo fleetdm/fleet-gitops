@@ -1,0 +1,11 @@
+# concept2-utility  (Concept2Utility71700.pkg) version unknown
+url: https://software.concept2.com/utility/Concept2Utility71700.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

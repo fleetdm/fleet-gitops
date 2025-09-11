@@ -1,0 +1,11 @@
+# kindle-create  (KindleCreateInstaller.pkg) version unknown
+url: https://d2bzeorukaqrvt.cloudfront.net/KindleCreateInstaller.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

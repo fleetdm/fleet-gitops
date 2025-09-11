@@ -1,0 +1,11 @@
+# fujifilm-tether-app  (FUJIFILM_TetherApp_Mac1340.pkg) version unknown
+url: https://dl.fujifilm-x.com/support/software/tether-app-mac1340-ym6rhx10/FUJIFILM_TetherApp_Mac1340.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

@@ -1,0 +1,11 @@
+# alfaview  (alfaview-mac-production-9.22.12.pkg) version 9.22.12
+url: https://assets.alfaview.com/stable/mac/alfaview-mac-production-9.22.12.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

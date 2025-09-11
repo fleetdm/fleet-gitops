@@ -1,0 +1,11 @@
+# citrix-workspace  (CitrixWorkspaceAppUniversal25.05.10.16.pkg) version 25.05.10
+url: https://downloadplugins.citrix.com/ReceiverUpdates/Prod/Receiver/Mac/CitrixWorkspaceAppUniversal25.05.10.16.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+
