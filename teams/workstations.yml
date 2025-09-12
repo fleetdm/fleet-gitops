@@ -28,6 +28,28 @@ software:
   packages:
     - path: ../lib/packages/1password-cli1.yml
     - path: ../lib/packages/adoptopenjdk.yml
+    - path: ../lib/packages/airmedia.yml
+    - path: ../lib/packages/airtool.yml
+    - path: ../lib/packages/alfaview.yml
+    - path: ../lib/packages/amazon-workdocs-drive.yml
+    - path: ../lib/packages/anka-build-cloud-controller-and-registry.yml
+    - path: ../lib/packages/anka-build-cloud-controller.yml
+    - path: ../lib/packages/anka-build-cloud-registry.yml
+    - path: ../lib/packages/anka-virtualization.yml
+    - path: ../lib/packages/aptible.yml
+    - path: ../lib/packages/aquaskk.yml
+    - path: ../lib/packages/arq.yml
+    - path: ../lib/packages/arturia-software-center.yml
+    - path: ../lib/packages/audiogridder-plugin.yml
+    - path: ../lib/packages/audiogridder-server.yml
+    - path: ../lib/packages/autogram.yml
+    - path: ../lib/packages/aviatrix-vpn-client.yml
+    - path: ../lib/packages/aws-vpn-client.yml
+    - path: ../lib/packages/azookey.yml
+    - path: ../lib/packages/background-music.yml
+    - path: ../lib/packages/bankid.yml
+    - path: ../lib/packages/banking-4.yml
+    - path: ../lib/packages/basictex.yml
   app_store_apps:
     - app_store_id: '803453959' # Slack Desktop
       self_service: true
