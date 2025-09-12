@@ -50,7 +50,6 @@ software:
     - path: ../lib/packages/bankid.yml
     - path: ../lib/packages/banking-4.yml
     - path: ../lib/packages/basictex.yml
-    - path: ../lib/packages/battlescribe.yml
     - path: ../lib/packages/bing-wallpaper.yml
     - path: ../lib/packages/bitfocus-buttons.yml
     - path: ../lib/packages/blackhole-16ch.yml
