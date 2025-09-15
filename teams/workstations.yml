@@ -126,6 +126,8 @@ software:
     - path: ../lib/packages/fuse.yml
     - path: ../lib/packages/fx-cast-bridge.yml
     - path: ../lib/packages/galaxybudsclient.yml
+    - path: ../lib/packages/codium-linux-amd.yml
+    - path: ../lib/packages/codium-windows-x64.yml
   app_store_apps:
     - app_store_id: '803453959' # Slack Desktop
       self_service: true
