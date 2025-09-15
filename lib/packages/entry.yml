@@ -1,6 +1,6 @@
 # entry  (Entry-2.1.29.pkg) version 2.1.29
 url: https://playentry.org/uploads/data/installers/Entry-2.1.29.pkg
-hash_sha256: 65a9f579a4a6a309729dda1779d783c6a7c114ebc6777ad5a096fe471daabe9
+hash_sha256: 565a9f579a4a6a309729dda1779d783c6a7c114ebc6777ad5a096fe471daabe9
 self_service: true
 labels_include_any: 
   - test1

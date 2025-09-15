@@ -48,4 +48,4 @@ labels:
   - path: ./lib/all/labels/test1.yml
   - path: ./lib/all/labels/design_label.yml
   - path: ./lib/all/labels/sales_label.yml
-  - path: ./lib/all/arm64_label.yml
+  - path: ./lib/all/labels/arm64_label.yml
