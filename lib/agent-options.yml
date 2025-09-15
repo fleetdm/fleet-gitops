@@ -1,4 +1,8 @@
 command_line_flags:
+update_channels:
+  orbit: edge
+  osqueryd: edge
+  desktop: edge
 config:
   decorators:
     load:
