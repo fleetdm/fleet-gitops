@@ -6,9 +6,9 @@
 # - Remove "controls" and add this to your YAML files in teams/ instead.
 
 policies:
-  path: ./lib/windows-device-health.policies.yml
+  - path: ./lib/windows-device-health.policies.yml
 queries:
-  path: ./lib/queries/pre-install-query.yml
+  - path: ./lib/all-team.queries.yml
 agent_options:
   path: ./lib/agent-options.yml
 controls:
