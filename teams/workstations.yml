@@ -60,6 +60,7 @@ software:
     - slug: visual-studio-code/windows
       self_service: true
       categories:
+        - Communication
         - Productivity
     - slug: google-chrome/darwin
       self_service: true
