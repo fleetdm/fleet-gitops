@@ -12,6 +12,14 @@ controls:
   scripts:
   - path: ../lib/remove-zoom-artifacts.script.sh
   - path: ../lib/set-timezone.script.sh
+  macos_setup:
+    bootstrap_package: https://example.org/bootstrap_package.pkg
+    enable_end_user_authentication: false
+    enable_release_device_manually: false
+    macos_setup_assistant: ../lib/automatic-enrollment.dep.json
+    script: ../lib/set-timezone.sh
+    software:
+      - package_path: ../lib/packages/1password-cli1.yml
 team_settings:
   secrets:
   - secret: Team1secret
