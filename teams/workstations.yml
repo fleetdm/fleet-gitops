@@ -19,6 +19,11 @@ agent_options:
   path: ../lib/agent-options.yml
 controls:
   scripts:
+    - path: ../lib/scripts/read_identifier.sh
+    - path: ../lib/scripts/read_identifier.ps1
+    - path: ../lib/scripts/uninstall-fleetd-windows.ps1
+    - path: ../lib/scripts/uninstall-fleetd-linux.sh
+    - path: ../lib/scripts/unenroll_mac.sh
     - path: ../lib/remove-zoom-artifacts.script.sh
     - path: ../lib/set-timezone.script.sh
 team_settings:
