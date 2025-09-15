@@ -1,5 +1,6 @@
 # anka-build-cloud-controller  (anka-controller-arm64-1.48.2-2d2d57bf.pkg) version 1.48.2
 url: https://downloads.veertu.com/anka/anka-controller-arm64-1.48.2-2d2d57bf.pkg
+hash_sha256: 2b9d0aec78342d2392572d0aa2cbe171a7667abee6d4c73c8d96ce8c1b0fd018
 self_service: true
 labels_include_any: 
   - test1
