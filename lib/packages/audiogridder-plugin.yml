@@ -1,5 +1,6 @@
 # audiogridder-plugin  (AudioGridderPlugin_1.2.0_1_macOS-universal.pkg) version 1.2.0
 url: https://audiogridder.com/releases/AudioGridderPlugin_1.2.0_1_macOS-universal.pkg
+hash_sha256: 8e0a46eef57f5df0263b169397c63fcf61966b8ae96fa5eaededdef71a8af250
 self_service: true
 labels_include_any: 
   - test1

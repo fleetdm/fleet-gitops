@@ -54,7 +54,6 @@ software:
     - path: ../lib/packages/background-music.yml
     - path: ../lib/packages/bankid.yml
     - path: ../lib/packages/banking-4.yml
-    - path: ../lib/packages/basictex.yml
   app_store_apps:
     - app_store_id: '803453959' # Slack Desktop
       self_service: true

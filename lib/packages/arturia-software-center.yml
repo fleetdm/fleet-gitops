@@ -1,5 +1,6 @@
 # arturia-software-center  (Arturia_Software_Center__2_10_0_2970.pkg) version unknown
 url: https://dl.arturia.net/products/asc/soft/Arturia_Software_Center__2_10_0_2970.pkg
+hash_sha256: ebf561dee23eb580ca5784388d284c58a3c5d5c149048aac4505a488b6a590ca
 self_service: true
 labels_include_any: 
   - test1

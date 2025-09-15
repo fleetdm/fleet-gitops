@@ -37,11 +37,7 @@ org_settings:
     volume_purchasing_program:
     - location: Janis Watts
       teams:
-      - "Workstations"
-      - "Team1"
-      - "Team2"
-      - "Team3"
-      - "Test-FMA"
+      - Workstations
 labels:
   - path: ./lib/all/labels/test1.yml
   - path: ./lib/all/labels/design_label.yml

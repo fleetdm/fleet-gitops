@@ -113,12 +113,6 @@ software:
   - path: ../lib/packages/fuse.yml
   - path: ../lib/packages/fx-cast-bridge.yml
   - path: ../lib/packages/galaxybudsclient.yml
-  app_store_apps:
-  - app_store_id: '803453959'
-    self_service: true
-    categories:
-    - Productivity
-    - Communication
   fleet_maintained_apps:
   - slug: visual-studio-code/windows
     self_service: true
