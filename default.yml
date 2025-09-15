@@ -12,6 +12,7 @@ queries:
 agent_options:
   path: ./lib/agent-options.yml
 controls:
+  windows_enabled_and_configured: true
 org_settings:
   fleet_desktop:
     transparency_url: https://isitchristmas.com/
