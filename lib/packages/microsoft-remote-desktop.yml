@@ -1,11 +1,9 @@
-# microsoft-remote-desktop  (Microsoft_Remote_Desktop_10.9.10_installer.pkg) version 10.9.10
-url: https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Remote_Desktop_10.9.10_installer.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Remote_Desktop_10.9.10_installer.pkg

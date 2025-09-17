@@ -1,11 +1,9 @@
-# redcine-x-pro  (REDCINE-X_PRO_Build_64.0.25.pkg) version 64.0.25
-url: https://downloads.red.com/software/rcx/mac/release/64.0.25/REDCINE-X_PRO_Build_64.0.25.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://downloads.red.com/software/rcx/mac/release/64.0.25/REDCINE-X_PRO_Build_64.0.25.pkg

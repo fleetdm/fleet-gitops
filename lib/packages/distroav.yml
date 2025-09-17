@@ -1,12 +1,10 @@
-# distroav  (distroav-6.1.1-macos-universal.pkg) version 6.1.1
-url: https://github.com/DistroAV/DistroAV/releases/download/6.1.1/distroav-6.1.1-macos-universal.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 119e88377a3920216ac2f9e29b174d45c43f855baed14c7b282e35378c0e06d3
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/DistroAV/DistroAV/releases/download/6.1.1/distroav-6.1.1-macos-universal.pkg

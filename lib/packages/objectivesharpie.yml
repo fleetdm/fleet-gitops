@@ -1,11 +1,9 @@
-# objectivesharpie  (objectivesharpie-3.5.116.pkg) version 3.5.116
-url: https://download.visualstudio.microsoft.com/download/pr/3a748cc2-780d-403c-88ba-700aa9a2d299/88cbfd86e85f56b4c61e092d0f0b9ad9/objectivesharpie-3.5.116.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://download.visualstudio.microsoft.com/download/pr/3a748cc2-780d-403c-88ba-700aa9a2d299/88cbfd86e85f56b4c61e092d0f0b9ad9/objectivesharpie-3.5.116.pkg

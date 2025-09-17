@@ -1,11 +1,9 @@
-# wkhtmltopdf  (wkhtmltox-0.12.6-2.macos-cocoa.pkg) version 0.12.6
-url: https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-2/wkhtmltox-0.12.6-2.macos-cocoa.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-2/wkhtmltox-0.12.6-2.macos-cocoa.pkg

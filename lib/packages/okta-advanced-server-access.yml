@@ -1,11 +1,9 @@
-# okta-advanced-server-access  (ScaleFT-1.95.0.pkg) version 1.95.0
-url: https://dist.scaleft.com/repos/macos/stable/all/macos-client/v1.95.0/ScaleFT-1.95.0.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://dist.scaleft.com/repos/macos/stable/all/macos-client/v1.95.0/ScaleFT-1.95.0.pkg

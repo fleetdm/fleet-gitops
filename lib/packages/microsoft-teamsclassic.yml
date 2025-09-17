@@ -1,11 +1,9 @@
-# microsoft-teams@classic  (Teams_osx.pkg) version 1.7.00
-url: https://statics.teams.cdn.office.net/production-osx/1.7.00.15956/Teams_osx.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://statics.teams.cdn.office.net/production-osx/1.7.00.15956/Teams_osx.pkg

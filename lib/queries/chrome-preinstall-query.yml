@@ -1,2 +1,2 @@
-- name: "[Pre-install software] Insomnia (pkg)"
+- name: '[Pre-install software] Insomnia (pkg)'
   query: SELECT * FROM apps;

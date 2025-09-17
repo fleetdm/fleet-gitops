@@ -1,12 +1,10 @@
-# blurscreen  (BlurScreen-v2.pkg) version unknown
-url: https://www.blurscreen.app/assets/BlurScreen-v2.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 0e496eaa4c110d6c425d1b949ea4bfdb6288e4b5553fa90cc34f0d677eb73f74
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://www.blurscreen.app/assets/BlurScreen-v2.pkg

@@ -1,4 +1,3 @@
-# trial (PixelmatorProTrial_3.6.14.pkg) version 3.6.14
 hash_sha256: d019f16470f22af539dc950737e59e845c9eec523a377237f267c291db441e87
 install_script:
   path: ../scripts/install-trial.sh

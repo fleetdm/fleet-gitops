@@ -1,12 +1,10 @@
-# folding-at-home  (fah-client_8.4.9_universal.pkg) version 8.4.9
-url: https://download.foldingathome.org/releases/public/fah-client/macos-12-universal/release/fah-client_8.4.9_universal.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: e7df52b7aeb56dde4ec377787678e2a16fcb2c893bdb93389f4e5e63f1213c15
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://download.foldingathome.org/releases/public/fah-client/macos-12-universal/release/fah-client_8.4.9_universal.pkg

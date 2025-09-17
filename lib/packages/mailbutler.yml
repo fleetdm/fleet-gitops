@@ -1,11 +1,9 @@
-# mailbutler  (Mailbutler_8226-3630918.pkg) version unknown
-url: https://downloads.mailbutler.io/sparkle/public/new-horizons/Mailbutler_8226-3630918.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://downloads.mailbutler.io/sparkle/public/new-horizons/Mailbutler_8226-3630918.pkg

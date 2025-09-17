@@ -1,12 +1,10 @@
-# eagle  (Autodesk_EAGLE_9.6.2_English_Mac_64bit.pkg) version 9.6.2
-url: https://trial2.autodesk.com/NET17SWDLD/2017/EGLPRM/ESD/Autodesk_EAGLE_9.6.2_English_Mac_64bit.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: bda7c9a5cc0bb8ae0489ca2d2772e5dd869f466fdd56454d94144e34887d9712
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://trial2.autodesk.com/NET17SWDLD/2017/EGLPRM/ESD/Autodesk_EAGLE_9.6.2_English_Mac_64bit.pkg

@@ -1,11 +1,9 @@
-# insta360-link-controller  (Insta360LinkController_2.0.5(build10).pkg) version 2.0.5
-url: https://file.insta360.com/static/04c833fad3031d5143f4037e09252c77/Insta360LinkController_2.0.5(build10).pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://file.insta360.com/static/04c833fad3031d5143f4037e09252c77/Insta360LinkController_2.0.5(build10).pkg

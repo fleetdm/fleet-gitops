@@ -1,11 +1,9 @@
-# metasploit  (metasploit-framework-6.4.87-20250907055538-1rapid7-1.x86_64.pkg) version 6.4.87
-url: https://osx.metasploit.com/metasploit-framework-6.4.87-20250907055538-1rapid7-1.x86_64.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://osx.metasploit.com/metasploit-framework-6.4.87-20250907055538-1rapid7-1.x86_64.pkg

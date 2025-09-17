@@ -1,11 +1,9 @@
-# session-manager-plugin  (session-manager-plugin.pkg) version 1.2.707
-url: https://session-manager-downloads.s3.amazonaws.com/plugin/1.2.707.0/mac_arm64/session-manager-plugin.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://session-manager-downloads.s3.amazonaws.com/plugin/1.2.707.0/mac_arm64/session-manager-plugin.pkg

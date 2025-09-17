@@ -1,12 +1,10 @@
-# finch  (Finch-v1.11.0-aarch64.pkg) version 1.11.0
-url: https://github.com/runfinch/finch/releases/download/v1.11.0/Finch-v1.11.0-aarch64.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 40ab60034059d9163aa0f4a2efd10b0f00db0b355f8ef01dd5f0bbe156a0f309
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/runfinch/finch/releases/download/v1.11.0/Finch-v1.11.0-aarch64.pkg

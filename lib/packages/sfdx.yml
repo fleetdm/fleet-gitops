@@ -1,11 +1,9 @@
-# sfdx  (sfdx-arm64.pkg) version unknown
-url: https://developer.salesforce.com/media/salesforce-cli/sfdx/channels/stable/sfdx-arm64.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://developer.salesforce.com/media/salesforce-cli/sfdx/channels/stable/sfdx-arm64.pkg

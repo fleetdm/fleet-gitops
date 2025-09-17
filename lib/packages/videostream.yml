@@ -1,11 +1,9 @@
-# videostream  (Videostream.pkg) version unknown
-url: https://cdn.getvideostream.com/videostream-native-updates/macOS/Videostream.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://cdn.getvideostream.com/videostream-native-updates/macOS/Videostream.pkg

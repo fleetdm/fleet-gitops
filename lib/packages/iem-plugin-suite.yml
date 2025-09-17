@@ -1,11 +1,9 @@
-# iem-plugin-suite  (IEMPluginSuite_v1.15.0.pkg) version 1.15.0
-url: https://users.iem.at/holzmueller/IEM-Audioplugins/IEMPluginSuite/v1.15.0/IEMPluginSuite_v1.15.0.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://users.iem.at/holzmueller/IEM-Audioplugins/IEMPluginSuite/v1.15.0/IEMPluginSuite_v1.15.0.pkg

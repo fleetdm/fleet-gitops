@@ -1,12 +1,10 @@
-# anka-build-cloud-registry  (anka-registry-arm64-1.48.2-2d2d57bf.pkg) version 1.48.2
-url: https://downloads.veertu.com/anka/anka-registry-arm64-1.48.2-2d2d57bf.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: c33bca76ff0dd80c05f955284addce6d586d2b21ad7813140289db2248438de6
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://downloads.veertu.com/anka/anka-registry-arm64-1.48.2-2d2d57bf.pkg

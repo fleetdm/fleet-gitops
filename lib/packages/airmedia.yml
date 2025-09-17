@@ -1,12 +1,10 @@
-# airmedia  (airmedia_osx_4.1.14_installer.pkg) version 4.1.14
-url: https://www.crestron.com/software_files_public/am-100/airmedia_osx_4.1.14_installer.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 40bdda14fb0aa346bc630df14563fd2a6ef165c6d21cda8c2681affd2b2eee43
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://www.crestron.com/software_files_public/am-100/airmedia_osx_4.1.14_installer.pkg

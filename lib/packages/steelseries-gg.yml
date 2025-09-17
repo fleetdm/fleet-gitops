@@ -1,11 +1,9 @@
-# steelseries-gg  (SteelSeriesGG94.0.0.pkg) version 94.0.0
-url: https://engine.steelseriescdn.com/SteelSeriesGG94.0.0.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://engine.steelseriescdn.com/SteelSeriesGG94.0.0.pkg

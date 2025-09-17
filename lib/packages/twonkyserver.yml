@@ -1,11 +1,9 @@
-# twonkyserver  (TwonkyServerInstaller-8.5.2.pkg) version 8.5.2
-url: https://download.twonky.com/8.5.2/TwonkyServerInstaller-8.5.2.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://download.twonky.com/8.5.2/TwonkyServerInstaller-8.5.2.pkg

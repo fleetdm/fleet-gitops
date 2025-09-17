@@ -1,11 +1,9 @@
-# weasis  (Weasis-4.6.3-aarch64.pkg) version 4.6.3
-url: https://github.com/nroduit/Weasis/releases/download/v4.6.3/Weasis-4.6.3-aarch64.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/nroduit/Weasis/releases/download/v4.6.3/Weasis-4.6.3-aarch64.pkg

@@ -1,12 +1,10 @@
-# bitfocus-buttons  (bitfocus-buttons-mac-arm-4157-e14e47c7.pkg) version unknown
-url: https://s4.bitfocus.io/builds/buttons/bitfocus-buttons-mac-arm-4157-e14e47c7.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 376c92d1c4230857692f52c07b046bce6407f87dbe22b75a931cfc20c213fec2
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://s4.bitfocus.io/builds/buttons/bitfocus-buttons-mac-arm-4157-e14e47c7.pkg

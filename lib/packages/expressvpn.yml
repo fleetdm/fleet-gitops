@@ -1,12 +1,10 @@
-# expressvpn  (expressvpn_mac_11.70.0.90675_release.pkg) version 11.70.0
-url: https://www.expressvpn.works/clients/mac/expressvpn_mac_11.70.0.90675_release.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 9872744c64784d6c09c73522e50a8b76e0bb19b8f0351da1568068a7dbb0ccfe
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://www.expressvpn.works/clients/mac/expressvpn_mac_11.70.0.90675_release.pkg

@@ -1,11 +1,9 @@
-# kern  (kern_1_2_0_mac.pkg) version unknown
-url: https://www.fullbucket.de/music/dl/kern_1_2_0_mac.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://www.fullbucket.de/music/dl/kern_1_2_0_mac.pkg

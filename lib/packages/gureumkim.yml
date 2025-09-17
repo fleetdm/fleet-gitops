@@ -1,11 +1,9 @@
-# gureumkim  (Gureum-1.13.2.pkg) version 1.13.2
-url: https://github.com/gureum/gureum/releases/download/1.13.2/Gureum-1.13.2.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/gureum/gureum/releases/download/1.13.2/Gureum-1.13.2.pkg

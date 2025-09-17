@@ -1,11 +1,9 @@
-# wifi-explorer-pro  (WiFiExplorerPro_3.7.5.pkg) version 3.7.5
-url: https://www.intuitibits.com/downloads/WiFiExplorerPro_3.7.5.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://www.intuitibits.com/downloads/WiFiExplorerPro_3.7.5.pkg

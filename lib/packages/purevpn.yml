@@ -1,11 +1,9 @@
-# purevpn  (PureVPN.pkg) version unknown
-url: https://dzglif4kkvz04.cloudfront.net/mac-2.0/packages/Production/PureVPN.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://dzglif4kkvz04.cloudfront.net/mac-2.0/packages/Production/PureVPN.pkg

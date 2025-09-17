@@ -1,11 +1,9 @@
-# lazarus  (Lazarus-3.6-macosx-x86_64.pkg) version unknown
-url: https://downloads.sourceforge.net/lazarus/Lazarus%20macOS%20x86-64/Lazarus%203.6/Lazarus-3.6-macosx-x86_64.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://downloads.sourceforge.net/lazarus/Lazarus%20macOS%20x86-64/Lazarus%203.6/Lazarus-3.6-macosx-x86_64.pkg

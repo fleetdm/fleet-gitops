@@ -1,12 +1,10 @@
-# alfaview  (alfaview-mac-production-9.22.12.pkg) version 9.22.12
-url: https://assets.alfaview.com/stable/mac/alfaview-mac-production-9.22.12.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: cb617a08b02a5ab83f2035ddcc2f38f0cbda27c6a2d4e5cfad7eeea02eb628db
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://assets.alfaview.com/stable/mac/alfaview-mac-production-9.22.12.pkg

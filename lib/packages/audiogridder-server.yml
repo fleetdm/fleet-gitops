@@ -1,12 +1,10 @@
-# audiogridder-server  (AudioGridderServer_1.2.0_1_macOS-universal.pkg) version 1.2.0
-url: https://audiogridder.com/releases/AudioGridderServer_1.2.0_1_macOS-universal.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: ba69f70ee4fd7eb2e962cc203310f1a38f26f0f8432dc232f78af1734c0e699a
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://audiogridder.com/releases/AudioGridderServer_1.2.0_1_macOS-universal.pkg

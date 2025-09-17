@@ -1,11 +1,9 @@
-# nextcloud  (Nextcloud-3.17.1.pkg) version 3.17.1
-url: https://download.nextcloud.com/desktop/releases/Mac/Installer/Nextcloud-3.17.1.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://download.nextcloud.com/desktop/releases/Mac/Installer/Nextcloud-3.17.1.pkg

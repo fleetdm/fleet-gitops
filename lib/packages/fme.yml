@@ -1,11 +1,9 @@
-# fme  (fme-form-2024.1-b24612-macosx-aarch64.pkg) version unknown
-url: https://downloads.safe.com/fme/2024/macos-aarch64/fme-form-2024.1-b24612-macosx-aarch64.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://downloads.safe.com/fme/2024/macos-aarch64/fme-form-2024.1-b24612-macosx-aarch64.pkg

@@ -1,11 +1,9 @@
-# odrive  (odrivesync.7514.pkg) version unknown
-url: https://d3huse1s6vwzq6.cloudfront.net/odrivesync.7514.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://d3huse1s6vwzq6.cloudfront.net/odrivesync.7514.pkg

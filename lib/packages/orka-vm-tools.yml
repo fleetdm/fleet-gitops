@@ -1,11 +1,9 @@
-# orka-vm-tools  (orka-vm-tools.pkg) version 3.3.0
-url: https://orka-tools.s3.amazonaws.com/orka-vm-tools/official/3.3.0/orka-vm-tools.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://orka-tools.s3.amazonaws.com/orka-vm-tools/official/3.3.0/orka-vm-tools.pkg

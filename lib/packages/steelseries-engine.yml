@@ -1,11 +1,9 @@
-# steelseries-engine  (SteelSeriesEngine3.22.0.pkg) version 3.22.0
-url: https://downloads.steelseriescdn.com/drivers/engine/SteelSeriesEngine3.22.0.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://downloads.steelseriescdn.com/drivers/engine/SteelSeriesEngine3.22.0.pkg

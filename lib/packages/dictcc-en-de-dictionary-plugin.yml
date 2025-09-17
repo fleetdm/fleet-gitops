@@ -1,12 +1,10 @@
-# dictcc-en-de-dictionary-plugin  (macosx10.6_dict.cc_dictionary.pkg) version unknown
-url: https://www1.dict.cc/download/macosx10.6_dict.cc_dictionary.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 33db30ed79d732ac425cfc7a87c36436320944fe003564b05e48626d8dd4dc0c
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://www1.dict.cc/download/macosx10.6_dict.cc_dictionary.pkg

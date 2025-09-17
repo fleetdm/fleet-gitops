@@ -1,11 +1,9 @@
-# gams  (GAMS50.4.1.pkg) version 50.4.1
-url: https://d37drm4t2jghv5.cloudfront.net/distributions/50.4.1/macosx_arm64/GAMS50.4.1.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://d37drm4t2jghv5.cloudfront.net/distributions/50.4.1/macosx_arm64/GAMS50.4.1.pkg

@@ -1,11 +1,9 @@
-# ptpwebcam  (PTP_Webcam-v1.3.2.pkg) version 1.3.2
-url: https://github.com/dognotdog/ptpwebcam/releases/download/v1.3.2/PTP_Webcam-v1.3.2.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/dognotdog/ptpwebcam/releases/download/v1.3.2/PTP_Webcam-v1.3.2.pkg

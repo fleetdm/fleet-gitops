@@ -1,11 +1,9 @@
-# opencpn  (OpenCPN_5.12.2-universal+14584.efdcaa63f-14.pkg) version 5.12.2
-url: https://github.com/OpenCPN/OpenCPN/releases/download/Release_5.12.2/OpenCPN_5.12.2-universal+14584.efdcaa63f-14.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/OpenCPN/OpenCPN/releases/download/Release_5.12.2/OpenCPN_5.12.2-universal+14584.efdcaa63f-14.pkg

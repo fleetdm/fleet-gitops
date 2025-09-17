@@ -1,10 +1,10 @@
-url: https://github.com/VSCodium/vscodium/releases/download/1.104.06131/VSCodium-x64-1.104.06131.msi
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 8ffe069e7333366113f11e55ef1b8e101e2fc5c08b08ff938870a49b1c195b3b
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
+self_service: true
+url: https://github.com/VSCodium/vscodium/releases/download/1.104.06131/VSCodium-x64-1.104.06131.msi

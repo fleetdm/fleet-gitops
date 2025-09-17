@@ -1,11 +1,9 @@
-# realforce  (REALFORCE%20CONNECT%20Software_3-3-2.pkg) version unknown
-url: https://www.realforce.co.jp/support/download/software/mac/files/REALFORCE%20CONNECT%20Software_3-3-2.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://www.realforce.co.jp/support/download/software/mac/files/REALFORCE%20CONNECT%20Software_3-3-2.pkg

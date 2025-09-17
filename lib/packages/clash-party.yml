@@ -1,12 +1,10 @@
-# clash-party  (clash-party-macos-1.8.7-arm64.pkg) version 1.8.7
-url: https://github.com/mihomo-party-org/clash-party/releases/download/v1.8.7/clash-party-macos-1.8.7-arm64.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 992944a6316b88895d7a68ad557ec4867e2670f17f00c3120e1eeb75b2c9e7ed
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/mihomo-party-org/clash-party/releases/download/v1.8.7/clash-party-macos-1.8.7-arm64.pkg

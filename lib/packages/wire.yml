@@ -1,11 +1,9 @@
-# wire  (Wire.pkg) version 3.40.5285
-url: https://github.com/wireapp/wire-desktop/releases/download/macos%2F3.40.5285/Wire.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/wireapp/wire-desktop/releases/download/macos%2F3.40.5285/Wire.pkg

@@ -1,11 +1,9 @@
-# mipony  (Mipony-Installer.pkg) version unknown
-url: https://download.mipony.net/downloads/mac/Mipony-Installer.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://download.mipony.net/downloads/mac/Mipony-Installer.pkg

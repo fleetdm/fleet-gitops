@@ -1,64 +1,64 @@
-name: Team2
-policies:
-- path: ../lib/macos-device-health.policies.yml
-- path: ../lib/windows-device-health.policies.yml
-- path: ../lib/linux-device-health.policies.yml
-queries:
-- path: ../lib/collect-usb-devices.queries.yml
-- path: ../lib/collect-failed-login-attempts.queries.yml
 agent_options:
   path: ../lib/agent-options.yml
 controls:
   scripts:
-  - path: ../lib/remove-zoom-artifacts.script.sh
-  - path: ../lib/set-timezone.script.sh
+    - path: ../lib/remove-zoom-artifacts.script.sh
+    - path: ../lib/set-timezone.script.sh
+name: Team2
+policies:
+  - path: ../lib/macos-device-health.policies.yml
+  - path: ../lib/windows-device-health.policies.yml
+  - path: ../lib/linux-device-health.policies.yml
+queries:
+  - path: ../lib/collect-usb-devices.queries.yml
+  - path: ../lib/collect-failed-login-attempts.queries.yml
+software:
+  fleet_maintained_apps:
+    - categories:
+        - Productivity
+      self_service: true
+      slug: visual-studio-code/windows
+    - self_service: true
+      slug: google-chrome/darwin
+    - categories:
+        - Communication
+        - Productivity
+      install_script:
+        path: ../lib/scripts/chrome-install-script.ps1
+      labels_include_any:
+        - Design
+        - Sales
+      post_install_script:
+        path: ../lib/scripts/chrome-config-script.ps1
+      pre_install_query:
+        path: ../lib/queries/chrome-preinstall-query.yml
+      self_service: true
+      slug: google-chrome/windows
+      uninstall_script:
+        path: ../lib/scripts/chrome-uninstall-script.ps1
+  packages:
+    - path: ../lib/packages/1password-cli1.yml
+    - path: ../lib/packages/adoptopenjdk.yml
+    - path: ../lib/packages/airmedia.yml
+    - path: ../lib/packages/airtool.yml
+    - path: ../lib/packages/alfaview.yml
+    - path: ../lib/packages/amazon-workdocs-drive.yml
+    - path: ../lib/packages/anka-build-cloud-controller-and-registry.yml
+    - path: ../lib/packages/anka-build-cloud-controller.yml
+    - path: ../lib/packages/anka-build-cloud-registry.yml
+    - path: ../lib/packages/anka-virtualization.yml
+    - path: ../lib/packages/aptible.yml
+    - path: ../lib/packages/aquaskk.yml
+    - path: ../lib/packages/arq.yml
+    - path: ../lib/packages/arturia-software-center.yml
+    - path: ../lib/packages/audiogridder-plugin.yml
+    - path: ../lib/packages/audiogridder-server.yml
+    - path: ../lib/packages/autogram.yml
+    - path: ../lib/packages/aviatrix-vpn-client.yml
+    - path: ../lib/packages/fuse-t.yml
+    - path: ../lib/packages/fuse.yml
+    - path: ../lib/packages/fx-cast-bridge.yml
+    - path: ../lib/packages/galaxybudsclient.yml
 team_settings:
   secrets:
-  - secret: Team2secret
-software:
-  packages:
-  - path: ../lib/packages/1password-cli1.yml
-  - path: ../lib/packages/adoptopenjdk.yml
-  - path: ../lib/packages/airmedia.yml
-  - path: ../lib/packages/airtool.yml
-  - path: ../lib/packages/alfaview.yml
-  - path: ../lib/packages/amazon-workdocs-drive.yml
-  - path: ../lib/packages/anka-build-cloud-controller-and-registry.yml
-  - path: ../lib/packages/anka-build-cloud-controller.yml
-  - path: ../lib/packages/anka-build-cloud-registry.yml
-  - path: ../lib/packages/anka-virtualization.yml
-  - path: ../lib/packages/aptible.yml
-  - path: ../lib/packages/aquaskk.yml
-  - path: ../lib/packages/arq.yml
-  - path: ../lib/packages/arturia-software-center.yml
-  - path: ../lib/packages/audiogridder-plugin.yml
-  - path: ../lib/packages/audiogridder-server.yml
-  - path: ../lib/packages/autogram.yml
-  - path: ../lib/packages/aviatrix-vpn-client.yml
-  - path: ../lib/packages/fuse-t.yml
-  - path: ../lib/packages/fuse.yml
-  - path: ../lib/packages/fx-cast-bridge.yml
-  - path: ../lib/packages/galaxybudsclient.yml
-  fleet_maintained_apps:
-  - slug: visual-studio-code/windows
-    self_service: true
-    categories:
-    - Productivity
-  - slug: google-chrome/darwin
-    self_service: true
-  - slug: google-chrome/windows
-    pre_install_query:
-      path: ../lib/queries/chrome-preinstall-query.yml
-    install_script:
-      path: ../lib/scripts/chrome-install-script.ps1
-    uninstall_script:
-      path: ../lib/scripts/chrome-uninstall-script.ps1
-    post_install_script:
-      path: ../lib/scripts/chrome-config-script.ps1
-    self_service: true
-    labels_include_any:
-    - Design
-    - Sales
-    categories:
-    - Communication
-    - Productivity
+    - secret: Team2secret

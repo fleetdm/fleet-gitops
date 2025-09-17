@@ -1,11 +1,9 @@
-# openbb-terminal  (ARM64.MacOS.OpenBB.Terminal.v3.2.5.pkg) version 3.2.5
-url: https://github.com/OpenBB-finance/OpenBBTerminal/releases/download/v3.2.5/ARM64.MacOS.OpenBB.Terminal.v3.2.5.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/OpenBB-finance/OpenBBTerminal/releases/download/v3.2.5/ARM64.MacOS.OpenBB.Terminal.v3.2.5.pkg

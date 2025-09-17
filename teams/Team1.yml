@@ -1,17 +1,7 @@
-name: Team1
-policies:
-- path: ../lib/macos-device-health.policies.yml
-- path: ../lib/windows-device-health.policies.yml
-- path: ../lib/linux-device-health.policies.yml
-queries:
-- path: ../lib/collect-usb-devices.queries.yml
-- path: ../lib/collect-failed-login-attempts.queries.yml
 agent_options:
   path: ../lib/agent-options.yml
 controls:
-  scripts:
-  - path: ../lib/remove-zoom-artifacts.script.sh
-  - path: ../lib/set-timezone.script.sh
+  enable_disk_encryption: true
   macos_setup:
     bootstrap_package: https://www.intuitibits.com/downloads/Airtool_2.6.2.pkg
     enable_end_user_authentication: false
@@ -20,37 +10,47 @@ controls:
     script: ../lib/set-timezone.script.sh
     software:
       - package_path: ../lib/packages/1password-cli1.yml
-  enable_disk_encryption: true
+  scripts:
+    - path: ../lib/remove-zoom-artifacts.script.sh
+    - path: ../lib/set-timezone.script.sh
+name: Team1
+policies:
+  - path: ../lib/macos-device-health.policies.yml
+  - path: ../lib/windows-device-health.policies.yml
+  - path: ../lib/linux-device-health.policies.yml
+queries:
+  - path: ../lib/collect-usb-devices.queries.yml
+  - path: ../lib/collect-failed-login-attempts.queries.yml
+software:
+  fleet_maintained_apps:
+    - categories:
+        - Productivity
+      self_service: true
+      slug: visual-studio-code/windows
+    - self_service: true
+      slug: google-chrome/darwin
+    - categories:
+        - Communication
+        - Productivity
+      install_script:
+        path: ../lib/scripts/chrome-install-script.ps1
+      labels_include_any:
+        - Design
+        - Sales
+        - Arm64
+      post_install_script:
+        path: ../lib/scripts/chrome-config-script.ps1
+      pre_install_query:
+        path: ../lib/queries/chrome-preinstall-query.yml
+      self_service: true
+      slug: google-chrome/windows
+      uninstall_script:
+        path: ../lib/scripts/chrome-uninstall-script.ps1
+  packages:
+    - path: ../lib/packages/1password-cli1.yml
+    - path: ../lib/packages/adoptopenjdk.yml
+    - path: ../lib/packages/airmedia.yml
+    - path: ../lib/packages/airtool.yml
 team_settings:
   secrets:
-  - secret: Team1secret
-software:
-  packages:
-  - path: ../lib/packages/1password-cli1.yml
-  - path: ../lib/packages/adoptopenjdk.yml
-  - path: ../lib/packages/airmedia.yml
-  - path: ../lib/packages/airtool.yml
-  fleet_maintained_apps:
-  - slug: visual-studio-code/windows
-    self_service: true
-    categories:
-    - Productivity
-  - slug: google-chrome/darwin
-    self_service: true
-  - slug: google-chrome/windows
-    pre_install_query:
-      path: ../lib/queries/chrome-preinstall-query.yml
-    install_script:
-      path: ../lib/scripts/chrome-install-script.ps1
-    uninstall_script:
-      path: ../lib/scripts/chrome-uninstall-script.ps1
-    post_install_script:
-      path: ../lib/scripts/chrome-config-script.ps1
-    self_service: true
-    labels_include_any:
-    - Design
-    - Sales
-    - Arm64
-    categories:
-    - Communication
-    - Productivity
+    - secret: Team1secret

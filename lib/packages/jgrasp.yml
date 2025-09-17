@@ -1,11 +1,9 @@
-# jgrasp  (jgrasp206_18.pkg) version unknown
-url: https://jgrasp.org/dl4g/jgrasp/jgrasp206_18.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://jgrasp.org/dl4g/jgrasp/jgrasp206_18.pkg

@@ -1,11 +1,9 @@
-# munki  (munkitools-6.7.0.4731.pkg) version 6.7.0
-url: https://github.com/munki/munki/releases/download/v6.7.0/munkitools-6.7.0.4731.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/munki/munki/releases/download/v6.7.0/munkitools-6.7.0.4731.pkg

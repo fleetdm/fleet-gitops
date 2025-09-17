@@ -1,12 +1,10 @@
-# cisco-jabber  (Install_Cisco-Jabber-Mac.pkg) version unknown
-url: https://binaries.webex.com/jabberclientmac/20250908060654/Install_Cisco-Jabber-Mac.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: e6c46f131ffa9f71cff6baf777c808a506af48b3b509532d1895bd88de6e5003
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://binaries.webex.com/jabberclientmac/20250908060654/Install_Cisco-Jabber-Mac.pkg

@@ -1,11 +1,9 @@
-# picoscope  (PicoScope_7_TandM_7.1.50.5777.pkg) version 7.1.50
-url: https://www.picotech.com/download/software/sr/PicoScope_7_TandM_7.1.50.5777.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://www.picotech.com/download/software/sr/PicoScope_7_TandM_7.1.50.5777.pkg

@@ -1,11 +1,9 @@
-# orka  (orka.pkg) version 2.4.0
-url: https://cli-builds-public.s3.amazonaws.com/official/2.4.0/macos/orka.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://cli-builds-public.s3.amazonaws.com/official/2.4.0/macos/orka.pkg

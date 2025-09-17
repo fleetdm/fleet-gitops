@@ -1,11 +1,9 @@
-# philips-hue-sync  (HueSyncInstaller_1.13.0.77.pkg) version 1.13.0
-url: https://firmware.meethue.com/storage/huesyncmac/77/cb2f5b01-9dde-40c1-abe8-b7b02dc4e302/HueSyncInstaller_1.13.0.77.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://firmware.meethue.com/storage/huesyncmac/77/cb2f5b01-9dde-40c1-abe8-b7b02dc4e302/HueSyncInstaller_1.13.0.77.pkg

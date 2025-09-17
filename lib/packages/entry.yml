@@ -1,12 +1,10 @@
-# entry  (Entry-2.1.29.pkg) version 2.1.29
-url: https://playentry.org/uploads/data/installers/Entry-2.1.29.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 565a9f579a4a6a309729dda1779d783c6a7c114ebc6777ad5a096fe471daabe9
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://playentry.org/uploads/data/installers/Entry-2.1.29.pkg

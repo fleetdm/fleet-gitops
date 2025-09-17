@@ -1,11 +1,9 @@
-# virtualdj  (install_virtualdj_2025_b8729_mac.pkg) version unknown
-url: https://download.virtualdj.com/b8729/BB04CB90/install_virtualdj_2025_b8729_mac.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://download.virtualdj.com/b8729/BB04CB90/install_virtualdj_2025_b8729_mac.pkg

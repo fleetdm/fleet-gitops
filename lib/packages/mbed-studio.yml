@@ -1,11 +1,9 @@
-# mbed-studio  (MbedStudio.pkg) version unknown
-url: https://studio.mbed.com/installers/latest/mac/MbedStudio.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://studio.mbed.com/installers/latest/mac/MbedStudio.pkg

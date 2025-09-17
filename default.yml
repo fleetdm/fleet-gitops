@@ -1,33 +1,34 @@
-# For Fleet Free: 
-# - This file updates policies, queries, agent_options, and controls for all hosts.
-
-# For Fleet Premium:
-# - This file updates policies and queries that run on all hosts ("All teams"). 
-# - Remove "controls" and add this to your YAML files in teams/ instead.
-
-policies:
-  - path: ./lib/windows-device-health.policies.yml
-queries:
-  - path: ./lib/all-team.queries.yml
 agent_options:
   path: ./lib/agent-options.yml
 controls:
   windows_enabled_and_configured: true
+labels:
+  - path: ./lib/all/labels/test1.yml
+  - path: ./lib/all/labels/design_label.yml
+  - path: ./lib/all/labels/sales_label.yml
+  - path: ./lib/all/labels/arm64_label.yml
 org_settings:
+  features:
+    additional_queries:
+      macs: SELECT mac FROM interface_details
+      time: SELECT * FROM time
+    enable_host_users: true
+    enable_software_inventory: true
   fleet_desktop:
     transparency_url: https://isitchristmas.com/
-  server_settings:
-    server_url: $FLEET_URL
+  mdm:
+    apple_business_manager:
+      - organization_name: Fleet Device Management Inc.
+    volume_purchasing_program:
+      - location: Janis Watts
+        teams:
+          - Workstations
   org_info:
     org_name: Fleet
   secrets:
-    - secret: "$FLEET_GLOBAL_ENROLL_SECRET"
-  features:
-    additional_queries:
-      time: SELECT * FROM time
-      macs: SELECT mac FROM interface_details
-    enable_host_users: true
-    enable_software_inventory: true
+    - secret: $FLEET_GLOBAL_ENROLL_SECRET
+  server_settings:
+    server_url: $FLEET_URL
   sso_settings:
     enable_jit_provisioning: true
     enable_sso: true
@@ -35,17 +36,9 @@ org_settings:
     entity_id: fleetsso
     idp_image_url: ""
     idp_name: Okta
-    metadata: 
-    metadata_url: "https://dev-66479709.okta.com/app/exknouxjb8ILG2lM95d7/sso/saml/metadata"
-  mdm:
-    apple_business_manager:
-    - organization_name: Fleet Device Management Inc.
-    volume_purchasing_program:
-    - location: Janis Watts
-      teams:
-      - Workstations
-labels:
-  - path: ./lib/all/labels/test1.yml
-  - path: ./lib/all/labels/design_label.yml
-  - path: ./lib/all/labels/sales_label.yml
-  - path: ./lib/all/labels/arm64_label.yml
+    metadata: null
+    metadata_url: https://dev-66479709.okta.com/app/exknouxjb8ILG2lM95d7/sso/saml/metadata
+policies:
+  - path: ./lib/windows-device-health.policies.yml
+queries:
+  - path: ./lib/all-team.queries.yml

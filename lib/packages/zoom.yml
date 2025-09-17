@@ -1,11 +1,9 @@
-# zoom  (zoomusInstallerFull.pkg) version 6.5.12
-url: https://cdn.zoom.us/prod/6.5.12.63499/arm64/zoomusInstallerFull.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://cdn.zoom.us/prod/6.5.12.63499/arm64/zoomusInstallerFull.pkg

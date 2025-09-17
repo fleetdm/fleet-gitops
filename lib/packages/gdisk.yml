@@ -1,11 +1,9 @@
-# gdisk  (gdisk-1.0.10.pkg) version 1.0.10
-url: https://downloads.sourceforge.net/gptfdisk/gdisk-1.0.10.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://downloads.sourceforge.net/gptfdisk/gdisk-1.0.10.pkg

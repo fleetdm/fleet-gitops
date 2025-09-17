@@ -1,11 +1,9 @@
-# opentoonz  (OpenToonz.pkg) version 1.7.1
-url: https://github.com/opentoonz/opentoonz/releases/download/v1.7.1/OpenToonz.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/opentoonz/opentoonz/releases/download/v1.7.1/OpenToonz.pkg

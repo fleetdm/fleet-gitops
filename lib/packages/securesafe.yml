@@ -1,11 +1,9 @@
-# securesafe  (securesafe-2.25.0.pkg) version 2.25.0
-url: https://app.securesafe.com/app/download/securesafe-2.25.0.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://app.securesafe.com/app/download/securesafe-2.25.0.pkg

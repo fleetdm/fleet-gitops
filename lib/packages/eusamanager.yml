@@ -1,12 +1,10 @@
-# eusamanager  (EUSignWebInstall.pkg) version unknown
-url: https://iit.com.ua/download/productfiles/EUSignWebInstall.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 9c225c7463e23f044e6cf6131be6b2e41bc1e04150a40e2a8be50191572bd7f4
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://iit.com.ua/download/productfiles/EUSignWebInstall.pkg

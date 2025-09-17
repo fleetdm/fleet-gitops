@@ -1,11 +1,9 @@
-# onedrive  (OneDrive.pkg) version 25.130.0706
-url: https://oneclient.sfx.ms/Mac/Installers/25.130.0706.0004/universal/OneDrive.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://oneclient.sfx.ms/Mac/Installers/25.130.0706.0004/universal/OneDrive.pkg

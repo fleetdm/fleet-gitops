@@ -1,11 +1,9 @@
-# icc  (ICCforMac.r7648.pkg) version unknown
-url: https://s3-us-west-2.amazonaws.com/download.chessclub.com/desktop/mac/ICCforMac.r7648.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://s3-us-west-2.amazonaws.com/download.chessclub.com/desktop/mac/ICCforMac.r7648.pkg

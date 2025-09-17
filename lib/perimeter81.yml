@@ -1,11 +1,9 @@
-# perimeter81  (Harmony_SASE_12.0.0.6019.pkg) version 12.0.0
-url: https://static.perimeter81.com/agents/mac/Harmony_SASE_12.0.0.6019.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://static.perimeter81.com/agents/mac/Harmony_SASE_12.0.0.6019.pkg

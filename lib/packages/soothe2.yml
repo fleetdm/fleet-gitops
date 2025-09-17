@@ -1,11 +1,9 @@
-# soothe2  (soothe2_v133_Mac.pkg) version unknown
-url: https://oeksound.ams3.cdn.digitaloceanspaces.com/soothe2_v133_Mac.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://oeksound.ams3.cdn.digitaloceanspaces.com/soothe2_v133_Mac.pkg

@@ -1,11 +1,9 @@
-# nudge  (Nudge-2.0.12.81807.pkg) version 2.0.12
-url: https://github.com/macadmins/nudge/releases/download/v2.0.12.81807/Nudge-2.0.12.81807.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/macadmins/nudge/releases/download/v2.0.12.81807/Nudge-2.0.12.81807.pkg

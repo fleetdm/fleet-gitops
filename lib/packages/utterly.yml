@@ -1,11 +1,9 @@
-# utterly  (Utterly-Elevate.pkg) version unknown
-url: https://www.utterly.app/Utterly-Elevate.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://www.utterly.app/Utterly-Elevate.pkg

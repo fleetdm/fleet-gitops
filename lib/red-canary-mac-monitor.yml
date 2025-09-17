@@ -1,11 +1,9 @@
-# red-canary-mac-monitor  (Red-Canary-Mac-Monitor-GoldCardinal-1-0-5.pkg) version 1.0.5
-url: https://github.com/redcanaryco/mac-monitor/releases/download/v1.0.5/Red-Canary-Mac-Monitor-GoldCardinal-1-0-5.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/redcanaryco/mac-monitor/releases/download/v1.0.5/Red-Canary-Mac-Monitor-GoldCardinal-1-0-5.pkg

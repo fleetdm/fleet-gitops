@@ -1,12 +1,10 @@
-# cernbox  (cernbox-5.3.2.15486-arm64.pkg) version 5.3.2
-url: https://cernbox.cern.ch/cernbox/doc/MacOSX/cernbox-5.3.2.15486-arm64.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: d421a2e07f546bac998c64f2f93db8ed8ee0c17125c538a77a9440d46f080195
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://cernbox.cern.ch/cernbox/doc/MacOSX/cernbox-5.3.2.15486-arm64.pkg

@@ -1,12 +1,10 @@
-# finalshell  (finalshell_macos_arm64.pkg) version unknown
-url: https://dl.hostbuf.com/finalshell3/finalshell_macos_arm64.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: f649960744d22fe2fb1d8592fa8413f14f8e89728f5189d25884383a96b86883
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://dl.hostbuf.com/finalshell3/finalshell_macos_arm64.pkg

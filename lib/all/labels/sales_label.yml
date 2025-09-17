@@ -1,5 +1,5 @@
-- name: Sales
-  description: Sales Label
-  label_membership_type: manual
+- description: Sales Label
   hosts:
-    - "JANISWATTSEBA4"
+    - JANISWATTSEBA4
+  label_membership_type: manual
+  name: Sales

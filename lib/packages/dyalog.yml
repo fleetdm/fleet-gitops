@@ -1,12 +1,10 @@
-# dyalog  (mac_64_19.0.50027_unicode.pkg) version 19.0.50027
-url: https://www.dyalog.com/uploads/php/download.dyalog.com/download.php?file=19.0/mac_64_19.0.50027_unicode.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 3f033230380f15cff1d2d6bff2e9d6c74057320c81da1435d41ba2a88b2a1b03
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://www.dyalog.com/uploads/php/download.dyalog.com/download.php?file=19.0/mac_64_19.0.50027_unicode.pkg

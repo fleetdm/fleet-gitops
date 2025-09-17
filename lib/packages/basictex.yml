@@ -1,11 +1,9 @@
-# basictex  (mactex-basictex-20250308.pkg) version unknown
-url: https://mirror.ctan.org/systems/mac/mactex/mactex-basictex-20250308.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://mirror.ctan.org/systems/mac/mactex/mactex-basictex-20250308.pkg

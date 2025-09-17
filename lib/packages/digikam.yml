@@ -1,12 +1,10 @@
-# digikam  (digiKam-8.7.0-Qt6-MacOS-arm64.pkg) version 8.7.0
-url: https://download.kde.org/stable/digikam/8.7.0/digiKam-8.7.0-Qt6-MacOS-arm64.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 0956433185d54db6a87edb6438df4831aa11be4a267b3ac44f91c71369571e79
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://download.kde.org/stable/digikam/8.7.0/digiKam-8.7.0-Qt6-MacOS-arm64.pkg

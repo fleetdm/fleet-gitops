@@ -1,12 +1,10 @@
-# daedalus-mainnet  (daedalus-7.2.0-77924-mainnet-1458fc3a2-x86_64-darwin.pkg) version 7.2.0
-url: https://update-cardano-mainnet.iohk.io/daedalus-7.2.0-77924-mainnet-1458fc3a2-x86_64-darwin.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 8667b4f740ee689952461fa03195b4133f0c613bec444510b37814590031f918
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://update-cardano-mainnet.iohk.io/daedalus-7.2.0-77924-mainnet-1458fc3a2-x86_64-darwin.pkg

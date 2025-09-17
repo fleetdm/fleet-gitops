@@ -1,12 +1,10 @@
-# container  (container-0.4.1-installer-signed.pkg) version 0.4.1
-url: https://github.com/apple/container/releases/download/0.4.1/container-0.4.1-installer-signed.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 02ef1669ad24814e9b019153ac205611e381850afa3eb274004880dd1b078188
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/apple/container/releases/download/0.4.1/container-0.4.1-installer-signed.pkg

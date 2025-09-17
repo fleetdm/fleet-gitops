@@ -1,11 +1,9 @@
-# tsh  (tsh-16.4.7.pkg) version 16.4.7
-url: https://cdn.teleport.dev/tsh-16.4.7.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://cdn.teleport.dev/tsh-16.4.7.pkg

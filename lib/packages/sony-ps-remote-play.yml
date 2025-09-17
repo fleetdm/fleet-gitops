@@ -1,11 +1,9 @@
-# sony-ps-remote-play  (RemotePlayInstaller.pkg) version unknown
-url: https://remoteplay.dl.playstation.net/remoteplay/module/mac/RemotePlayInstaller.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://remoteplay.dl.playstation.net/remoteplay/module/mac/RemotePlayInstaller.pkg

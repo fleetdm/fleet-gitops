@@ -1,20 +1,3 @@
-# Teams are available in Fleet Premium. 
-
-# This file updates policies, queries, agent options, controls, and software for hosts assigned to the "Workstations" team.
-
-# To add another team, create a new file in the teams/ directory and copy and paste the contents from this file.
-# Update the secret in the new file, then create the corresponding secret in GitHub Actions secrets. 
-# Then add that secret to .github/workflows/workflow.yml as an env variable.
-# The secret name in the YAML file must match the secret name in GitHub Actions secrets.
-
-name: Workstations
-policies:
-  - path: ../lib/macos-device-health.policies.yml
-  - path: ../lib/windows-device-health.policies.yml
-  - path: ../lib/linux-device-health.policies.yml
-queries:
-  - path: ../lib/collect-usb-devices.queries.yml
-  - path: ../lib/collect-failed-login-attempts.queries.yml
 agent_options:
   path: ../lib/agent-options.yml
 controls:
@@ -26,10 +9,45 @@ controls:
     - path: ../lib/scripts/unenroll_mac.sh
     - path: ../lib/remove-zoom-artifacts.script.sh
     - path: ../lib/set-timezone.script.sh
-team_settings:
-  secrets:
-    - secret: "$FLEET_WORKSTATIONS_ENROLL_SECRET"
+name: Workstations
+policies:
+  - path: ../lib/macos-device-health.policies.yml
+  - path: ../lib/windows-device-health.policies.yml
+  - path: ../lib/linux-device-health.policies.yml
+queries:
+  - path: ../lib/collect-usb-devices.queries.yml
+  - path: ../lib/collect-failed-login-attempts.queries.yml
 software:
+  app_store_apps:
+    - app_store_id: "803453959"
+      categories:
+        - Productivity
+        - Communication
+      self_service: true
+  fleet_maintained_apps:
+    - categories:
+        - Communication
+        - Productivity
+      self_service: true
+      slug: visual-studio-code/windows
+    - self_service: true
+      slug: google-chrome/darwin
+    - categories:
+        - Communication
+        - Productivity
+      install_script:
+        path: ../lib/scripts/chrome-install-script.ps1
+      labels_include_any:
+        - Design
+        - Sales
+      post_install_script:
+        path: ../lib/scripts/chrome-config-script.ps1
+      pre_install_query:
+        path: ../lib/queries/chrome-preinstall-query.yml
+      self_service: true
+      slug: google-chrome/windows
+      uninstall_script:
+        path: ../lib/scripts/chrome-uninstall-script.ps1
   packages:
     - path: ../lib/packages/1password-cli1.yml
     - path: ../lib/packages/adoptopenjdk.yml
@@ -128,33 +146,6 @@ software:
     - path: ../lib/packages/galaxybudsclient.yml
     - path: ../lib/packages/codium-linux-amd.yml
     - path: ../lib/packages/codium-windows-x64.yml
-  app_store_apps:
-    - app_store_id: '803453959' # Slack Desktop
-      self_service: true
-      categories:
-        - Productivity
-        - Communication
-  fleet_maintained_apps:
-    - slug: visual-studio-code/windows
-      self_service: true
-      categories:
-        - Communication
-        - Productivity
-    - slug: google-chrome/darwin
-      self_service: true
-    - slug: google-chrome/windows
-      pre_install_query:
-        path: ../lib/queries/chrome-preinstall-query.yml
-      install_script:
-        path: ../lib/scripts/chrome-install-script.ps1
-      uninstall_script:
-        path: ../lib/scripts/chrome-uninstall-script.ps1
-      post_install_script:
-        path: ../lib/scripts/chrome-config-script.ps1
-      self_service: true
-      labels_include_any:
-        - Design
-        - Sales
-      categories:
-        - Communication
-        - Productivity
+team_settings:
+  secrets:
+    - secret: $FLEET_WORKSTATIONS_ENROLL_SECRET

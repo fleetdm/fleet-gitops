@@ -1,12 +1,10 @@
-# aviatrix-vpn-client  (AVPNC_mac.pkg) version unknown
-url: https://aviatrix-download.s3.amazonaws.com/AviatrixVPNClient/AVPNC_mac.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 7940758e52bd9a8e2462ec3b79e5423737e68d435ab405161dadd475ab24a291
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://aviatrix-download.s3.amazonaws.com/AviatrixVPNClient/AVPNC_mac.pkg

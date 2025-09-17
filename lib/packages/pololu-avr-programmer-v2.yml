@@ -1,11 +1,9 @@
-# pololu-avr-programmer-v2  (pololu-usb-avr-programmer-v2-1.1.0-macos.pkg) version 1.1.0
-url: https://www.pololu.com/file/0J1120/pololu-usb-avr-programmer-v2-1.1.0-macos.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://www.pololu.com/file/0J1120/pololu-usb-avr-programmer-v2-1.1.0-macos.pkg

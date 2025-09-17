@@ -1,12 +1,10 @@
-# bankid  (BankID_installation_7_15_2.pkg) version unknown
-url: https://cdn.bankid.com/bisp/mac/BankID_installation_7_15_2.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: ed0025040c89d72b02d646771132fcbfd46f15dbfc42134bc9ccf60456e04462
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://cdn.bankid.com/bisp/mac/BankID_installation_7_15_2.pkg

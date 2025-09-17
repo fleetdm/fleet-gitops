@@ -1,11 +1,9 @@
-# twingate  (Twingate.pkg) version 2025.227.17625
-url: https://binaries.twingate.com/client/macos/2025.227.17625/Twingate.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://binaries.twingate.com/client/macos/2025.227.17625/Twingate.pkg

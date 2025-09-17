@@ -1,11 +1,9 @@
-# elgato-wave-link  (WaveLink_2.0.6.3780.pkg) version 2.0.6
-url: https://edge.elgato.com/egc/macos/wavelink/2.0.6/WaveLink_2.0.6.3780.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://edge.elgato.com/egc/macos/wavelink/2.0.6/WaveLink_2.0.6.3780.pkg

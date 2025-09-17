@@ -1,11 +1,9 @@
-# ninja-download-manager-ndm  (ndm_46.pkg) version unknown
-url: https://ninjadownloadmanager.com/downloads/ndm_46.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://ninjadownloadmanager.com/downloads/ndm_46.pkg

@@ -1,11 +1,9 @@
-# mega  (MEGA_11.0.13_installer.pkg) version 11.0.13
-url: https://megasoftware.net/do_force_download/MEGA_11.0.13_installer.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://megasoftware.net/do_force_download/MEGA_11.0.13_installer.pkg

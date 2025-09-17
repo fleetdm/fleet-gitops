@@ -1,11 +1,9 @@
-# private-eye  (Private_Eye_for_OS_X_10.9_and_later.pkg) version unknown
-url: https://radiosilenceapp.com/downloads/Private_Eye_for_OS_X_10.9_and_later.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://radiosilenceapp.com/downloads/Private_Eye_for_OS_X_10.9_and_later.pkg

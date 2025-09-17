@@ -1,11 +1,9 @@
-# yubihsm2-sdk  (yubihsm2-sdk-2025-06b-darwin-arm64.pkg) version unknown
-url: https://developers.yubico.com/YubiHSM2/Releases/yubihsm2-sdk-2025-06b-darwin-arm64.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://developers.yubico.com/YubiHSM2/Releases/yubihsm2-sdk-2025-06b-darwin-arm64.pkg

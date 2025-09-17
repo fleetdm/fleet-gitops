@@ -1,11 +1,9 @@
-# lynx-whiteboard  (lynx-whiteboard.pkg) version unknown
-url: https://downloads.lynxcloud.app/lynx-whiteboard/releases/macx/lynx-whiteboard.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://downloads.lynxcloud.app/lynx-whiteboard/releases/macx/lynx-whiteboard.pkg

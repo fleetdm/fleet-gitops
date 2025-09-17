@@ -1,12 +1,10 @@
-# azookey  (azooKey-release-signed.pkg) version unknown
-url: https://github.com/azooKey/azooKey-Desktop/releases/download/v0.1/azooKey-release-signed.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: b5e41eee24205dfde7634cb3a67f70ba5cbea410ce97e1627199465cf01b100d
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/azooKey/azooKey-Desktop/releases/download/v0.1/azooKey-release-signed.pkg

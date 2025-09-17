@@ -1,12 +1,10 @@
-# foxit-pdf-editor  (FoxitPDFEditor1400.L10N.Setup.pkg) version 14.0.0
-url: https://cdn01.foxitsoftware.com/pub/foxit/phantomPDF/desktop/mac/14.x/14.0.0/FoxitPDFEditor1400.L10N.Setup.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: b9645d63b7df5b5a21757b363f9a80f40d180cb94671e9ed356b57b4c8590b02
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://cdn01.foxitsoftware.com/pub/foxit/phantomPDF/desktop/mac/14.x/14.0.0/FoxitPDFEditor1400.L10N.Setup.pkg

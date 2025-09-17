@@ -1,12 +1,10 @@
-# dotnet-sdk@8  (dotnet-sdk-8.0.414-osx-arm64.pkg) version 8.0.414
-url: https://builds.dotnet.microsoft.com/dotnet/Sdk/8.0.414/dotnet-sdk-8.0.414-osx-arm64.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 34897089f3f67551f847c5d80d639ab9a50e7dea05181f57f9f997a5f21fea2d
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://builds.dotnet.microsoft.com/dotnet/Sdk/8.0.414/dotnet-sdk-8.0.414-osx-arm64.pkg

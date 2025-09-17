@@ -1,11 +1,9 @@
-# ui  (6ae9-macOS-0.89.1-7ee8d102-d6c2-472d-9d0b-38b3627d11be.pkg) version 0.89.1
-url: https://fw-download.ubnt.com/data/uid-ui-desktop-app/6ae9-macOS-0.89.1-7ee8d102-d6c2-472d-9d0b-38b3627d11be.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://fw-download.ubnt.com/data/uid-ui-desktop-app/6ae9-macOS-0.89.1-7ee8d102-d6c2-472d-9d0b-38b3627d11be.pkg

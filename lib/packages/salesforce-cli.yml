@@ -1,11 +1,9 @@
-# salesforce-cli  (sf-v2.105.6-b06e5b4-arm64.pkg) version 2.105.6
-url: https://github.com/salesforcecli/cli/releases/download/2.105.6/sf-v2.105.6-b06e5b4-arm64.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/salesforcecli/cli/releases/download/2.105.6/sf-v2.105.6-b06e5b4-arm64.pkg

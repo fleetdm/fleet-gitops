@@ -1,12 +1,10 @@
-# arturia-software-center  (Arturia_Software_Center__2_10_0_2970.pkg) version unknown
-url: https://dl.arturia.net/products/asc/soft/Arturia_Software_Center__2_10_0_2970.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: ebf561dee23eb580ca5784388d284c58a3c5d5c149048aac4505a488b6a590ca
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://dl.arturia.net/products/asc/soft/Arturia_Software_Center__2_10_0_2970.pkg

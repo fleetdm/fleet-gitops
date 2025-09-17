@@ -1,12 +1,10 @@
-# galaxybudsclient  (GalaxyBudsClient_macOS_arm64.pkg) version 5.1.2
-url: https://github.com/ThePBone/GalaxyBudsClient/releases/download/5.1.2/GalaxyBudsClient_macOS_arm64.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 6f6d9c0111f04e3602f4a6262f3ec2c7e03e162d653433d2d93e70379a6bf5dc
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/ThePBone/GalaxyBudsClient/releases/download/5.1.2/GalaxyBudsClient_macOS_arm64.pkg

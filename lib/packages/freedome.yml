@@ -1,12 +1,10 @@
-# freedome  (Freedome.pkg) version unknown
-url: https://download.sp.f-secure.com/freedome/installer/2/Freedome.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: d2038f743eebdbea632dacf8c35a8ad349b2e398778bbf9acee95032ff96e7ff
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://download.sp.f-secure.com/freedome/installer/2/Freedome.pkg

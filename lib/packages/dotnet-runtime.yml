@@ -1,12 +1,10 @@
-# dotnet-runtime  (dotnet-runtime-9.0.9-osx-arm64.pkg) version 9.0.9
-url: https://builds.dotnet.microsoft.com/dotnet/Runtime/9.0.9/dotnet-runtime-9.0.9-osx-arm64.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: ab36fa54e95417aa105854c0e5313014c2119c24cae034709d03695701eb57bd
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://builds.dotnet.microsoft.com/dotnet/Runtime/9.0.9/dotnet-runtime-9.0.9-osx-arm64.pkg

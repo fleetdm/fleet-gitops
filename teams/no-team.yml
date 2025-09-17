@@ -1,41 +1,35 @@
-# Teams are available in Fleet Premium. 
-
-# This file updates policies, controls, and software for hosts assigned to "No team."
-
-# To update queries and agent options for hosts assigned to "No team," use the default.yml file.
-
+controls: null
 name: No team
-policies:
-controls:
+policies: null
 software:
-  packages:
-  - path: ../lib/packages/spyder.yml
-  - path: ../lib/packages/metasploit.yml
-  - path: ../lib/packages/fuse.yml
-  - path: ../lib/packages/expressvpn.yml
-  - path: ../lib/packages/duckietv.yml
   fleet_maintained_apps:
-  - slug: visual-studio-code/darwin
-    self_service: true
-    categories:
-    - Productivity
-    labels_include_any:
-    - Design
-  - slug: google-chrome/darwin
-    self_service: true
-  - slug: google-chrome/windows
-    pre_install_query:
-      path: ../lib/queries/chrome-preinstall-query.yml
-    install_script:
-      path: ../lib/scripts/chrome-install-script.ps1
-    uninstall_script:
-      path: ../lib/scripts/chrome-uninstall-script.ps1
-    post_install_script:
-      path: ../lib/scripts/chrome-config-script.ps1
-    self_service: true
-    labels_include_any:
-    - Design
-    - Sales
-    categories:
-    - Communication
-    - Productivity  
+    - categories:
+        - Productivity
+      labels_include_any:
+        - Design
+      self_service: true
+      slug: visual-studio-code/darwin
+    - self_service: true
+      slug: google-chrome/darwin
+    - categories:
+        - Communication
+        - Productivity
+      install_script:
+        path: ../lib/scripts/chrome-install-script.ps1
+      labels_include_any:
+        - Design
+        - Sales
+      post_install_script:
+        path: ../lib/scripts/chrome-config-script.ps1
+      pre_install_query:
+        path: ../lib/queries/chrome-preinstall-query.yml
+      self_service: true
+      slug: google-chrome/windows
+      uninstall_script:
+        path: ../lib/scripts/chrome-uninstall-script.ps1
+  packages:
+    - path: ../lib/packages/spyder.yml
+    - path: ../lib/packages/metasploit.yml
+    - path: ../lib/packages/fuse.yml
+    - path: ../lib/packages/expressvpn.yml
+    - path: ../lib/packages/duckietv.yml

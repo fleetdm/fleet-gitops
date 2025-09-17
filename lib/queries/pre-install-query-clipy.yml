@@ -1,2 +1,2 @@
-- name: "[Pre-install software] Clipy (pkg)"
+- name: '[Pre-install software] Clipy (pkg)'
   query: SELECT * from apps;

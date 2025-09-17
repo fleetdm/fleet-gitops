@@ -1,12 +1,10 @@
-# detail  (Detail.pkg) version 3.4.4
-url: https://detail-builds.s3.amazonaws.com/mac/3.4.4/Detail.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 6f0a69466477d5824886087e11f5a542f7f04d4fbab71392820c45f2cf6c59f0
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://detail-builds.s3.amazonaws.com/mac/3.4.4/Detail.pkg

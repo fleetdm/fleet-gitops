@@ -1,11 +1,9 @@
-# jedit-omega  (JeditOmega311.pkg) version unknown
-url: https://artman21.site/JeditOmega311.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://artman21.site/JeditOmega311.pkg

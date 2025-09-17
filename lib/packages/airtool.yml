@@ -1,12 +1,10 @@
-# airtool  (Airtool_2.6.2.pkg) version 2.6.2
-url: https://www.intuitibits.com/downloads/Airtool_2.6.2.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 514309d1208612270f795e66842ed2668923c20159776502b3d5baf97c086769
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://www.intuitibits.com/downloads/Airtool_2.6.2.pkg

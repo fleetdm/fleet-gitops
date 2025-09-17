@@ -1,11 +1,9 @@
-# zoho-cliq  (Cliq-arm64-1.7.6.pkg) version 1.7.6
-url: https://downloads.zohocdn.com/chat-desktop/mac/Cliq-arm64-1.7.6.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://downloads.zohocdn.com/chat-desktop/mac/Cliq-arm64-1.7.6.pkg

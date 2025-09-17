@@ -1,11 +1,9 @@
-# semeru-jdk-open@17  (ibm-semeru-open-jdk_aarch64_mac_17.0.16_8_openj9-0.53.0.pkg) version 17.0.16
-url: https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.16+8_openj9-0.53.0/ibm-semeru-open-jdk_aarch64_mac_17.0.16_8_openj9-0.53.0.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.16+8_openj9-0.53.0/ibm-semeru-open-jdk_aarch64_mac_17.0.16_8_openj9-0.53.0.pkg

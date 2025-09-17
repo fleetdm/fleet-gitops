@@ -1,12 +1,10 @@
-# dotnet-sdk  (dotnet-sdk-9.0.305-osx-arm64.pkg) version 9.0.305
-url: https://builds.dotnet.microsoft.com/dotnet/Sdk/9.0.305/dotnet-sdk-9.0.305-osx-arm64.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 7bbaf37675331cc58704bd4201800e8049658f4670ba256c86e7c42d49c7389b
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://builds.dotnet.microsoft.com/dotnet/Sdk/9.0.305/dotnet-sdk-9.0.305-osx-arm64.pkg

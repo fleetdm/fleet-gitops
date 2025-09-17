@@ -1,11 +1,9 @@
-# yubico-yubikey-manager  (yubikey-manager-qt-1.2.5-mac.pkg) version 1.2.5
-url: https://developers.yubico.com/yubikey-manager-qt/Releases/yubikey-manager-qt-1.2.5-mac.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://developers.yubico.com/yubikey-manager-qt/Releases/yubikey-manager-qt-1.2.5-mac.pkg

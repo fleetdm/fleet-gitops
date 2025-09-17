@@ -1,11 +1,9 @@
-# quick-app-ide  (quickapp-ide-6.7.2.pkg) version 6.7.2
-url: https://statres.quickapp.cn/quickapp/show/ide/quickapp-ide-6.7.2.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://statres.quickapp.cn/quickapp/show/ide/quickapp-ide-6.7.2.pkg

@@ -1,11 +1,9 @@
-# mailtrackerblocker  (MailTrackerBlocker.pkg) version 0.8.9
-url: https://github.com/apparition47/MailTrackerBlocker/releases/download/0.8.9/MailTrackerBlocker.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/apparition47/MailTrackerBlocker/releases/download/0.8.9/MailTrackerBlocker.pkg

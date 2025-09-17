@@ -1,11 +1,9 @@
-# elgato-stream-deck  (Stream_Deck_7.0.0.22005.pkg) version 7.0.0
-url: https://edge.elgato.com/egc/macos/sd/Stream_Deck_7.0.0.22005.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://edge.elgato.com/egc/macos/sd/Stream_Deck_7.0.0.22005.pkg

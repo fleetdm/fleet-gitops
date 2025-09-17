@@ -1,12 +1,10 @@
-# elgato-camera-hub  (CameraHub_2.1.1.6518.pkg) version 2.1.1
-url: https://edge.elgato.com/egc/macos/echm/2.1.1/CameraHub_2.1.1.6518.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 1e31c588b043194f9004fc52e40e6eec172fb1988da59ec9fe57b32bda0a7721
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://edge.elgato.com/egc/macos/echm/2.1.1/CameraHub_2.1.1.6518.pkg

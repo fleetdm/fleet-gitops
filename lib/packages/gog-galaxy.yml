@@ -1,11 +1,9 @@
-# gog-galaxy  (galaxy_client_2.0.88.15.pkg) version 2.0.88
-url: https://gog-cdn-fastly.gog.com/open/galaxy/client/galaxy_client_2.0.88.15.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://gog-cdn-fastly.gog.com/open/galaxy/client/galaxy_client_2.0.88.15.pkg

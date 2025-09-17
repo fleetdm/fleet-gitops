@@ -1,11 +1,9 @@
-# send-to-kindle  (SendToKindleForMac-installer.pkg) version unknown
-url: https://sendtokindle.s3.amazonaws.com/SendToKindleForMac-installer.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://sendtokindle.s3.amazonaws.com/SendToKindleForMac-installer.pkg

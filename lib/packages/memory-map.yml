@@ -1,11 +1,9 @@
-# memory-map  (Memory-Map.1.7.1-18.pkg) version 1.7.1
-url: https://memory-map.com/download/mac/Memory-Map.1.7.1-18.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://memory-map.com/download/mac/Memory-Map.1.7.1-18.pkg

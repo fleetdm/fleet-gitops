@@ -1,11 +1,9 @@
-# box-drive  (BoxDrive-2.43.205.pkg) version 2.43.205
-url: https://e3.boxcdn.net/desktop/releases/mac/BoxDrive-2.43.205.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://e3.boxcdn.net/desktop/releases/mac/BoxDrive-2.43.205.pkg

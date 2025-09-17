@@ -1,11 +1,9 @@
-# mullvad-vpn  (MullvadVPN-2025.9.pkg) version unknown
-url: https://cdn.mullvad.net/app/desktop/releases/2025.9/MullvadVPN-2025.9.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://cdn.mullvad.net/app/desktop/releases/2025.9/MullvadVPN-2025.9.pkg

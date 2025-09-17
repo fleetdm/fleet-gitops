@@ -1,11 +1,9 @@
-# gamemaker  (GameMaker-2024.13.1.193.pkg) version 2024.13.1
-url: https://gms.yoyogames.com/GameMaker-2024.13.1.193.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://gms.yoyogames.com/GameMaker-2024.13.1.193.pkg

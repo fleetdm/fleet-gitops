@@ -1,11 +1,9 @@
-# linn-konfig  (konfig_latest_osx.pkg) version unknown
-url: https://cloud.linn.co.uk/applications/konfig/releases/Davaar/konfig_latest_osx.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://cloud.linn.co.uk/applications/konfig/releases/Davaar/konfig_latest_osx.pkg

@@ -1,8 +1,4 @@
-command_line_flags:
-update_channels:
-  orbit: edge
-  osqueryd: edge
-  desktop: edge
+command_line_flags: null
 config:
   decorators:
     load:
@@ -15,3 +11,7 @@ config:
     distributed_tls_max_attempts: 3
     logger_tls_endpoint: /api/v1/osquery/log
     pack_delimiter: /
+update_channels:
+  desktop: edge
+  orbit: edge
+  osqueryd: edge

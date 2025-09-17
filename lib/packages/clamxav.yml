@@ -1,12 +1,10 @@
-# clamxav  (ClamXAV_3.9.1_11136_Installer.pkg) version 3.9.1
-url: https://cdn.clamxav.com/ClamXAVdownloads/ClamXAV_3.9.1_11136_Installer.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 216ecd4e17636ecc1f1cfd088a5db5b1ed306f52d6380e42ccd4092dbb3e9fde
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://cdn.clamxav.com/ClamXAVdownloads/ClamXAV_3.9.1_11136_Installer.pkg

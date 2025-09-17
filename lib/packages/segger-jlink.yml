@@ -1,11 +1,9 @@
-# segger-jlink  (JLink_MacOSX_V868_universal.pkg) version unknown
-url: https://www.segger.com/downloads/jlink/JLink_MacOSX_V868_universal.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://www.segger.com/downloads/jlink/JLink_MacOSX_V868_universal.pkg

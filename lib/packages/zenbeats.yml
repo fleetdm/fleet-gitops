@@ -1,11 +1,9 @@
-# zenbeats  (Zenbeats_Installer.pkg) version unknown
-url: https://static.roland.com/assets/media/pkg/Zenbeats_Installer.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://static.roland.com/assets/media/pkg/Zenbeats_Installer.pkg

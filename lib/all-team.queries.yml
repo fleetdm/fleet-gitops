@@ -1,14 +1,14 @@
-- name: Collect failed login attempts
+- automations_enabled: false
   description: Lists the users at least one failed login attempt and timestamp of failed login. Number of failed login attempts reset to zero after a user successfully logs in.
-  query: SELECT users.username, account_policy_data.failed_login_count, account_policy_data.failed_login_timestamp FROM users INNER JOIN account_policy_data using (uid) WHERE account_policy_data.failed_login_count > 0;
-  platform: darwin,linux,windows
   interval: 300
+  name: Collect failed login attempts
   observer_can_run: false
-  automations_enabled: false
-- name: Collect USB devices
+  platform: darwin,linux,windows
+  query: SELECT users.username, account_policy_data.failed_login_count, account_policy_data.failed_login_timestamp FROM users INNER JOIN account_policy_data using (uid) WHERE account_policy_data.failed_login_count > 0;
+- automations_enabled: false
   description: Collects the USB devices that are currently connected to macOS and Linux hosts.
-  query: SELECT model, vendor FROM usb_devices;
-  platform: darwin,linux
   interval: 300
+  name: Collect USB devices
   observer_can_run: true
-  automations_enabled: false
+  platform: darwin,linux
+  query: SELECT model, vendor FROM usb_devices;

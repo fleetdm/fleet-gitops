@@ -1,11 +1,9 @@
-# smlnj  (smlnj-amd64-110.99.8.pkg) version 110.99.8
-url: http://smlnj.cs.uchicago.edu/dist/working/110.99.8/smlnj-amd64-110.99.8.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: http://smlnj.cs.uchicago.edu/dist/working/110.99.8/smlnj-amd64-110.99.8.pkg

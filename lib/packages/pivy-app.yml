@@ -1,11 +1,9 @@
-# pivy-app  (pivy-0.12.0-macos12.pkg) version 0.12.0
-url: https://github.com/joyent/pivy/releases/download/v0.12.0/pivy-0.12.0-macos12.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/joyent/pivy/releases/download/v0.12.0/pivy-0.12.0-macos12.pkg

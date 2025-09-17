@@ -1,11 +1,9 @@
-# xamarin-android  (xamarin.android-13.2.2.0.pkg) version 13.2.2
-url: https://download.visualstudio.microsoft.com/download/pr/8cbf56b1-ef0d-466f-8cfe-fae4ba8c5080/e9e853fee3169b1c5128098942f19120/xamarin.android-13.2.2.0.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://download.visualstudio.microsoft.com/download/pr/8cbf56b1-ef0d-466f-8cfe-fae4ba8c5080/e9e853fee3169b1c5128098942f19120/xamarin.android-13.2.2.0.pkg

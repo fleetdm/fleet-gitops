@@ -1,12 +1,10 @@
-# displaycal  (DisplayCAL-3.8.9.3.pkg) version 3.8.9
-url: https://downloads.sourceforge.net/dispcalgui/release/3.8.9.3/DisplayCAL-3.8.9.3.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 3e3f4a506c3ffc1e2004d57c6cd521d6cacb1bb6a71f9e3fa4cd81ab6ad4f31a
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://downloads.sourceforge.net/dispcalgui/release/3.8.9.3/DisplayCAL-3.8.9.3.pkg

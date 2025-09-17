@@ -1,12 +1,10 @@
-# duo-connect  (DuoConnect-2.0.7.pkg) version 2.0.7
-url: https://dl.duosecurity.com/DuoConnect-2.0.7.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: eb18cb3cc446a319a8cfa9387bb42990857809a1619f49ef154fe306a15b7f6f
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://dl.duosecurity.com/DuoConnect-2.0.7.pkg

@@ -1,11 +1,9 @@
-# softube-central  (Softube%20Central-2.1.1-universal.pkg) version 2.1.1
-url: https://softubestorage.b-cdn.net/softubecentraldata/softubecentral/Softube%20Central-2.1.1-universal.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://softubestorage.b-cdn.net/softubecentraldata/softubecentral/Softube%20Central-2.1.1-universal.pkg

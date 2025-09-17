@@ -1,11 +1,9 @@
-# opensong  (OpenSong%203.4.8.pkg) version 3.4.8
-url: https://downloads.sourceforge.net/opensong/OpenSong/V3.4.8%20Beta/OpenSong%203.4.8.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://downloads.sourceforge.net/opensong/OpenSong/V3.4.8%20Beta/OpenSong%203.4.8.pkg

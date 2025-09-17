@@ -1,11 +1,9 @@
-# spyder  (Spyder-macOS-arm64.pkg) version 6.0.8
-url: https://github.com/spyder-ide/spyder/releases/download/v6.0.8/Spyder-macOS-arm64.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/spyder-ide/spyder/releases/download/v6.0.8/Spyder-macOS-arm64.pkg

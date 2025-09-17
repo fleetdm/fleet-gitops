@@ -1,12 +1,10 @@
-# epichrome  (epichrome-2.4.26.pkg) version 2.4.26
-url: https://github.com/dmarmor/epichrome/releases/download/v2.4.26/epichrome-2.4.26.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 690df70b5c8fc7104ad44965dfc509e61f5c2238638d793befdae19c1210a8d3
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/dmarmor/epichrome/releases/download/v2.4.26/epichrome-2.4.26.pkg

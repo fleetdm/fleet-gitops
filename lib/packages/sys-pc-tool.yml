@@ -1,11 +1,9 @@
-# sys-pc-tool  (SYS_PC_Tool_setup_mac-6.33.pkg) version unknown
-url: https://www.syride.com/downloads/SYS_PC_Tool_setup_mac-6.33.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://www.syride.com/downloads/SYS_PC_Tool_setup_mac-6.33.pkg

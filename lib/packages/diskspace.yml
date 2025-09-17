@@ -1,12 +1,10 @@
-# diskspace  (diskspace-1.pkg) version unknown
-url: https://github.com/scriptingosx/diskspace/releases/download/v1/diskspace-1.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 918e9796e3390b2644efd4deb36d4095599be5372fddc8536f91bfeba01f66ee
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/scriptingosx/diskspace/releases/download/v1/diskspace-1.pkg

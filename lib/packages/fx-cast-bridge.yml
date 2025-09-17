@@ -1,12 +1,10 @@
-# fx-cast-bridge  (fx_cast_bridge-0.3.0-arm64.pkg) version 0.3.0
-url: https://github.com/hensm/fx_cast/releases/download/v0.3.0/fx_cast_bridge-0.3.0-arm64.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 2e8dd783be80c21b5b25615284046df7ea7322dba80e96f09c93a329f3f6b6fb
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/hensm/fx_cast/releases/download/v0.3.0/fx_cast_bridge-0.3.0-arm64.pkg

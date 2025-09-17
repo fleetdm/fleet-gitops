@@ -1,11 +1,9 @@
-# orka3  (orka3.pkg) version 3.4.0
-url: https://cli-builds-public.s3.amazonaws.com/official/3.4.0/orka3/macos/arm64/orka3.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://cli-builds-public.s3.amazonaws.com/official/3.4.0/orka3/macos/arm64/orka3.pkg

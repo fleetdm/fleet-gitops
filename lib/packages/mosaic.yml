@@ -1,11 +1,9 @@
-# mosaic  (Mosaic_1_4.pkg) version unknown
-url: https://lightpillar.com/appdata/mosaic/archive/Mosaic_1_4.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://lightpillar.com/appdata/mosaic/archive/Mosaic_1_4.pkg

@@ -1,11 +1,9 @@
-# gpg-sync  (GPGSync-0.3.6.pkg) version 0.3.6
-url: https://github.com/firstlookmedia/gpgsync/releases/download/v0.3.6/GPGSync-0.3.6.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/firstlookmedia/gpgsync/releases/download/v0.3.6/GPGSync-0.3.6.pkg

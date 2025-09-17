@@ -1,11 +1,9 @@
-# outset  (Outset-4.2.0.21973.pkg) version 4.2.0
-url: https://github.com/macadmins/outset/releases/download/v4.2.0.21973/Outset-4.2.0.21973.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/macadmins/outset/releases/download/v4.2.0.21973/Outset-4.2.0.21973.pkg

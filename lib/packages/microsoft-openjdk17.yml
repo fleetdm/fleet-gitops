@@ -1,11 +1,9 @@
-# microsoft-openjdk@17  (microsoft-jdk-17.0.16-macos-aarch64.pkg) version 17.0.16
-url: https://aka.ms/download-jdk/microsoft-jdk-17.0.16-macos-aarch64.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://aka.ms/download-jdk/microsoft-jdk-17.0.16-macos-aarch64.pkg

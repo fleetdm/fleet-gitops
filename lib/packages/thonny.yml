@@ -1,11 +1,9 @@
-# thonny  (thonny-4.1.7.pkg) version 4.1.7
-url: https://github.com/thonny/thonny/releases/download/v4.1.7/thonny-4.1.7.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/thonny/thonny/releases/download/v4.1.7/thonny-4.1.7.pkg

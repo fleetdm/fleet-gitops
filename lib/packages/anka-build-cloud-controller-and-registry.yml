@@ -1,12 +1,10 @@
-# anka-build-cloud-controller-and-registry  (AnkaControllerRegistryArm64-1.39.0-d35842e6.pkg) version 1.39.0
-url: https://downloads.veertu.com/anka/AnkaControllerRegistryArm64-1.39.0-d35842e6.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 0b7cd5e1e27a6466380de772cfa26c97ca6544f71450086043ee55cd505c4ffc
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://downloads.veertu.com/anka/AnkaControllerRegistryArm64-1.39.0-d35842e6.pkg

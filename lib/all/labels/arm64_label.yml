@@ -1,4 +1,4 @@
-- name: Arm64
-  description: Hosts on the Arm64 architecture
-  query: "SELECT 1 FROM system_info WHERE cpu_type LIKE 'arm64%' OR cpu_type LIKE 'aarch64%'"
+- description: Hosts on the Arm64 architecture
   label_membership_type: dynamic
+  name: Arm64
+  query: SELECT 1 FROM system_info WHERE cpu_type LIKE 'arm64%' OR cpu_type LIKE 'aarch64%'

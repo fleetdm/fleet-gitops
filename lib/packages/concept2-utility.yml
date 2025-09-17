@@ -1,12 +1,10 @@
-# concept2-utility  (Concept2Utility71700.pkg) version unknown
-url: https://software.concept2.com/utility/Concept2Utility71700.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 2796b6275e9d1ab08051b94e5c33e89a5b14d31020132324f9948f8aa754cae3
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://software.concept2.com/utility/Concept2Utility71700.pkg

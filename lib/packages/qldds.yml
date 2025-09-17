@@ -1,11 +1,9 @@
-# qldds  (QLdds_133.pkg) version unknown
-url: https://github.com/Marginal/QLdds/releases/download/rel-133/QLdds_133.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://github.com/Marginal/QLdds/releases/download/rel-133/QLdds_133.pkg

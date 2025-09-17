@@ -1,12 +1,10 @@
-# eu  (EUInstall.pkg) version unknown
-url: https://iit.com.ua/download/productfiles/EUInstall.pkg
+categories:
+  - Communication
+  - Productivity
 hash_sha256: 939b9c38331bbd615f6e368cc5a8602b561ceba4e0f59e768192067531ffe731
-self_service: true
-labels_include_any: 
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://iit.com.ua/download/productfiles/EUInstall.pkg

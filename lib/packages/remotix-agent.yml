@@ -1,11 +1,9 @@
-# remotix-agent  (RemotixAgent-1.5.19-23333.pkg) version 1.5.19
-url: https://downloads.remotix.com/agent-mac/RemotixAgent-1.5.19-23333.pkg
-self_service: true
-labels_include_any: 
+categories:
+  - Communication
+  - Productivity
+labels_include_any:
   - test1
   - Design
   - Sales
-categories: 
-  - Communication
-  - Productivity
-
+self_service: true
+url: https://downloads.remotix.com/agent-mac/RemotixAgent-1.5.19-23333.pkg

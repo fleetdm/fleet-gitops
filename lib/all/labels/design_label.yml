@@ -1,5 +1,5 @@
-- name: Design
-  description: Design Label
-  label_membership_type: manual
+- description: Design Label
   hosts:
-    - "JANISWATTSEBA4"
+    - JANISWATTSEBA4
+  label_membership_type: manual
+  name: Design
