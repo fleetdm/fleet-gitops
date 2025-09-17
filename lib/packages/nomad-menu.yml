@@ -1,0 +1,11 @@
+# nomad-menu  (NoMAD.pkg) version unknown
+url: https://files.nomad.menu/NoMAD.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

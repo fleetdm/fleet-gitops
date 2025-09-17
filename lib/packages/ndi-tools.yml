@@ -1,0 +1,11 @@
+# ndi-tools  (NDIToolsInstaller.pkg) version unknown
+url: https://downloads.ndi.tv/Tools/NDIToolsInstaller.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

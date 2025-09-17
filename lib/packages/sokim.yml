@@ -1,0 +1,11 @@
+# sokim  (SokIM.pkg) version 1.2.0
+url: https://github.com/kiding/SokIM/releases/download/v1.2.0/SokIM.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

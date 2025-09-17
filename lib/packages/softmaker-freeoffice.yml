@@ -1,0 +1,11 @@
+# softmaker-freeoffice  (softmaker-freeoffice-2024.pkg) version unknown
+url: https://www.softmaker.net/down/softmaker-freeoffice-2024.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

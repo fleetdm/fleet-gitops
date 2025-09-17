@@ -1,0 +1,11 @@
+# hackolade  (Hackolade-macARM64-setup-signed.pkg) version 8.4.1
+url: https://hackolade.s3.amazonaws.com/previous/v8.4.1/Hackolade-macARM64-setup-signed.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

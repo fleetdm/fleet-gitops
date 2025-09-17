@@ -6,11 +6,16 @@
 # - Remove "controls" and add this to your YAML files in teams/ instead.
 
 policies:
+  - path: ./lib/windows-device-health.policies.yml
 queries:
+  - path: ./lib/all-team.queries.yml
 agent_options:
   path: ./lib/agent-options.yml
 controls:
+  windows_enabled_and_configured: true
 org_settings:
+  fleet_desktop:
+    transparency_url: https://isitchristmas.com/
   server_settings:
     server_url: $FLEET_URL
   org_info:
@@ -18,6 +23,9 @@ org_settings:
   secrets:
     - secret: "$FLEET_GLOBAL_ENROLL_SECRET"
   features:
+    additional_queries:
+      time: SELECT * FROM time
+      macs: SELECT mac FROM interface_details
     enable_host_users: true
     enable_software_inventory: true
   sso_settings:
@@ -35,8 +43,9 @@ org_settings:
     volume_purchasing_program:
     - location: Janis Watts
       teams:
-      - "Workstations"
+      - Workstations
 labels:
   - path: ./lib/all/labels/test1.yml
   - path: ./lib/all/labels/design_label.yml
   - path: ./lib/all/labels/sales_label.yml
+  - path: ./lib/all/labels/arm64_label.yml

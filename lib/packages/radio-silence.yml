@@ -1,0 +1,11 @@
+# radio-silence  (Radio_Silence_3.3.pkg) version unknown
+url: https://radiosilenceapp.com/downloads/Radio_Silence_3.3.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+

@@ -1,0 +1,11 @@
+# hancom-word  (HancomOfficeHWPGeneral.pkg) version unknown
+url: https://cdn.hancom.com/pds/hnc/DOWN/HancomOfficeHWPGeneral.pkg
+self_service: true
+labels_include_any: 
+  - test1
+  - Design
+  - Sales
+categories: 
+  - Communication
+  - Productivity
+
