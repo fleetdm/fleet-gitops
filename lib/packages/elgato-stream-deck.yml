@@ -1,5 +1,6 @@
 # elgato-stream-deck  (Stream_Deck_7.0.0.22005.pkg) version 7.0.0
 url: https://edge.elgato.com/egc/macos/sd/Stream_Deck_7.0.0.22005.pkg
+hash_sha256: f42fdbdc6d6f9a1f3598a3d766f979596de5d48363c9f3371f9f0617da64f4ca
 self_service: true
 labels_include_any: 
   - test1
