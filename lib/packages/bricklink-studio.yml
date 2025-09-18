@@ -1,5 +1,6 @@
 # bricklink-studio  (Studio+2.0.pkg) version 2.25.8
 url: https://studio.download.bricklink.info/Studio2.0/Archive/2.25.8_1/Studio+2.0.pkg
+hash_sha256: 5e3d38f76b624d41f1bd0c8faa6b1ce087013e579a2d46a84c74739a4790ebd0
 self_service: true
 labels_include_any: 
   - test1
