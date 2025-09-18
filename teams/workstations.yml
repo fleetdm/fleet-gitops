@@ -58,7 +58,6 @@ software:
     - path: ../lib/packages/bitfocus-buttons.yml
     - path: ../lib/packages/bluestacks.yml
     - path: ../lib/packages/blurscreen.yml
-    - path: ../lib/packages/box-drive.yml
     - path: ../lib/packages/bricklink-partdesigner.yml
     - path: ../lib/packages/bricklink-studio.yml
     - path: ../lib/packages/cardinal.yml
@@ -71,11 +70,6 @@ software:
     - path: ../lib/packages/cold-turkey-blocker.yml
     - path: ../lib/packages/concept2-utility.yml
     - path: ../lib/packages/container.yml
-    - path: ../lib/packages/corretto.yml
-    - path: ../lib/packages/corretto11.yml
-    - path: ../lib/packages/corretto17.yml
-    - path: ../lib/packages/corretto21.yml
-    - path: ../lib/packages/corretto8.yml
     - path: ../lib/packages/daedalus-mainnet.yml
     - path: ../lib/packages/deco.yml
     - path: ../lib/packages/deepstream.yml
@@ -88,7 +82,6 @@ software:
     - path: ../lib/packages/distroav.yml
     - path: ../lib/packages/docker-toolbox.yml
     - path: ../lib/packages/dotnet-runtime.yml
-    - path: ../lib/packages/dotnet-runtimepreview.yml
     - path: ../lib/packages/dotnet-sdk.yml
     - path: ../lib/packages/dotnet-sdk8.yml
     - path: ../lib/packages/dotnet-sdkpreview.yml
@@ -101,8 +94,6 @@ software:
     - path: ../lib/packages/elgato-camera-hub.yml
     - path: ../lib/packages/elgato-stream-deck.yml
     - path: ../lib/packages/elgato-wave-link.yml
-    - path: ../lib/packages/emclient.yml
-    - path: ../lib/packages/emclientbeta.yml
     - path: ../lib/packages/enclave.yml
     - path: ../lib/packages/enpass.yml
     - path: ../lib/packages/entry.yml
@@ -115,9 +106,6 @@ software:
     - path: ../lib/packages/finalshell.yml
     - path: ../lib/packages/finch.yml
     - path: ../lib/packages/flox.yml
-    - path: ../lib/packages/fme.yml
-    - path: ../lib/packages/folding-at-home.yml
-    - path: ../lib/packages/folding-at-homebeta.yml
     - path: ../lib/packages/foxit-pdf-editor.yml
     - path: ../lib/packages/foxitreader.yml
     - path: ../lib/packages/freedome.yml
