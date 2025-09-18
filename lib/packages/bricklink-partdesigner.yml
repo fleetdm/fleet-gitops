@@ -1,5 +1,6 @@
 # bricklink-partdesigner  (PartDesigner.pkg) version 2.25.3
 url: https://studio.download.bricklink.info/PartDesigner/Archive/2.25.3_1/PartDesigner.pkg
+hash_sha256: 78ab640c2f0a298ad24a69989edbc7e8bec8eb8118d1a337d8d7d9e43504adbe
 self_service: true
 labels_include_any: 
   - test1
