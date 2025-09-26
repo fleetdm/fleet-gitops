@@ -7,9 +7,6 @@ controls:
     deadline:
     minimum_version:
   macos_migration:
-    enable: false
-    mode: forced
-    webhook_url: https://quomoquize5842.andrey.docun.ngrok.app
   macos_settings:
     custom_settings:
     - path: ../lib/no-team/profiles/1password-managed-settings.mobileconfig
@@ -46,3 +43,15 @@ policies:
     version_compare(version, '3.2.2') >= 0\n  );"
   resolution:
 software:
+  packages:
+  - categories:
+    - Productivity
+    hash_sha256: 1dbf8310633bca60ee7fbd6e293cbc2fff5b516676f900fec3b876b4dbe9d0f9
+      # 1Password (1Password-8.11.10-aarch64.zip) version 8.11.10
+    install_script:
+      path: ../lib/no-team/scripts/1password-darwin-install
+    labels_include_any:
+    - TestLabel
+    uninstall_script:
+      path: ../lib/no-team/scripts/1password-darwin-uninstall
+    url: https://downloads.1password.com/mac/1Password-8.11.10-aarch64.zip

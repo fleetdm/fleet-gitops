@@ -16,29 +16,8 @@ agent_options:
 labels:
 - description:
   label_membership_type: dynamic
-  name: MacOS only > Windows only
-  platform: windows
-  query: SELECT 1 FROM os_version WHERE major >= 1;
-- description:
-  label_membership_type: dynamic
-  name: Windows and MacOS
-  platform: windows, darwin
-  query: SELECT 1 FROM os_version WHERE major >= 1;
-- description:
-  label_membership_type: dynamic
-  name: Ubuntu only > MacOS only
-  platform: darwin
-  query: SELECT 1 FROM os_version WHERE major >= 1;
-- description:
-  hosts:
-  - andreys-macbook-pro.local
-  label_membership_type: manual
-  name: Mini > Pro
-- description:
-  hosts:
-  - Andreys-Mac-mini.local
-  label_membership_type: manual
-  name: Pro > Mini
+  name: TestLabel
+  query: SELECT 1 FROM os_version WHERE major >= 13;
 org_settings:
   features:
     enable_host_users: true
