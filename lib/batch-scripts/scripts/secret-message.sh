@@ -1,1 +1,0 @@
-echo "The secret is: $FLEET_SECRET_MESSAGE"

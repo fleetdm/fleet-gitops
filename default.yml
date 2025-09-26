@@ -19,27 +19,40 @@ labels:
   name: TestLabel
   query: SELECT 1 FROM os_version WHERE major >= 13;
 org_settings:
+  certificate_authorities:
+    custom_scep_proxy:
+    digicert:
+    hydrant:
+    ndes_scep_proxy:
   features:
     enable_host_users: true
     enable_software_inventory: true
   fleet_desktop:
+    transparency_url: https://fleetdm.com/transparency
   host_expiry_settings:
     host_expiry_enabled: false
     host_expiry_window: 0
   integrations:
+    conditional_access_enabled:
+    google_calendar:
+    jira:
+    zendesk:
   mdm:
     apple_business_manager:
     apple_server_url:
     end_user_authentication:
+      entity_id:
+      idp_name:
+      issuer_uri:
+      metadata:
+      metadata_url:
+    end_user_license_agreement:
     volume_purchasing_program:
-    - location: Andrey Kizimenko
-      teams:
-      - Default ADE team
   org_info:
     contact_url: https://fleetdm.com/company/contact
     org_logo_url:
     org_logo_url_light_background:
-    org_name: TestQA
+    org_name: Main_QA
   secrets:
   - secret: $FLEET_GLOBAL_ENROLL_SECRET # TODO: Add your enroll secrets here
   server_settings:
@@ -52,6 +65,15 @@ org_settings:
     scripts_disabled: false
     server_url: $FLEET_URL
   sso_settings:
+    enable_jit_provisioning: false
+    enable_sso: false
+    enable_sso_idp_login: false
+    entity_id:
+    idp_image_url:
+    idp_name:
+    metadata:
+    metadata_url:
+    sso_server_url:
   webhook_settings:
     activities_webhook:
       destination_url:
@@ -73,50 +95,15 @@ org_settings:
       host_batch_size: 0
   yara_rules:
 policies:
-- calendar_events_enabled: false
-  conditional_access_enabled: false
-  critical: false
-  description:
-  name: Test
-  platform: darwin,windows,linux,chrome
-  query: SELECT 1 FROM osquery_info WHERE start_time > 1;
-  resolution:
-- calendar_events_enabled: false
-  conditional_access_enabled: false
-  critical: false
-  description:
-  name: Test123
-  platform: darwin,windows,chrome
-  query: SELECT 1 FROM osquery_info WHERE start_time > 1;
-  resolution:
 queries:
 - automations_enabled: false
-  description:
+  description: Collects operating system information from all devices enrolled in
+    Fleet
   discard_data: false
-  interval: 3600
+  interval: 300
   logging: snapshot
   min_osquery_version:
-  name: Test Query
-  observer_can_run: false
-  platform: darwin,windows,linux,chrome
-  query: SELECT * FROM osquery_info;
-- automations_enabled: false
-  description:
-  discard_data: false
-  interval: 3600
-  logging: snapshot
-  min_osquery_version:
-  name: Test1
-  observer_can_run: false
-  platform: darwin,windows,linux,chrome
-  query: SELECT * FROM osquery_info;
-- automations_enabled: false
-  description:
-  discard_data: false
-  interval: 3600
-  logging: snapshot
-  min_osquery_version:
-  name: Test2
-  observer_can_run: false
-  platform: darwin,windows,linux,chrome
-  query: SELECT * FROM osquery_info;
+  name: Collect operating system information
+  observer_can_run: true
+  platform: darwin,linux,windows
+  query: SELECT * FROM os_version;

@@ -1,1 +1,0 @@
-Write-Host "The secret is: $FLEET_SECRET_MESSAGE"

@@ -1,7 +1,0 @@
-{
-  "Type": "com.apple.configuration.management.test",
-  "Payload": {
-    "Echo": "$FLEET_GIT_OPS_1"
-  },
-  "Identifier": "io.macadmins.config.test.2"
-}
