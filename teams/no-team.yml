@@ -35,4 +35,3 @@ software:
     uninstall_script:
       path: ../lib/no-team/scripts/1password-darwin-uninstall
     url: https://downloads.1password.com/mac/1Password-8.11.10-aarch64.zip
-team_settings:
