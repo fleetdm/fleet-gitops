@@ -36,9 +36,3 @@ software:
       path: ../lib/no-team/scripts/1password-darwin-uninstall
     url: https://downloads.1password.com/mac/1Password-8.11.10-aarch64.zip
 team_settings:
-  webhook_settings:
-    failing_policies_webhook:
-      destination_url:
-      enable_failing_policies_webhook: false
-      host_batch_size: 0
-      policy_ids:
