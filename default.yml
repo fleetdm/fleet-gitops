@@ -31,11 +31,6 @@ org_settings:
     apple_business_manager:
     apple_server_url:
     end_user_authentication:
-      entity_id: eua-temp
-      idp_name: OKTA
-      issuer_uri:
-      metadata:
-      metadata_url: $FLEET_MDM_SSO_METADATA # TODO: Add your MDM end user auth metadata URL here
     volume_purchasing_program:
     - location: Andrey Kizimenko
       teams:
