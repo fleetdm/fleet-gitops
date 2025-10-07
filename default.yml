@@ -18,11 +18,6 @@ labels:
   label_membership_type: dynamic
   name: TestLabel
   query: SELECT 1 FROM os_version WHERE major >= 13;
-- description:
-  hosts:
-  - Tests-MacBook-Pro.local
-  label_membership_type: manual
-  name: LabelToBeRemoved
 org_settings:
   secrets:
   - secret: $FLEET_GLOBAL_ENROLL_SECRET # TODO: Add your enroll secrets here
