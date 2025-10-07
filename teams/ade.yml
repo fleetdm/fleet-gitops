@@ -42,6 +42,7 @@ software:
     install_script:
       path: ../lib/ade/scripts/1password-darwin-install
     labels_include_any:
+    - LabelToBeRemoved
     - Dynamic
     uninstall_script:
       path: ../lib/ade/scripts/1password-darwin-uninstall
