@@ -42,11 +42,9 @@ software:
     install_script:
       path: ../lib/ade/scripts/1password-darwin-install
     labels_include_any:
-    - LabelToBeRemoved
     - Dynamic
     uninstall_script:
       path: ../lib/ade/scripts/1password-darwin-uninstall
-    url: https://downloads.1password.com/mac/1Password-8.11.12-aarch64.zip
 team_settings:
   features:
     enable_host_users: true
