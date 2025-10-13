@@ -25,7 +25,7 @@ runs:
           npm install -g "fleetctl@$FLEET_VERSION" || npm install -g fleetctl
         else
           echo "Failed to get Fleet version from $FLEET_URL, installing latest version of fleetctl"
-          npm install -g fleetctl
+          npm install -g fleetctl@4.74.0
         fi
 
     - name: Configure fleetctl
