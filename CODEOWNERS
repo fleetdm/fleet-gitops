@@ -19,7 +19,7 @@
 default.yml @harrisonravazzolo
 
 # GitHub Action and GitLab CI/CD
-.github @getvictor
+.github @getvictor @allenhouchins
 .gitlab-ci.yml @getvictor
 gitops.sh @getvictor
 
