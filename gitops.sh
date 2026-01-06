@@ -12,8 +12,14 @@ FLEETCTL="${FLEETCTL:-fleetctl}"
 FLEET_DRY_RUN_ONLY="${FLEET_DRY_RUN_ONLY:-false}"
 FLEET_DELETE_OTHER_TEAMS="${FLEET_DELETE_OTHER_TEAMS:-true}"
 
-# Validate that global file contains org_settings
-grep -Exq "^org_settings:.*" "$FLEET_GLOBAL_FILE"
+# Check for existence of the global file in case the script is used
+# on repositories with team only yamls.
+if [ -f "$FLEET_GLOBAL_FILE" ]; then
+	# Validate that global file contains org_settings
+	grep -Exq "^org_settings:.*" "$FLEET_GLOBAL_FILE"
+else
+	FLEET_DELETE_OTHER_TEAMS=false
+fi
 
 # Copy/pasting raw SSO metadata into GitHub secrets will result in malformed yaml. 
 # Adds spaces to all but the first line of metadata keeps the  multiline string in bounds.
@@ -28,7 +34,11 @@ if compgen -G "$FLEET_GITOPS_DIR"/teams/*.yml > /dev/null; then
   ! perl -nle 'print $1 if /^name:\s*(.+)$/' "$FLEET_GITOPS_DIR"/teams/*.yml | sort | uniq -d | grep . -cq
 fi
 
-args=(-f "$FLEET_GLOBAL_FILE")
+args=()
+if [ -f "$FLEET_GLOBAL_FILE" ]; then
+	args=(-f "$FLEET_GLOBAL_FILE")
+fi
+
 for team_file in "$FLEET_GITOPS_DIR"/teams/*.yml; do
   if [ -f "$team_file" ]; then
     args+=(-f "$team_file")
