@@ -1,17 +1,15 @@
 name: "💻 Workstations"
 policies:
-  - path: ../lib/macos/policies/macos-device-health.policies.yml
-  - path: ../lib/windows/policies/windows-device-health.policies.yml
-  - path: ../lib/linux/policies/linux-device-health.policies.yml
+  - path: ../lib/macos.policies.yml
+  - path: ../lib/windows.policies.yml
+  - path: ../lib/linux.policies.yml
 queries:
-  - path: ../lib/all/queries/collect-usb-devices.queries.yml
-  - path: ../lib/all/queries/collect-failed-login-attempts.queries.yml
+  - path: ../lib/queries.yml
 agent_options:
   path: ../lib/agent-options.yml
 controls:
   scripts:
-    - path: ../lib/macos/scripts/remove-zoom-artifacts.script.sh
-    - path: ../lib/macos/scripts/set-timezone.script.sh
+    - path: ../lib/collect-fleetd-logs.sh
 software:
 team_settings:
   secrets:
