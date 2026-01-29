@@ -6,4 +6,4 @@ controls:
 software:
 team_settings:
   secrets:
-    - secret: $DEDICATED_DEVICES_ENROLL_SECRET
+    - secret: "$DEDICATED_DEVICES_ENROLL_SECRET"

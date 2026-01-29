@@ -6,4 +6,4 @@ controls:
 software:
 team_settings:
   secrets:
-    - secret: $PERSONAL_MOBILE_DEVICES_ENROLL_SECRET
+    - secret: "$PERSONAL_MOBILE_DEVICES_ENROLL_SECRET"
