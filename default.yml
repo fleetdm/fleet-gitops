@@ -10,4 +10,4 @@ org_settings:
   org_info:
     org_name: Fleet
   secrets:
-    - secret: "$GLOBAL_ENROLL_SECRET"
+    - secret: "REPLACE_WITH_ENVIRONMENT_VARIABLE"
