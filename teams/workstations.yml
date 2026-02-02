@@ -1,19 +1,9 @@
 name: "💻 Workstations"
 policies:
-  - path: ../lib/macos.policies.yml
-  - path: ../lib/windows.policies.yml
-  - path: ../lib/linux.policies.yml
 queries:
-  - path: ../lib/queries.yml
 agent_options:
-  path: ../lib/agent-options.yml
 controls:
-  scripts:
-    - path: ../lib/collect-fleetd-logs.sh
 software:
 team_settings:
   secrets:
     - secret: "$WORKSTATIONS_ENROLL_SECRET"
-  features:
-    enable_host_users: true
-    enable_software_inventory: true
