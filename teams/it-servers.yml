@@ -6,4 +6,4 @@ controls:
 software:
 team_settings:
   secrets:
-    - secret: "$IT_SERVERS_ENROLL_SECRET"
+    - secret: "REPLACE_WITH_ENVIRONMENT_VARIABLE"
