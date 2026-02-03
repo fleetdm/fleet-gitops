@@ -3,6 +3,7 @@
 policies:
 queries:
 agent_options:
+controls:
 org_settings:
   server_settings:
     server_url: $FLEET_URL
