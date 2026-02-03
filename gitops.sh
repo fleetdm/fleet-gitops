@@ -21,12 +21,13 @@ else
 	FLEET_DELETE_OTHER_TEAMS=false
 fi
 
-# Copy/pasting raw SSO metadata into GitHub secrets will result in malformed yaml. 
-# Adds spaces to all but the first line of metadata keeps the  multiline string in bounds.
-# See README for more information 
+# If you are using secrets to manage SSO metadata for Fleet SSO login or MDM SSO login, uncomment the below:
 
 # FLEET_SSO_METADATA=$( sed '2,$s/^/      /' <<<  "${FLEET_MDM_SSO_METADATA}")
 # FLEET_MDM_SSO_METADATA=$( sed '2,$s/^/        /' <<<  "${FLEET_MDM_SSO_METADATA}")
+
+# Copy/pasting raw SSO metadata into GitHub secrets will result in malformed yaml. 
+# Adds spaces to all but the first line of metadata keeps the  multiline string in bounds.
 
 if compgen -G "$FLEET_GITOPS_DIR"/teams/*.yml > /dev/null; then
   # Validate that every team has a unique name.
