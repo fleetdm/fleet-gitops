@@ -1,7 +1,0 @@
-- name: Collect failed login attempts
-  description: Lists the users at least one failed login attempt and timestamp of failed login. Number of failed login attempts reset to zero after a user successfully logs in.
-  query: SELECT users.username, account_policy_data.failed_login_count, account_policy_data.failed_login_timestamp FROM users INNER JOIN account_policy_data using (uid) WHERE account_policy_data.failed_login_count > 0;
-  interval: 300 # 5 minutes
-  observer_can_run: false
-  automations_enabled: false
-  platform: darwin,linux,windows

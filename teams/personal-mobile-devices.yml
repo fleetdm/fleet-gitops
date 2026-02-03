@@ -1,0 +1,9 @@
+name: 📱🔐 Personal mobile devices
+policies:
+queries:
+agent_options:
+controls:
+software:
+team_settings:
+  secrets:
+    - secret: "REPLACE_WITH_ENVIRONMENT_VARIABLE_3" # Learn how: https://fleetdm.com/guides/secrets-in-scripts-and-configuration-profiles#gitops
