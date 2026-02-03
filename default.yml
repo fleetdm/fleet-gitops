@@ -3,7 +3,6 @@
 policies:
 queries:
 agent_options:
-  path: ./lib/agent-options.yml
 org_settings:
   server_settings:
     server_url: $FLEET_URL
