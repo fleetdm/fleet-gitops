@@ -6,4 +6,4 @@ controls:
 software:
 team_settings:
   secrets:
-    - secret: "REPLACE_WITH_ENVIRONMENT_VARIABLE_2" # Learn how: https://fleetdm.com/guides/secrets-in-scripts-and-configuration-profiles#gitops
+    - secret: "$FLEET_EMPLOYEE_ISSUED_MOBILE_DEVICES_ENROLL_SECRET"
