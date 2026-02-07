@@ -20,6 +20,8 @@ runs:
       working-directory: ${{ inputs.working-directory }}
       run: |
         FLEET_VERSION="$(curl "$FLEET_URL/api/v1/fleet/version" --header "Authorization: Bearer $FLEET_API_TOKEN" --fail --silent | jq --raw-output '.version')"
+        # Strip anything after - or + (e.g., 4.81.0-rc.1234567 or 4.81.0+foobar -> 4.81.0)
+        FLEET_VERSION="${FLEET_VERSION%%[-+]*}"
         DEFAULT_FLEETCTL_VERSION="4.80.0"
 
         # Decide which fleetctl version to install:
