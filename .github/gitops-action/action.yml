@@ -27,10 +27,18 @@ runs:
         # If the server returns a snapshot (e.g. 0.0.0-SNAPSHOT-xxxxx) or is empty, pin to DEFAULT_FLEETCTL_VERSION.
         if [[ -z "$FLEET_VERSION" ]]; then
           INSTALL_VERSION="$DEFAULT_FLEETCTL_VERSION"
+        elif [[ "$FLEET_VERSION" == 0.0.0-SNAPSHOT* ]]; then
+          INSTALL_VERSION="$DEFAULT_FLEETCTL_VERSION"
         elif [[ "$FLEET_VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
           INSTALL_VERSION="$FLEET_VERSION"
         else
-          INSTALL_VERSION="$DEFAULT_FLEETCTL_VERSION"
+          # Strip anything after + (e.g. 4.81.0+foobar -> 4.81.0)
+          FLEET_VERSION="${FLEET_VERSION%%\+*}"
+          if [[ "$FLEET_VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            INSTALL_VERSION="$FLEET_VERSION"
+          else
+            INSTALL_VERSION="$DEFAULT_FLEETCTL_VERSION"
+          fi
         fi
 
         echo "Installing fleetctl v$INSTALL_VERSION..."
