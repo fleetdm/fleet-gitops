@@ -33,7 +33,7 @@ runs:
           INSTALL_VERSION="$FLEET_VERSION"
         else
           # Strip anything after - or + (e.g., 4.81.0-rc.1234567 or 4.81.0+foobar -> 4.81.0)
-          FLEET_VERSION="${FLEET_VERSION%%[-+]*}"
+          FLEET_VERSION="${FLEET_VERSION%%\+*}"
           if [[ "$FLEET_VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
             INSTALL_VERSION="$FLEET_VERSION"
           else
