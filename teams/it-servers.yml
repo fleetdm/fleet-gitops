@@ -1,9 +1,0 @@
-name: ☁️ IT servers
-policies:
-queries:
-agent_options:
-controls:
-software:
-team_settings:
-  secrets:
-    - secret: "$FLEET_IT_SERVERS_ENROLL_SECRET"
