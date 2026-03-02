@@ -1,0 +1,48 @@
+name: fleetctl-gitops-rc
+description: Builds fleetctl gitops from specified branch to apply configuration to Fleet
+
+inputs:
+  working-directory:
+    description: 'The working directory, which should be the root of the fleet-gitops repository.'
+    default: './'
+  fleet-branch:
+    description: 'The branch of fleetdm/fleet to clone and build fleetctl from.'
+    required: true
+  dry-run-only:
+    description: 'Whether to only run the fleetctl gitops commands in dry-run mode.'
+    default: 'false'
+  delete-other-teams:
+    description: 'Whether to delete other teams in Fleet which are not part of the gitops config.'
+    default: 'true'
+
+runs:
+  using: "composite"
+  steps:
+    - name: Clone fleet repository
+      shell: bash
+      run: git clone --branch ${{ inputs.fleet-branch }} --depth 1 https://github.com/fleetdm/fleet.git /tmp/fleet
+
+    - name: Set up Go
+      uses: actions/setup-go@v5
+      with:
+        go-version-file: /tmp/fleet/go.mod
+
+    - name: Build fleetctl
+      shell: bash
+      working-directory: /tmp/fleet
+      run: |
+        make build
+        echo "/tmp/fleet/build" >> "$GITHUB_PATH"
+
+    - name: Configure fleetctl
+      shell: bash
+      working-directory: ${{ inputs.working-directory }}
+      run: fleetctl config set --address ${{ env.FLEET_URL }} --token ${{ env.FLEET_API_TOKEN }}
+
+    - name: Run fleetctl gitops commands
+      shell: bash
+      working-directory: ${{ inputs.working-directory }}
+      env:
+        FLEET_DRY_RUN_ONLY: ${{ inputs.dry-run-only }}
+        FLEET_DELETE_OTHER_TEAMS: ${{ inputs.delete-other-teams }}
+      run: ./gitops.sh
