@@ -31,7 +31,7 @@ runs:
       shell: bash
       working-directory: /tmp/fleet
       run: |
-        make build
+        make fleetctl
         echo "/tmp/fleet/build" >> "$GITHUB_PATH"
 
     - name: Configure fleetctl
