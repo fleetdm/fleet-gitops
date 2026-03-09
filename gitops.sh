@@ -12,7 +12,7 @@ FLEETCTL="${FLEETCTL:-fleetctl}"
 FLEET_DRY_RUN_ONLY="${FLEET_DRY_RUN_ONLY:-false}"
 FLEET_DELETE_OTHER_TEAMS="${FLEET_DELETE_OTHER_TEAMS:-true}"
 # shellcheck disable=SC2034
-FLEET_ENABLE_LOG_TOPICS=deprecated-field-names
+FLEET_ENABLE_LOG_TOPICS="deprecated-field-names"
 
 # Check for existence of the global file in case the script is used
 # on repositories with team only yamls.
