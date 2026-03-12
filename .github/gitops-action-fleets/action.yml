@@ -8,8 +8,8 @@ inputs:
   dry-run-only:
     description: 'Whether to only run the fleetctl gitops commands in dry-run mode.'
     default: 'false'
-  delete-other-teams:
-    description: 'Whether to delete other teams in Fleet which are not part of the gitops config.'
+  delete-other-fleets:
+    description: 'Whether to delete other fleets in Fleet which are not part of the gitops config.'
     default: 'true'
 
 runs:
@@ -55,5 +55,5 @@ runs:
       working-directory: ${{ inputs.working-directory }}
       env:
         FLEET_DRY_RUN_ONLY: ${{ inputs.dry-run-only }}
-        FLEET_DELETE_OTHER_TEAMS: ${{ inputs.delete-other-teams }}
-      run: ./gitops.sh
+        FLEET_DELETE_OTHER_FLEETS: ${{ inputs.delete-other-fleets }}
+      run: ./gitops-fleets.sh
