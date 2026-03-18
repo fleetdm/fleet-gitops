@@ -4,6 +4,6 @@ queries:
 agent_options:
 controls:
 software:
-team_settings:
+settings:
   secrets:
     - secret: "$FLEET_WORKSTATIONS_ENROLL_SECRET"
