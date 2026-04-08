@@ -4,6 +4,20 @@ queries:
 agent_options:
 controls:
 software:
+  packages:
+    # Repro for Fleet GitOps backslash-escape stripping bug.
+    # A tiny, always-available macOS .pkg is used only as a carrier for
+    # the inline install script under lib/macos/scripts/repro-escape-bug-install.sh.
+    # The script contains escaped bash variables (\$EUID, \$USER, \$HOME,
+    # \$CURRENT_USER). Fleet GitOps validation rejects unescaped "$VAR"
+    # because it tries to resolve them as repo-level env vars, so the
+    # backslash escape is mandatory at ingestion time. The bug is that
+    # the backslash is still present when the install script is delivered
+    # to the host, causing shell errors on install.
+    - url: https://github.com/macadmins/installomator/releases/download/v10.7/Installomator-10.7.pkg
+      self_service: true
+      install_script:
+        path: ../lib/macos/scripts/repro-escape-bug-install.sh
 team_settings:
   secrets:
     - secret: "$FLEET_WORKSTATIONS_ENROLL_SECRET"
