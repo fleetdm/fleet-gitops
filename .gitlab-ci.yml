@@ -2,6 +2,16 @@ fleet-gitops:
   image: node:22
   variables:
     FLEET_DRY_RUN_ONLY: true
+    # Optional. Extra HTTP headers to send on every request to Fleet. They are applied to
+    # both the version check (curl) and all fleetctl commands (config set / gitops).
+    #
+    # Format: a comma-separated list of "Header:Value" pairs. Header values cannot contain
+    # commas. Leave empty to send no extra headers.
+    #
+    # Set the real value as a (masked) CI/CD variable in Settings > CI/CD > Variables, which
+    # overrides this default. Example for a Cloudflare Access service token:
+    #   FLEET_CUSTOM_HEADERS: "CF-Access-Client-Id:<client-id>,CF-Access-Client-Secret:<client-secret>"
+    FLEET_CUSTOM_HEADERS: ""
   rules:
     - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
@@ -14,8 +24,19 @@ fleet-gitops:
     - apt-get -qq update
     - apt-get install -y 'jq=1.6-2.1*'
   script:
+    # Parse FLEET_CUSTOM_HEADERS into argument arrays for curl and fleetctl.
+    - |
+      CURL_HEADER_ARGS=()
+      FLEETCTL_HEADER_ARGS=()
+      if [[ -n "$FLEET_CUSTOM_HEADERS" ]]; then
+        IFS=',' read -ra _CUSTOM_HEADERS <<< "$FLEET_CUSTOM_HEADERS"
+        for _header in "${_CUSTOM_HEADERS[@]}"; do
+          CURL_HEADER_ARGS+=(--header "$_header")
+          FLEETCTL_HEADER_ARGS+=(--custom-header "$_header")
+        done
+      fi
     - >
-      FLEET_VERSION="$(curl "$FLEET_URL/api/v1/fleet/version" --header "Authorization: Bearer $FLEET_API_TOKEN" --fail --silent | jq --raw-output '.version')"
+      FLEET_VERSION="$(curl "$FLEET_URL/api/v1/fleet/version" --header "Authorization: Bearer $FLEET_API_TOKEN" "${CURL_HEADER_ARGS[@]}" --fail --silent | jq --raw-output '.version')"
     - >
       if [[ -n "$FLEET_VERSION" ]] ; then
         npm install -g "fleetctl@$FLEET_VERSION" || npm install -g fleetctl
@@ -23,5 +44,5 @@ fleet-gitops:
         echo "Failed to get Fleet version from $FLEET_URL, installing latest version of fleetctl"
         npm install -g fleetctl
       fi
-    - fleetctl config set --address $FLEET_URL --token $FLEET_API_TOKEN
+    - fleetctl config set --address $FLEET_URL --token $FLEET_API_TOKEN "${FLEETCTL_HEADER_ARGS[@]}"
     - ./gitops.sh
