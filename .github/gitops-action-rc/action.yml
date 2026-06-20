@@ -37,7 +37,18 @@ runs:
     - name: Configure fleetctl
       shell: bash
       working-directory: ${{ inputs.working-directory }}
-      run: fleetctl config set --address ${{ env.FLEET_URL }} --token ${{ env.FLEET_API_TOKEN }}
+      run: |
+        # Build optional custom request headers from FLEET_CUSTOM_HEADERS, a comma-separated
+        # list of "Header:Value" pairs. fleetctl persists them and sends them on every request,
+        # so the gitops commands below use them too.
+        CUSTOM_HEADER_ARGS=()
+        if [[ -n "${FLEET_CUSTOM_HEADERS:-}" ]]; then
+          IFS=',' read -ra _CUSTOM_HEADERS <<< "$FLEET_CUSTOM_HEADERS"
+          for _header in "${_CUSTOM_HEADERS[@]}"; do
+            CUSTOM_HEADER_ARGS+=(--custom-header "$_header")
+          done
+        fi
+        fleetctl config set --address "$FLEET_URL" --token "$FLEET_API_TOKEN" "${CUSTOM_HEADER_ARGS[@]}"
 
     - name: Run fleetctl gitops commands
       shell: bash
