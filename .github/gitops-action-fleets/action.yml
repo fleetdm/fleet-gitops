@@ -32,7 +32,7 @@ runs:
         fi
 
         FLEET_VERSION="$(curl "$FLEET_URL/api/v1/fleet/version" --header "Authorization: Bearer $FLEET_API_TOKEN" "${CURL_HEADER_ARGS[@]}" --fail --silent | jq --raw-output '.version')"
-        DEFAULT_FLEETCTL_VERSION="4.88.1"
+        DEFAULT_FLEETCTL_VERSION="4.89.0"
 
         # Decide which fleetctl version to install:
         # If the server returns a clean version (e.g. 4.74.0), use that.
