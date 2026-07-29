@@ -11,15 +11,7 @@ This was the starter repository for using [Fleet](https://fleetdm.com) with a Gi
 
 ## Getting started
 
-Install [`fleetctl`](https://fleetdm.com/guides/fleetctl), then run:
-
-```sh
-fleetctl new
-```
-
-This creates a starter GitOps directory with a `default.yml`, per-fleet manifests, a recommended directory structure, and CI/CD workflows for GitHub Actions and GitLab. Follow the next steps it prints to push the directory to your own repository and add the `FLEET_URL` and `FLEET_API_TOKEN` secrets.
-
-For all configuration options, see the [YAML files reference](https://fleetdm.com/docs/configuration/yaml-files) in the Fleet docs.
+To start a new Fleet GitOps repository, install [`fleetctl`](https://fleetdm.com/guides/fleetctl#installing-fleetctl) and run `fleetctl new`. The [manage devices as code](https://fleetdm.com/docs/configuration/yaml-files) reference in the Fleet docs walks through the full setup and every configuration option.
 
 ## GitOps mode
 
